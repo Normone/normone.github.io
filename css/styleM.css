@@ -274,7 +274,7 @@
 }
 .catalog__item-img {
     width: 40%;
-
+    margin-top: -29px;
 }
 
 .catalog__item-category {
