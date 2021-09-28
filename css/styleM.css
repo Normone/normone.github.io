@@ -194,10 +194,10 @@
 /* ---------------------------------------------*/
 /* Пустой блок ------------------------------------*/
 
-.empty {
+/* .empty {
     width: 100%;
     height: 410px;
-}
+} */
 
 /* ---------------------------------------------*/
 /* Каталог ------------------------------------*/
@@ -213,21 +213,24 @@
     text-align: center;
     text-transform: uppercase;
 }
+.catalog__category-title {
+
+}
 
 .catalog__table {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
     grid-row-gap: 10px;
-    width: 98%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 20px;
 }
 .catalog__item {
-    background: #75757540;
-    border: 0.7px solid #3A2F23;
-    box-sizing: border-box;
-    border-radius: 14px;
+    border-radius: 9px;
+    box-shadow: 2px 1px 4px 2px rgba(46, 60, 80, 0.2);
+    background-image: url('../img/border-bg.svg');
+    background-size: cover;
 }
 
 .catalog__item1 {
@@ -257,6 +260,27 @@
     margin: 42px 20px 0px 0px;
 }
 
+.catalog__item-category {
+
+}
+.catalog__item-category-arrow {
+
+}
+.catalog__item-category-text {
+
+}
+.catalog__item-category-table {
+    display: none;
+}
+.catalog__item-category-item {
+
+}
+.catalog__item-category-title {
+
+}
+.catalog__item-category-link {
+
+}
 /* ---------------------------------------------*/
 /* Картинка с горами ------------------------------------*/
 
