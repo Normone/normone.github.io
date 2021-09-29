@@ -667,7 +667,7 @@
 .end {
     background-image: url('../img/bg-end-mobile.png');
     background-position: bottom;
-    background-size: auto;
+    background-size: cover;
     height: 3200px;
 }
 
@@ -713,12 +713,100 @@
     color: #706F6F;
 }
 
+/* ---------------------------------------------*/
+/* Преимущества ------------------------------------*/
+
+.features {
+    color: #fff;
+}
+.features__title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
+}
+.features__table {
+    display: grid;
+}
+.features__item {
+}
+.features__item-img {
+    margin: 0 auto;
+}
+.features__item-description {
+    font-family: 'Atomic Alice';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-feature-settings: 'case' on, 'cpsp' on;
+}
+
+/* ---------------------------------------------*/
+/* Подвал ------------------------------------*/
 
 
+.footer {
+    height: 350px;
+}
 
-
-
-
+.footer__table {
+}
+.footer__info {
+}
+.footer__info-title {
+}
+.footer__info-spoiler {
+}
+.footer__info-content {
+}
+.footer__link {
+}
+.footer__service {
+}
+.footer__service-title {
+}
+.footer__service-spoiler {
+}
+.footer__service-content {
+}
+.footer__personal {
+}
+.footer__personal-title {
+}
+.footer__personal-spoiler {
+}
+.footer__personal-content {
+}
+.footer__contacts {
+}
+.footer__contacts-title {
+}
+.footer__contacts-phone {
+}
+.footer__text-cut-mobile {
+}
+.footer__contacts-email {
+}
+.footer__opening-time {
+}
+.footer__opening-time-title {
+}
+.footer__opening-time-text {
+}
+.footer__social-media {
+}
+.footer__social-media-title {
+}
+.footer__social-media-youtube {
+}
+.footer__social-media-instagram {
+}
+.footer__social-media-vk {
+}
+.footer__social-media-copyright {
+}
+.footer__logo {
+}
 
 
 
