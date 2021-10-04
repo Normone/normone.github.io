@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Atomic Alice';
+    src: url('../fonts/AtomicAlice-Light.eot');
+    src: local('Atomic Alice Light'), local('AtomicAlice-Light'),
+        url('../fonts/AtomicAlice-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Light.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Light.woff') format('woff'),
+        url('../fonts/AtomicAlice-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Atomic Alice';
+    src: url('../fonts/AtomicAlice-Regular.eot');
+    src: local('Atomic Alice Regular'), local('AtomicAlice-Regular'),
+        url('../fonts/AtomicAlice-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Regular.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Regular.woff') format('woff'),
+        url('../fonts/AtomicAlice-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Atomic Alice';
+    src: url('../fonts/AtomicAlice-Bold.eot');
+    src: local('Atomic Alice Bold'), local('AtomicAlice-Bold'),
+        url('../fonts/AtomicAlice-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Bold.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Bold.woff') format('woff'),
+        url('../fonts/AtomicAlice-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Affect';
+    src: url('../fonts/Affect.eot');
+    src: url('../fonts/Affect.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Affect.woff') format('woff'),
+    url('../fonts/Affect.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Atomic Alice';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.page-path {
+    margin-top: 67px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.page-path__link {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+.page-path__divider {
+}
+
+
+.gallery {
+    width: 310px;
+    height: 255px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+.gallery__main-preview {
+    width: 255px;
+    height: 255px;
+}
+.gallery__sub-preview {
+    width: 50px;
+    height: 200px;
+    margin-top: 100px;
+}
+.gallery__sub-preview-item {
+
+}
+.gallery__favorite-icon {
+    position: absolute;
+    right: 8px;
+}
+.gallery__promo-icon {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+}
+
+
+.product-info {
+    width:310px;
+    margin: 0 auto;
+    margin-top: 35px;
+}   
+.product-info__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.product-info__weight {
+    font-family: Affect;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    position: relative;
+}
+.product-info__weight-option {
+    font-family: Affect;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-decoration-line: underline;
+    margin: 7px 7.5px 10px 7.5px;
+}
+.product-info__weight-option-selected {
+    width: 66px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    border: 1.5px solid #289648;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 7px 5px 10px 5px;
+    text-align: center;
+}
+.product-info__food-category-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.product-info__rating {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+}
+.product-info__rating-stars {
+    display: flex;
+}
+.product-info__rating-star-1 {
+}
+.product-info__rating-star-2 {
+}
+.product-info__rating-star-3 {
+}
+.product-info__rating-star-4 {
+}
+.product-info__rating-star-5 {
+}
+.product-info__rating-stars-int {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 101%;
+    margin: 3px;
+    opacity: 0.8;
+}
+
+
+.product-info__reviews {
+    display: flex;
+}
+.product-info__reviews-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 101%;
+    text-decoration-line: underline;
+    color: #EA8D2F;
+    
+}
+.product-info__reviews-volume {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 101%;
+    opacity: 0.8;
+    margin: 2px;
+}
+
+
+.product-info__availability {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 101%;
+    color: #289648;
+    opacity: 0.8;
+    margin-top: 25px;
+}
+
+
+.product-info__purchase {
+    display: flex;
+    justify-content: space-between;
+}
+.product-info__purchase-price {
+    display: flex;
+    margin-top: 2px;
+    
+}
+.product-info__purchase-price-value {
+    font-family: Affect;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 20px;
+    color: #FDB01A;
+}
+.product-info__purchase-price-valute {
+    margin: 3px 0px 0px 10px;
+}
+.product-info__purchase-busket-btn {
+    width: 140px;
+    height: 28px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 14px;
+    font-family: Affect;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.product-info__detal {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 101%;
+    color: #FDB01A;
+    display: flex;
+}
+.product-info__detal-text {
+    margin: 15px 5px 15px 0px
+}
+.product-info__description {
+    font-size: 14.5px;
+    line-height: 101%;
+}
+.product-info__calorie-table {
+}
+.product-info__with-disc {
+}

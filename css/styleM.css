@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Affect Regular';
+    font-family: 'Affect';
     src: url('../fonts/Affect.eot');
     src: url('../fonts/Affect.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Affect.woff') format('woff'),
@@ -19,15 +19,42 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Atomic Alice';
-    src: url('../fonts/AtomicAlice-Regular.woff') format('woff'),
-    url('../fonts/AtomicAlice-Regular.ttf') format('truetype');
+    src: url('../fonts/AtomicAlice-Light.eot');
+    src: local('Atomic Alice Light'), local('AtomicAlice-Light'),
+        url('../fonts/AtomicAlice-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Light.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Light.woff') format('woff'),
+        url('../fonts/AtomicAlice-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Atomic Alice';
+    src: url('../fonts/AtomicAlice-Regular.eot');
+    src: local('Atomic Alice Regular'), local('AtomicAlice-Regular'),
+        url('../fonts/AtomicAlice-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Regular.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Regular.woff') format('woff'),
+        url('../fonts/AtomicAlice-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Atomic Alice';
+    src: url('../fonts/AtomicAlice-Bold.eot');
+    src: local('Atomic Alice Bold'), local('AtomicAlice-Bold'),
+        url('../fonts/AtomicAlice-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Bold.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Bold.woff') format('woff'),
+        url('../fonts/AtomicAlice-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
-* {font-family: 'Affect Regular';}
+* {font-family: 'Affect';}
 
 
 /* ---------------------------------------------*/
@@ -923,7 +950,7 @@
 .footer__logo {
     grid-column: 2/3;
     grid-row: 4/7;
-
+    margin-top: 6px;
 }
 
 
