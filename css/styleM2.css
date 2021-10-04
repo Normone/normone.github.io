@@ -171,15 +171,16 @@
     display: flex;
 }
 .product-info__reviews-link {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 101%;
     text-decoration-line: underline;
     color: #EA8D2F;
+    opacity: 0.8;
     
 }
 .product-info__reviews-volume {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px;
     line-height: 101%;
     opacity: 0.8;
