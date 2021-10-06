@@ -183,21 +183,21 @@
 /* ---------------------------------------------*/
 /* Слайдер ------------------------------------*/
 
-.slider {
+.ad-slider {
     margin-top: 46px;
     height: 293px;
     color: #fff;
 }
-.slider__back {
+.ad-slider__back {
     height: 100%;;
     background-image: url('../img/bg-mobile1.png');
     background-size: cover;
 }
-.slider__front {
+.ad-slider__front {
     background-color: rgb(0 0 0 / 50%);
     height: 100%;
 }
-.slider__h1 {
+.ad-slider__h1 {
     font-family: 'Lester Deco';
     font-size: 36px;
     font-style: normal;
@@ -207,14 +207,14 @@
     text-align: center;
     padding-top: 112px;
 }
-.slider__h2 {
+.ad-slider__h2 {
     font-family: 'Muller Regular';
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     letter-spacing: -0.05em;
 }
-.slider__link-btn {
+.ad-slider__link-btn {
     display: none;
 }
 
@@ -342,7 +342,9 @@
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin-top: 40px;
 }
-.offer__slider {
+
+
+.product-slider {
     width: 100%;
     height: 100%;
     margin-top: 15px;
@@ -350,7 +352,7 @@
     justify-content: space-evenly;
     position: relative;
 }
-.offer__slider-item {
+.product-slider-item {
     width: 204px;
     height: 260px;
     border: 1px solid #333333;
@@ -359,9 +361,9 @@
     border-radius: 11px;
     position: relative;
 }
-.offer__slider-img {
+.product-slider-img {
 }
-.offer__slider-description {
+.product-slider-description {
     font-family: 'Atomic Alice';
     font-size: 14px;
     line-height: 15px;
@@ -369,26 +371,26 @@
 }
 
 
-.offer__slider-rating {
+.product-slider-rating {
     display: flex;
     margin-left: 10px;
     margin-top: 2.5px;
 }
 
-.offer__slider-star {
+.product-slider-star {
 }
 
-.offer__slider-star-1 {
+.product-slider-star-1 {
 }
-.offer__slider-star-2 {
+.product-slider-star-2 {
 }
-.offer__slider-star-3 {
+.product-slider-star-3 {
 }
-.offer__slider-star-4 {
+.product-slider-star-4 {
 }
-.offer__slider-star-5 {
+.product-slider-star-5 {
 }
-.offer__slider-int-rating {
+.product-slider-int-rating {
     font-family: 'Atomic Alice';
     font-weight: 500;
     font-size: 9px;
@@ -396,16 +398,16 @@
     margin: 3px 0 0 5px;
 }
 
-.offer__slider-price {
+.product-slider-price {
     font-size: 24px;
     line-height: 20px;
     margin-left: 12px;
 }
-.offer__slider-price-valute {
+.product-slider-price-valute {
     width: 11px;
 }
 
-.offer__slider-in-basket-btn {
+.product-slider-in-basket-btn {
     width: 80px;
     height: 18px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
@@ -414,7 +416,7 @@
     right: 14px;
     bottom: 10px;
 }
-.offer__slider-in-basket-btn-text {
+.product-slider-in-basket-btn-text {
     font-size: 12px;
     line-height: 16px;
     text-align: center;
@@ -422,7 +424,7 @@
     color: #fff;
 }
 
-.offer__slider-favorite-icon {
+.product-slider-favorite-icon {
     position: absolute;
     top: 11px;
     right: 10px;
@@ -430,7 +432,7 @@
 }
 
 
-.offer__slider-btn-back {
+.product-slider-btn-back {
     position: absolute;
     left: 42px;
     top: 128px;
@@ -439,7 +441,7 @@
     transform: rotate(0.5turn);
     display: none;
 }
-.offer__slider-btn-forward {
+.product-slider-btn-forward {
     position: absolute;
     right: 42px;
     top: 128px;
@@ -462,110 +464,6 @@
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin-top: 40px;
 }
-.newest__slider {
-    width: 100%;
-    height: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-.newest__slider-item {
-    width: 204px;
-    height: 260px;
-    border: 1px solid #333333;
-    box-sizing: border-box;
-    box-shadow: 3px 2px 10px 2px rgba(46, 60, 80, 0.4);
-    border-radius: 11px;
-    position: relative;
-}
-.newest__slider-img {
-}
-.newest__slider-description {
-    font-family: 'Atomic Alice';
-    font-size: 14px;
-    line-height: 15px;
-    margin: 4px 0px 0px 12px;
-}
-
-
-.newest__slider-rating {
-    display: flex;
-    margin-left: 10px;
-    margin-top: 2.5px;
-}
-
-.newest__slider-star {
-}
-
-.newest__slider-star-1 {
-}
-.newest__slider-star-2 {
-}
-.newest__slider-star-3 {
-}
-.newest__slider-star-4 {
-}
-.newest__slider-star-5 {
-}
-.newest__slider-int-rating {
-    font-family: 'Atomic Alice';
-    font-weight: 500;
-    font-size: 9px;
-    line-height: 101%;
-    margin: 3px 0 0 5px;
-}
-
-.newest__slider-price {
-    font-size: 24px;
-    line-height: 20px;
-    margin-left: 12px;
-}
-.newest__slider-price-valute {
-    width: 11px;
-}
-
-.newest__slider-in-basket-btn {
-    width: 80px;
-    height: 18px;
-    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
-    border-radius: 21px;
-    position: absolute;
-    right: 14px;
-    bottom: 10px;
-}
-.newest__slider-in-basket-btn-text {
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #fff;
-}
-
-.newest__slider-favorite-icon {
-    position: absolute;
-    top: 11px;
-    right: 10px;
-    
-}
-
-
-.newest__slider-btn-back {
-    position: absolute;
-    left: 42px;
-    top: 128px;
-    
-    height: 12px;
-    transform: rotate(0.5turn);
-    display: none;
-}
-.newest__slider-btn-forward {
-    position: absolute;
-    right: 42px;
-    top: 128px;
-    
-    height: 12px;
-}
 
 /* ---------------------------------------------*/
 /* Раздел "Акции"------------------------------*/
@@ -583,110 +481,7 @@
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin-top: 40px;
 }
-.promotion__slider {
-    width: 100%;
-    height: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-.promotion__slider-item {
-    width: 204px;
-    height: 260px;
-    border: 1px solid #333333;
-    box-sizing: border-box;
-    box-shadow: 3px 2px 10px 2px rgba(46, 60, 80, 0.4);
-    border-radius: 11px;
-    position: relative;
-}
-.promotion__slider-img {
-}
-.promotion__slider-description {
-    font-family: 'Atomic Alice';
-    font-size: 14px;
-    line-height: 15px;
-    margin: 4px 0px 0px 12px;
-}
 
-
-.promotion__slider-rating {
-    display: flex;
-    margin-left: 10px;
-    margin-top: 2.5px;
-}
-
-.promotion__slider-star {
-}
-
-.promotion__slider-star-1 {
-}
-.promotion__slider-star-2 {
-}
-.promotion__slider-star-3 {
-}
-.promotion__slider-star-4 {
-}
-.promotion__slider-star-5 {
-}
-.promotion__slider-int-rating {
-    font-family: 'Atomic Alice';
-    font-weight: 500;
-    font-size: 9px;
-    line-height: 101%;
-    margin: 3px 0 0 5px;
-}
-
-.promotion__slider-price {
-    font-size: 24px;
-    line-height: 20px;
-    margin-left: 12px;
-}
-.promotion__slider-price-valute {
-    width: 11px;
-}
-
-.promotion__slider-in-basket-btn {
-    width: 80px;
-    height: 18px;
-    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
-    border-radius: 21px;
-    position: absolute;
-    right: 14px;
-    bottom: 10px;
-}
-.promotion__slider-in-basket-btn-text {
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #fff;
-}
-
-.promotion__slider-favorite-icon {
-    position: absolute;
-    top: 11px;
-    right: 10px;
-    
-}
-
-
-.promotion__slider-btn-back {
-    position: absolute;
-    left: 42px;
-    top: 128px;
-    
-    height: 12px;
-    transform: rotate(0.5turn);
-    display: none;
-}
-.promotion__slider-btn-forward {
-    position: absolute;
-    right: 42px;
-    top: 128px;
-    
-    height: 12px;
-}
 
 /* ---------------------------------------------*/
 /* Конец страницы ------------------------------------*/

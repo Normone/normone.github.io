@@ -47,6 +47,8 @@
     font-weight: 400;
 }
 
+/* ---------------------------------------------*/
+/* Путь самурая ------------------------------------*/
 
 .page-path {
     margin-top: 67px;
@@ -61,6 +63,8 @@
 .page-path__divider {
 }
 
+/* ---------------------------------------------*/
+/* Галлерея ------------------------------------*/
 
 .gallery {
     width: 310px;
@@ -91,6 +95,8 @@
     right: 50px;
 }
 
+/* ---------------------------------------------*/
+/* Большой блок с информацией о продукте ------------------------------------*/
 
 .product-info {
     width:310px;
@@ -166,7 +172,6 @@
     opacity: 0.8;
 }
 
-
 .product-info__reviews {
     display: flex;
 }
@@ -174,7 +179,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 101%;
-    text-decoration-line: underline;
+    border-bottom: 1px solid #EA8D2F;
     color: #EA8D2F;
     opacity: 0.8;
     
@@ -232,6 +237,8 @@
     color: #FFFFFF;
 }
 
+/* ---------------------------------------------*/
+/*  ------------------------------------*/
 
 .product-info__detal {
     font-weight: 600;
@@ -247,7 +254,316 @@
     font-size: 14.5px;
     line-height: 101%;
 }
+
+/* ---------------------------------------------*/
+/* Таблица с колориями ------------------------------------*/
+
 .product-info__calorie-table {
 }
 .product-info__with-disc {
 }
+
+/* ---------------------------------------------*/
+/* Инфо состав ------------------------------------*/
+
+.product-info__composition {
+}
+.product-info__composition-title {
+}
+.product-info__composition-content {
+}
+
+/* ---------------------------------------------*/
+/* Инфо штампы ------------------------------------*/
+
+.product-info__stamps {
+}
+
+/* ---------------------------------------------*/
+/* Инфо температура хранения ------------------------------------*/
+
+.product-info__temperature {
+}
+.product-info__temperature-title {
+}
+.product-info__temperature-storage {
+}
+.product-info__temperature-storage-when-closed {
+}
+.product-info__temperature-info {
+}
+.product-info__temperature-when-opened {
+}
+
+/* ---------------------------------------------*/
+/* хрен-его-знает-кнопки ------------------------------------*/
+
+.idk-btns {
+}
+.idk-btns__block {
+}
+.idk-btns__item {
+}
+.idk-btns__item-icon {
+}
+.idk-btns__item-btn {
+}
+
+/* ---------------------------------------------*/
+/* Разогрев ------------------------------------*/
+
+.preheat {
+}
+.preheat__title {
+}
+.preheat__sub-title {
+}
+.preheat__sub-title-icon {
+}
+.preheat__sub-title-text {
+}
+.preheat__content {
+}
+.preheat__content-box {
+}
+.preheat__content-number {
+}
+.preheat__content-text {
+}
+.preheat__content-time {
+}
+.preheat__alert {
+}
+.preheat__alert-icon {
+}
+.preheat__alert-text {
+}
+.preheat__content-link {
+}
+
+/* ---------------------------------------------*/
+/* Похожие товары ------------------------------------*/
+
+.similar {
+    width: 100%;
+    height: 355px;
+}
+.similar__title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
+    margin-top: 40px;
+}
+
+/* ---------------------------------------------*/
+/* С этим берут ------------------------------------*/
+
+.together {
+    width: 100%;
+    height: 300px;
+}
+.together__title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
+    margin-top: 40px;
+}
+
+/* ---------------------------------------------*/
+/* Слайдер ------------------------------------*/
+
+.product-slider {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.product-slider-item {
+    width: 204px;
+    height: 260px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 10px 2px rgba(46, 60, 80, 0.4);
+    border-radius: 11px;
+    position: relative;
+}
+.product-slider-img {
+}
+.product-slider-description {
+    font-family: 'Atomic Alice';
+    font-size: 14px;
+    line-height: 15px;
+    margin: 4px 0px 0px 12px;
+}
+
+
+.product-slider-rating {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 2.5px;
+}
+
+.product-slider-star {
+}
+
+.product-slider-star-1 {
+}
+.product-slider-star-2 {
+}
+.product-slider-star-3 {
+}
+.product-slider-star-4 {
+}
+.product-slider-star-5 {
+}
+.product-slider-int-rating {
+    font-family: 'Atomic Alice';
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 101%;
+    margin: 3px 0 0 5px;
+}
+
+.product-slider-price {
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 12px;
+}
+.product-slider-price-valute {
+    width: 11px;
+}
+
+.product-slider-in-basket-btn {
+    width: 80px;
+    height: 18px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 21px;
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+}
+.product-slider-in-basket-btn-text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.product-slider-favorite-icon {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    
+}
+
+
+.product-slider-btn-back {
+    position: absolute;
+    left: 42px;
+    top: 128px;
+    
+    height: 12px;
+    transform: rotate(0.5turn);
+    display: none;
+}
+.product-slider-btn-forward {
+    position: absolute;
+    right: 42px;
+    top: 128px;
+    
+    height: 12px;
+}
+
+/* ---------------------------------------------*/
+/* Отзывы ------------------------------------*/
+.review {
+    background-image: url('/img/end-bg-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #212121;
+    height: 364px;
+    width: 100%;
+    
+}
+.review__title {
+    font-family: Affect;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
+    padding: 60px 0px 24px 33px;
+}
+.review__block {
+    width: 308px;
+    height: 215px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 9px;
+    font-family: Montserrat;
+}
+.review__profile {
+    width: 240px;
+    padding: 16px 22px 0px 22px;
+    display: flex;
+}
+.review__profile-avatar {
+    height: 34px;
+    border-radius: 50%;
+}
+.review__profile-name {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    padding: 3px 0px 2px 8px;
+}
+.review__profile-time {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    padding-left: 8px;
+}
+.review__content {
+    font-size: 14px;
+    line-height: 122%;
+    margin: 17px 22px 14px 22px;
+}
+.review__rating {
+    display: flex;
+    justify-content: space-between;
+}
+.review__rating-place-of-order {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+.review__rating-stars {
+    margin-right: 22px;
+}
+.review__more-btn {
+    width: 90px;
+    height: 20px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 10px;
+    font-family: Affect;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
