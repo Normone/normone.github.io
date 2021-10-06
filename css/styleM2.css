@@ -22,6 +22,17 @@
 }
 @font-face {
     font-family: 'Atomic Alice';
+    src: url('../fonts/AtomicAlice-Medium.eot');
+    src: local('Atomic Alice Medium'), local('AtomicAlice-Medium'),
+        url('../fonts/AtomicAlice-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtomicAlice-Medium.woff2') format('woff2'),
+        url('../fonts/AtomicAlice-Medium.woff') format('woff'),
+        url('../fonts/AtomicAlice-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Atomic Alice';
     src: url('../fonts/AtomicAlice-Bold.eot');
     src: local('Atomic Alice Bold'), local('AtomicAlice-Bold'),
         url('../fonts/AtomicAlice-Bold.eot?#iefix') format('embedded-opentype'),
@@ -31,6 +42,7 @@
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Affect';
     src: url('../fonts/Affect.eot');
@@ -313,32 +325,74 @@
 /* Разогрев ------------------------------------*/
 
 .preheat {
+    width: 310px;
+    margin: 0 auto;
 }
 .preheat__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 101%;
+    margin: 48px 0px 28px 0px;
 }
 .preheat__sub-title {
+    display: flex;
+    align-items: baseline;
 }
 .preheat__sub-title-icon {
 }
 .preheat__sub-title-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 101%;
+    margin-left: 5px;
 }
 .preheat__content {
+    margin-top: 10px;
 }
 .preheat__content-box {
+    display: flex;
 }
 .preheat__content-number {
+    font-size: 14px;
+    line-height: 101%;
+    padding-right: 5px;
 }
 .preheat__content-text {
+    font-size: 14px;
+    line-height: 101%;
 }
 .preheat__content-time {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 101%;
+    color: #289648;
+    margin: 5px 0px 5px 15px;
 }
 .preheat__alert {
+    display: flex;
+    
+}
+.preheat__alert b {
+    font-size: 12px;
+    line-height: 108%;
+    font-weight: 500;
 }
 .preheat__alert-icon {
+    margin: 5px 10px 0px 0px;
+
 }
 .preheat__alert-text {
+    font-size: 12px;
+    line-height: 108%;
+    margin: 10px 0px 10px 0px;
 }
+
 .preheat__content-link {
+    font-size: 14px;
+    line-height: 126%;
+    letter-spacing: -0.01em;
+    text-decoration-line: underline;
+    margin-left: 15px;
 }
 
 /* ---------------------------------------------*/
