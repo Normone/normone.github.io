@@ -59,6 +59,80 @@
     font-weight: 400;
 }
 
+.container {
+
+}
+
+/* ---------------------------------------------*/
+/* хедер ------------------------------------*/
+
+.header {
+    width: 100%;
+    height: 46px;
+    box-shadow: 1px 1px 2px 0px #2E3C5099;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+}
+
+
+.header__top-block {
+    display: flex;
+    width: 100%;
+    margin: 15px auto 5px auto;
+    justify-content: space-between;
+}
+.header__top-contacts {
+    display: none;
+}
+
+.header__top-menu {
+    display: none;
+}
+
+
+
+
+.header__bottom-block {
+    position: fixed;
+    width: 100%;
+}
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav-item {
+    position: absolute;
+    top: 15px;
+}
+
+.header__nav-burger {
+    left: 15px;
+    top: 13px;
+}
+.header__nav-search {
+    width: 17px;
+    left: 45px;
+}
+.header__nav-option {
+    display: none;
+}
+.header__nav-mobile-logo {
+    margin: 0 auto;
+    position: relative;
+}
+.header__nav-desk-logo {
+    display: none;
+}
+.header__nav-mobile-basket {
+    right: 45px;
+}
+.header__nav-mobile-profile {
+    right: 15px;
+}
+
 /* ---------------------------------------------*/
 /* Путь самурая ------------------------------------*/
 
@@ -166,21 +240,31 @@
 .product-info__rating-stars {
     display: flex;
 }
-.product-info__rating-star-1 {
+.product-info__rating-stars-bar {
+    width: 105px;
+    height: 20px;
+    position: relative;
 }
-.product-info__rating-star-2 {
+.product-info__rating-stars-bar-0 {
+    background-image: url('/img/star-0.svg');
+    background-size: 21px;
+    height: 100%;
+    width: 100%;
 }
-.product-info__rating-star-3 {
-}
-.product-info__rating-star-4 {
-}
-.product-info__rating-star-5 {
+.product-info__rating-stars-bar-1 {
+    background-image: url('/img/star-1.svg');
+    background-size: 21px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 .product-info__rating-stars-int {
     font-weight: 500;
     font-size: 12px;
     line-height: 101%;
-    margin: 3px;
+    margin: 6px 0 0 4px;
     opacity: 0.8;
 }
 
@@ -265,6 +349,7 @@
 .product-info__description {
     font-size: 14.5px;
     line-height: 101%;
+    margin-bottom: 90px;
 }
 
 /* ---------------------------------------------*/
@@ -302,9 +387,17 @@
 }
 .product-info__temperature-storage-when-closed {
 }
+.product-info__temperature-when-closed-icon {
+    width: 48px;
+    height: 62px;
+}
 .product-info__temperature-info {
 }
 .product-info__temperature-when-opened {
+}
+.product-info__temperature-when-opened-icon {
+    width: 48px;
+    height: 62px;
 }
 
 /* ---------------------------------------------*/
@@ -458,23 +551,30 @@
 
 
 .product-slider-rating {
-    display: flex;
+    display: none; /* flex */
     margin-left: 10px;
     margin-top: 2.5px;
 }
 
-.product-slider-star {
+.product-slider__rating-stars-bar {
+    width: 66px;
+    height: 12px;
+    position: relative;
 }
-
-.product-slider-star-1 {
+.product-slider__rating-stars-bar-0 {
+    background-image: url('/img/star-0.svg');
+    background-size: 13px;
+    height: 100%;
+    width: 100%;
 }
-.product-slider-star-2 {
-}
-.product-slider-star-3 {
-}
-.product-slider-star-4 {
-}
-.product-slider-star-5 {
+.product-slider__rating-stars-bar-1 {
+    background-image: url('/img/star-1.svg');
+    background-size: 13px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 .product-slider-int-rating {
     font-family: 'Atomic Alice';
@@ -488,6 +588,7 @@
     font-size: 24px;
     line-height: 20px;
     margin-left: 12px;
+    margin-top: 16px;
 }
 .product-slider-price-valute {
     width: 11px;
@@ -621,3 +722,187 @@
 
 
 
+/* ---------------------------------------------*/
+/* Подвал ------------------------------------*/
+
+
+.footer {
+    background: #212121;
+
+}
+
+.footer__table {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding: 60px 30px 50px 30px;
+}
+
+.footer__info {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+}
+.footer__info-title {
+    font-family: 'Atomic Alice';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #EF861C;
+    border-bottom: 0.5px solid #EA8D2F;
+    margin-bottom: 11px;
+}
+.footer__info-spoiler {
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+.footer__info-content {
+    display: none;
+}
+.footer__link {
+}
+
+.footer__service {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    position: relative;
+}
+.footer__service-title {
+    font-family: 'Atomic Alice';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #EF861C;
+    border-bottom: 0.5px solid #EA8D2F;
+    margin-bottom: 11px;
+}
+.footer__service-spoiler {
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+.footer__service-content {
+    display: none;
+}
+
+.footer__personal {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    position: relative;
+}
+.footer__personal-title {
+    font-family: 'Atomic Alice';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #EF861C;
+    border-bottom: 0.5px solid #EA8D2F;
+    margin-bottom: 11px;
+}
+.footer__personal-spoiler {
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+.footer__personal-content {
+    display: none;
+}
+
+.footer__contacts {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    
+}
+.footer__contacts-title {
+    font-family: 'Atomic Alice';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #EF861C;
+}
+.footer__contacts-container {
+    display: flex;
+}
+.footer__contacts-phone {
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+.footer__text-cut-mobile {
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    margin: 0 6px;
+}   
+.footer__contacts-email {
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.footer__opening-time {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    display: flex;
+}
+.footer__opening-time-title {
+    font-family: 'Atomic Alice';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #EF861C;
+}
+
+.footer__opening-time-text {
+    font-family: 'Atomic Alice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #FFFFFF;
+}
+
+.footer__social-media {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+.footer__social-media-title {
+    font-family: 'Atomic Alice';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+
+    color: #EF861C;
+    margin-bottom: 3px;
+}
+.footer__social-media-youtube {
+    
+}
+.footer__social-media-instagram {
+}
+.footer__social-media-vk {
+}
+.footer__social-media-copyright {
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #6D6D6D;
+}
+
+.footer__logo {
+    grid-column: 2/3;
+    grid-row: 4/7;
+    margin-top: 6px;
+}
