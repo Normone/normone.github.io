@@ -903,6 +903,7 @@
         width: 34%;
     }
     .catalog__item-img-8 {
+        display: block;
         width: 120%;
         position: absolute;
         width: 120%;
