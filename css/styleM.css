@@ -119,17 +119,17 @@
     justify-content: space-between;
 }
 .header__nav-item {
-    position: absolute;
-    top: 15px;
+    display: flex;
+    margin-top: 12px;
 }
 
 .header__nav-burger {
-    left: 15px;
-    top: 13px;
+    margin-left: 15px;
 }
 .header__nav-search {
-    width: 17px;
-    left: 45px;
+    margin-left: 20px;
+    width: 18px;
+    margin-top: 2px;
 }
 .header__nav-option {
     display: none;
@@ -143,10 +143,10 @@
     display: none;
 }
 .header__nav-mobile-basket {
-    right: 45px;
+    margin-right: 20px;
 }
 .header__nav-mobile-profile {
-    right: 15px;
+    margin-right: 20px;
 }
 
 
@@ -750,8 +750,8 @@
 
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
-    
+@media (min-width: 1024px)  {
+    /* and (max-width: 1400px) */
     .header {
         width: 100%;
         height: 82px;
