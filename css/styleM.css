@@ -551,7 +551,7 @@
     
 }
 .features__item {
-    width: 320px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     display: block;
