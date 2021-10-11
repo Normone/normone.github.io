@@ -474,7 +474,7 @@
 /* Конец страницы ------------------------------------*/
 
 .end {
-    background-image: url('../img/bg-end-mobile.png');
+    background-image: url('../img/end-bg-mobile.png');
     background-position: bottom;
     background-size: cover;
     height: 3200px;

@@ -246,13 +246,13 @@
     position: relative;
 }
 .product-info__rating-stars-bar-0 {
-    background-image: url('/img/star-0.svg');
+    background-image: url('../img/star-0.svg');
     background-size: 21px;
     height: 100%;
     width: 100%;
 }
 .product-info__rating-stars-bar-1 {
-    background-image: url('/img/star-1.svg');
+    background-image: url('../img/star-1.svg');
     background-size: 21px;
     width: 0%;
     height: 100%;
@@ -562,13 +562,13 @@
     position: relative;
 }
 .product-slider__rating-stars-bar-0 {
-    background-image: url('/img/star-0.svg');
+    background-image: url('../img/star-0.svg');
     background-size: 13px;
     height: 100%;
     width: 100%;
 }
 .product-slider__rating-stars-bar-1 {
-    background-image: url('/img/star-1.svg');
+    background-image: url('../img/star-1.svg');
     background-size: 13px;
     width: 0%;
     height: 100%;
@@ -639,7 +639,7 @@
 /* ---------------------------------------------*/
 /* Отзывы ------------------------------------*/
 .review {
-    background-image: url('/img/end-bg-mobile.png');
+    background-image: url('../img/end-bg-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #212121;
