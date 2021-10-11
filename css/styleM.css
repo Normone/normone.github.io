@@ -240,7 +240,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 0px 60px 60px 60px 0px 60px 60px 0px 60px 60px 60px;
     grid-row-gap: 30px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -484,7 +484,9 @@
 /* О нас ------------------------------------*/
 
 .about {
-    margin: 33px;
+    display: none;
+    width: 80%;
+    margin: 0 auto;
 }
 .about__title {
     font-size: 20px;
@@ -510,6 +512,11 @@
     text-align: justify;
     font-feature-settings: 'liga' off;
     padding-bottom: 15px;
+}
+.about__stamps {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 .about__read-more-link {
     display: block;
@@ -886,7 +893,7 @@
         grid-template-rows: 57px 57px 57px 57px 57px 57px 57px 57px;
         grid-row-gap: 18px;
         grid-column-gap: 24px;
-        width: 97%;
+        width: fit-content;
         margin: 0 auto;
     }
 
@@ -992,5 +999,14 @@
     }
     .catalog__item-category-text {
         display: none;
+    }
+
+
+
+
+
+
+    .about {
+        display: block;
     }
 }
