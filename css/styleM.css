@@ -553,6 +553,8 @@
 .features__item {
     width: 320px;
     position: relative;
+    margin: 0 auto;
+    display: block;
 }
 .features__item-img {
     margin: 0 auto;
