@@ -781,8 +781,6 @@
     position: relative;
 }
 .footer__service-title {
-    font-family: 'Atomic Alice';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -806,8 +804,6 @@
     position: relative;
 }
 .footer__personal-title {
-    font-family: 'Atomic Alice';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -831,7 +827,6 @@
     
 }
 .footer__contacts-title {
-    font-family: 'Atomic Alice';
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -864,7 +859,6 @@
     display: flex;
 }
 .footer__opening-time-title {
-    font-family: 'Atomic Alice';
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -873,9 +867,6 @@
 }
 
 .footer__opening-time-text {
-    font-family: 'Atomic Alice';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 16px;
     font-feature-settings: 'case' on, 'cpsp' on;
@@ -887,8 +878,6 @@
     grid-row: 6/7;
 }
 .footer__social-media-title {
-    font-family: 'Atomic Alice';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
