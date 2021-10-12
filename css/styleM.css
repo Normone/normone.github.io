@@ -886,12 +886,18 @@
     color: #EF861C;
     margin-bottom: 3px;
 }
+.footer__social-media-block {
+    display: flex;
+    justify-content: flex-start;
+}
 .footer__social-media-youtube {
-    
+    width: 50px;
 }
 .footer__social-media-instagram {
+    width: 50px;
 }
 .footer__social-media-vk {
+    width: 50px;
 }
 .footer__social-media-copyright {
     font-size: 10px;
@@ -1425,12 +1431,17 @@
         border-bottom: none;
         margin-bottom: 1px;
     }
+    .footer__social-media-block {
+        justify-content: flex-end;
+    }
     .footer__social-media-youtube {
-        
+        width: 50px;
     }
     .footer__social-media-instagram {
+        width: 50px;
     }
     .footer__social-media-vk {
+        width: 50px;
     }
     .footer__social-media-copyright {
         font-size: 11px;
