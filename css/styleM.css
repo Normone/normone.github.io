@@ -477,7 +477,8 @@
     background-image: url('../img/end-bg-mobile.png');
     background-position: bottom;
     background-size: cover;
-    height: 2800px;
+    background-repeat: no-repeat;
+    height: 410px;
 }
 
 /* ---------------------------------------------*/
@@ -540,6 +541,7 @@
 /* Преимущества ------------------------------------*/
 
 .features {
+    display: none;
     color: #fff;
     width: 90%;
     margin: 0 auto;
@@ -578,25 +580,31 @@
 
 /* ---------------------------------------------*/
 /* Отзывы ------------------------------------*/
+
 .review {
-    display: none;
-    height: 500px;
+    background-image: url('../img/end-bg-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #212121;
+    height: 411px;
     width: 100%;
-    
 }
 .review__title {
     font-family: Affect;
-    font-size: 36px;
-    line-height: 45px;
     text-align: center;
-    color: #FFFFFF;
+    text-transform: uppercase;
+    
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
     padding: 60px 0px 24px 0;
 }
 .review__block {
     display: flex;
-    width: 100%;
-    height: 320px;
     font-family: Montserrat;
+    width: 100%;
+
+    height: 240px;
 }
 .review__item {
     position: relative;
@@ -606,37 +614,43 @@
     background-color: #fff;
     border-radius: 9px;
 }
+.review__item-first {
+    
+}
+.review__item-other {
+    display: none;
+}
 .review__item-profile {
     width: 80%;
-    padding: 20px 20px 25px 20px;
+    padding: 16px 20px 15px 20px;
     display: flex;
 }
 .review__item-profile-avatar {
-    height: 41px;
+    height: 34px;
     border-radius: 50%;
-    padding-right: 20px;
+    padding-right: 7px;
 }
 .review__item-profile-name {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 15px;
     letter-spacing: -0.05em;
     font-feature-settings: 'case' on, 'cpsp' on;
 }
 .review__item-profile-time {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 9px;
+    line-height: 11px;
     font-feature-settings: 'case' on, 'cpsp' on;
     color: #333333;
 }
 .review__item-content {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 122%;
     margin: 0 20px 0 20px;
 }
 .review__item-rating {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 17px;
+    bottom: 17px;
 }
 .review__item-rating-place-of-order {
     font-size: 9px;
@@ -651,19 +665,19 @@
     position: relative;
 }
 .review__item-rating-stars-bar {
-    width: 80px;
-    height: 16px;
+    width: 70px;
+    height: 14px;
     position: relative;
 }
 .review__item-rating-stars-bar-0 {
     background-image: url('../img/star-0.svg');
-    background-size: 16px;
+    background-size: 14px;
     height: 100%;
     width: 100%;
 }
 .review__item-rating-stars-bar-1 {
     background-image: url('../img/star-1.svg');
-    background-size: 16px;
+    background-size: 14px;
     width: 0%;
     height: 100%;
     position: absolute;
@@ -687,6 +701,7 @@
 /* Подсказка(?) в конце ------------------------------------*/
 
 .clue {
+    display: none;
     margin-top: 130px;
 }
 .clue-hr {
@@ -1164,7 +1179,12 @@
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
+    .end {
+        /* background-image: url('../img/end-bg-mobile.png'); */
+        height: 2800px;
+    }
 
+    /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .about {
         display: block;
@@ -1172,7 +1192,92 @@
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
+    .features {
+        display: block;
+    }
+
+    /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
+
     .review {
+        display: block;
+        height: 500px;
+        width: 100%;
+        background: none;
+    }
+    .review__title {
+        font-size: 36px;
+        line-height: 45px;
+        color: #FFFFFF;
+        text-transform: none;
+        padding: 60px 0px 24px 0;
+    }
+    .review__block {
+        height: 320px;
+    }
+    .review__item {
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 9px;
+    }
+    .review__item-other {
+        display: block;
+    }
+    .review__item-profile {
+        padding: 20px 20px 25px 20px;
+    }
+    .review__item-profile-avatar {
+        height: 41px;
+        padding-right: 20px;
+    }
+    .review__item-profile-name {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.05em;
+    }
+    .review__item-profile-time {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .review__item-content {
+        font-size: 15px;
+        line-height: 18px;
+        margin: 0 20px 0 20px;
+    }
+    .review__item-rating {
+        right: 20px;
+        bottom: 20px;
+    }
+    .review__item-rating-place-of-order {
+        font-size: 9px;
+        line-height: 11px;
+        margin-left: 22px;
+        margin-top: 5px;
+    }
+    
+    .review__item-rating-stars {
+    }
+    .review__item-rating-stars-bar {
+        width: 80px;
+        height: 16px;
+    }
+    .review__item-rating-stars-bar-0 {
+        background-size: 16px;
+    }
+    .review__item-rating-stars-bar-1 {
+        background-size: 16px;
+    }
+    
+    .review__item-more-btn {
+        width: 162px;
+        height: 31px;
+        background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+        border-radius: 25px;
+        margin-top: 25px;
+    }
+
+    /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
+
+    .clue {
         display: block;
     }
 
