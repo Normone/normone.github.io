@@ -477,7 +477,7 @@
     background-image: url('../img/end-bg-mobile.png');
     background-position: bottom;
     background-size: cover;
-    height: 3200px;
+    height: 2800px;
 }
 
 /* ---------------------------------------------*/
@@ -489,29 +489,36 @@
     margin: 0 auto;
 }
 .about__title {
-    font-size: 20px;
-    line-height: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
+    text-transform: uppercase;
 }
 .about__sub-title {
-    font-family: 'Atomic Alice';
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: justify;
-    font-feature-settings: 'liga' off;
-    margin: 10px 0;
+    
+
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+
+    margin: 15px 0;
 }
 .about__content {
-    font-family: 'Atomic Alice';
+    font-family: Montserrat;
+    font-size: 22px;
     font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 14px;
-    text-align: justify;
-    font-feature-settings: 'liga' off;
-    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+    padding: 10px 0;
 }
 .about__stamps {
     width: 100%;
@@ -568,6 +575,147 @@
     font-feature-settings: 'case' on, 'cpsp' on;
     margin-top: 15px;
 }
+
+/* ---------------------------------------------*/
+/* Отзывы ------------------------------------*/
+.review {
+    display: none;
+    height: 500px;
+    width: 100%;
+    
+}
+.review__title {
+    font-family: Affect;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 60px 0px 24px 0;
+}
+.review__block {
+    display: flex;
+    width: 100%;
+    height: 320px;
+    font-family: Montserrat;
+}
+.review__item {
+    position: relative;
+    width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 9px;
+}
+.review__item-profile {
+    width: 80%;
+    padding: 20px 20px 25px 20px;
+    display: flex;
+}
+.review__item-profile-avatar {
+    height: 41px;
+    border-radius: 50%;
+    padding-right: 20px;
+}
+.review__item-profile-name {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    font-feature-settings: 'case' on, 'cpsp' on;
+}
+.review__item-profile-time {
+    font-size: 11px;
+    line-height: 13px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+}
+.review__item-content {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0 20px 0 20px;
+}
+.review__item-rating {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.review__item-rating-place-of-order {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+
+.review__item-rating-stars {
+    position: relative;
+}
+.review__item-rating-stars-bar {
+    width: 80px;
+    height: 16px;
+    position: relative;
+}
+.review__item-rating-stars-bar-0 {
+    background-image: url('../img/star-0.svg');
+    background-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+.review__item-rating-stars-bar-1 {
+    background-image: url('../img/star-1.svg');
+    background-size: 16px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.review__item-more-btn {
+    width: 162px;
+    height: 31px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    color:#fff;
+}
+
+/* ---------------------------------------------*/
+/* Подсказка(?) в конце ------------------------------------*/
+
+.clue {
+    margin-top: 130px;
+}
+.clue-hr {
+    width: 60%;
+    opacity: 0.7;
+}
+.clue__block {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+.clue__item {
+    display: flex;
+    align-items: center;
+}
+.clue__item-img {
+}
+.clue__item-link {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+
+
 
 /* ---------------------------------------------*/
 /* Подвал ------------------------------------*/
@@ -823,7 +971,7 @@
     }
     .header__nav-item {
         position: relative;
-        top: 35px;
+        top: 30px;
     }
     .header__nav-option {
         display: block;
@@ -1014,11 +1162,21 @@
     }
 
 
-
+    /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
 
 
     .about {
         display: block;
     }
+
+    /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
+
+    .review {
+        display: block;
+    }
+
+    /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
+
+
 }

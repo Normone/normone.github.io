@@ -702,9 +702,31 @@
     margin-left: 22px;
     margin-top: 5px;
 }
+
 .review__rating-stars {
     margin-right: 22px;
 }
+.review__item-rating-stars-bar {
+    width: 66px;
+    height: 12px;
+    position: relative;
+}
+.review__item-rating-stars-bar-0 {
+    background-image: url('../img/star-0.svg');
+    background-size: 13px;
+    height: 100%;
+    width: 100%;
+}
+.review__item-rating-stars-bar-1 {
+    background-image: url('../img/star-1.svg');
+    background-size: 13px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
 .review__more-btn {
     width: 90px;
     height: 20px;
