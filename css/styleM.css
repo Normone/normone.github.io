@@ -104,12 +104,37 @@
     display: none;
 }
 
-.header__top-menu {
-    display: none;
+.header__top-mobile {
+    display: flex;
+}
+.header__top-burger {
+    margin-left: 15px;
+}
+.header__top-search {
+    margin-left: 20px;
+    width: 17px;
+    margin-top: 2px;
+}
+.header__top-mobile-logo {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 6px;
 }
 
-
-
+.header__top-menu {
+    display: flex;
+    
+}
+.header__top-menu-desktop-search {
+    display: none;
+    margin-right: 20px;
+}
+.header__top-menu-basket {
+    margin-right: 20px;
+}
+.header__top-menu-profile {
+    margin-right: 25px;
+}
 
 .header__bottom-block {
     width: 100%;
@@ -123,30 +148,13 @@
     margin-top: 12px;
 }
 
-.header__nav-burger {
-    margin-left: 15px;
-}
-.header__nav-search {
-    margin-left: 20px;
-    width: 18px;
-    margin-top: 2px;
-}
+
 .header__nav-option {
     display: none;
 }
-.header__nav-mobile-logo {
-    margin: 0 auto;
-    position: relative;
-    margin-top: 12px;
-}
+
 .header__nav-desk-logo {
     display: none;
-}
-.header__nav-mobile-basket {
-    margin-right: 20px;
-}
-.header__nav-mobile-profile {
-    margin-right: 20px;
 }
 
 
@@ -963,6 +971,13 @@
         transform: translate(-50%, -50%);
         margin-top: 25px;
     }
+    .header__top-mobile {
+        display: none;
+    }
+    .header__top-mobile-logo {
+        display: none;
+    }
+    
     .header__top-contacts {
         display: flex;
     }
@@ -982,7 +997,6 @@
         border: none;
         background-color: #fff;
         display: flex;
-        width: 40px;
     }
     
     .header__bottom-block {
@@ -1322,16 +1336,15 @@
         display: none;
     }
     .footer__info-content {
-        display: block;
-        width: 140px;
+        display: flex;
+        flex-direction: column;
         
     }
     .footer__link {
         font-size: 17px;
-        line-height: 21px;
+        /* line-height: 21px; */
         color: #FFFFFF;
-        display: inline-block;
-        width: 160px;
+        white-space: nowrap;
     }
     
     .footer__service {
@@ -1348,8 +1361,8 @@
         display: none;
     }
     .footer__service-content {
-        display: block;
-        width: 140px;
+        display: flex;
+        flex-direction: column;
     }
     
     .footer__personal {
@@ -1368,7 +1381,8 @@
         display: none;
     }
     .footer__personal-content {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     
     .footer__contacts {
@@ -1406,6 +1420,7 @@
         display: flex;
         text-align: right;
         margin-top: 11px;
+        justify-content: flex-end;
     }
     .footer__opening-time-title {
         font-size: 17px;
