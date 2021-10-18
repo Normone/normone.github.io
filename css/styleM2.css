@@ -1263,9 +1263,8 @@
     /* Большой блок с информацией о продукте ------------------------------------*/
     
     .product-info {
-        width:310px;
-        margin: 0 auto;
-        margin-top: 35px;
+        margin: 0;
+        margin-top: 0px;
     }   
     .product-info__title {
         font-size: 20px;
