@@ -205,9 +205,16 @@
 }
 .gallery__description {
     display: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 101%;
+    margin-top: 20px;
 }
 .gallery__stamps {
     display: none;
+    margin-top: 20px;
 }
 
 /* ---------------------------------------------*/
@@ -304,12 +311,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 101%;
-    border-bottom: 1px solid #EA8D2F;
+    text-decoration-line: underline;
     color: #EA8D2F;
     opacity: 0.8;
     
 }
-.product-info__reviews-volume {
+.product-info__reviews-volue {
     font-weight: 600;
     font-size: 13px;
     line-height: 101%;
@@ -396,10 +403,12 @@
 .product-info__with-gramm {
     font-size: 14px;
     line-height: 101%;
+    text-align: left;
 }
 .product-info__with-portion {
     font-size: 14px;
-    line-height: 101%;  
+    line-height: 101%;
+    text-align: left;
 }   
 .product-info__with-disc {
     font-weight: 600;
@@ -475,6 +484,28 @@
 .product-info__temperature-when-opened-icon {
     width: 48px;
     height: 62px;
+}
+
+
+.product-info__idk-btns {
+    display: none;
+    width: 380px;
+    margin: 20px auto 0 auto;
+}
+.product-info__idk-btns-block {
+    display: flex;
+    justify-content: space-between;
+}
+.product-info__idk-btns-item {
+    display: flex;
+}
+.product-info__idk-btns-item-icon {
+}
+.product-info__idk-btns-item-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;text-decoration-line: underline;
+    margin-left: 6px;
 }
 
 /* ---------------------------------------------*/
@@ -1228,7 +1259,7 @@
     
     .gallery {
         width: 550px;
-        height: 730px;
+        height: 680px;
         display: flex;
         flex-direction: column;
     }
@@ -1265,47 +1296,36 @@
     .product-info {
         margin: 0;
         margin-top: 0px;
-    }   
+        width: 400px;
+        
+    }
+    .product-info-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        box-shadow: 3px 2px 10px rgba(46, 60, 80, 0.4);
+        border: 1px solid #000;
+        border-radius: 19px;
+        height: 670px;
+    }
     .product-info__title {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
+        font-size: 28px;
+        line-height: 101%;
+        margin: 15px 25px 0 25px;
     }
     
     
     .product-info__weight {
-        font-family: Affect;
-        font-style: normal;
-        font-weight: 400;
-        display: flex;
-        position: relative;
+        margin: 15px 25px 0 25px;
     }
     .product-info__weight-option {
-        font-family: Affect;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 0em;
-        text-decoration-line: underline;
-        margin: 7px 7.5px 10px 7.5px;
+        
     }
     .product-info__weight-option-selected {
-        width: 66px;
-        height: 22px;
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0em;
-        border: 1.5px solid #289648;
-        box-sizing: border-box;
-        border-radius: 5px;
-        margin: 7px 5px 10px 5px;
-        text-align: center;
+        width: 75px;
+        height: 25px;
     }
     .product-info__food-category-icon {
-        position: absolute;
-        top: 0px;
-        right: 0px;
     }
     
     
@@ -1313,164 +1333,98 @@
         display: flex;
         justify-content: space-between;
         width: 310px;
+        grid-row: 11/12;
+        margin: 0px 25px 5px 25px;
     }
     .product-info__rating-stars {
-        display: flex;
     }
     .product-info__rating-stars-bar {
-        width: 105px;
-        height: 20px;
-        position: relative;
     }
     .product-info__rating-stars-bar-0 {
-        background-image: url('../img/star-0.svg');
-        background-size: 21px;
-        height: 100%;
-        width: 100%;
     }
     .product-info__rating-stars-bar-1 {
-        background-image: url('../img/star-1.svg');
-        background-size: 21px;
-        width: 0%;
-        height: 100%;
-        position: absolute;
-        left: 0px;
-        top: 0px;
     }
     .product-info__rating-stars-int {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 101%;
-        margin: 6px 0 0 4px;
-        opacity: 0.8;
     }
     
     .product-info__reviews {
-        display: flex;
     }
     .product-info__reviews-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 101%;
-        border-bottom: 1px solid #EA8D2F;
-        color: #EA8D2F;
-        opacity: 0.8;
         
     }
-    .product-info__reviews-volume {
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 101%;
-        opacity: 0.8;
-        margin: 2px;
+    .product-info__reviews-volue {
     }
     
     
     .product-info__availability {
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 101%;
-        color: #289648;
-        opacity: 0.8;
-        margin-top: 25px;
+        font-size: 14px;
+        margin: 0 25px;
     }
     
     
     .product-info__purchase {
         display: flex;
         justify-content: space-between;
+        margin: 0 25px;
     }
     .product-info__purchase-price {
         display: flex;
-        margin-top: 2px;
+        margin-top: 6px;
         
     }
     .product-info__purchase-price-value {
-        font-family: Affect;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 20px;
-        color: #FDB01A;
     }
     .product-info__purchase-price-valute {
-        margin: 3px 0px 0px 10px;
     }
     .product-info__purchase-busket-btn {
-        width: 140px;
-        height: 28px;
-        background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
-        border-radius: 14px;
-        font-family: Affect;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 21px;
-        text-align: center;
-        color: #FFFFFF;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        font-family: Montseratt;
+        font-size: 18px;
+        line-height: 101%;
     }
     
     /* ---------------------------------------------*/
     /*  ------------------------------------*/
     
     .product-info__detal {
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 101%;
-        color: #FDB01A;
-        display: flex;
+        font-size: 12px;
+        margin: 0 25px;
     }
     .product-info__detal-text {
-        margin: 15px 5px 15px 0px
     }
     .product-info__description {
-        font-size: 14.5px;
-        line-height: 101%;
-        margin-bottom: 50px;
+        display: none;
     }
     
     /* ---------------------------------------------*/
     /* Таблица с колориями ------------------------------------*/
     
     .product-info__calorie-table {
+        margin: 0 25px;
     }
     .product-info__with-calorie {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 101%;
-        text-align: left;
-        width: 173px;
     }
     .product-info__with-gramm {
-        font-size: 14px;
-        line-height: 101%;
     }
     .product-info__with-portion {
-        font-size: 14px;
-        line-height: 101%;  
     }   
     .product-info__with-disc {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 150%;
-        display: list-item;
-        list-style: disc;
-        list-style-position: inside;
     }
     .product-info__with-int {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 130%;
     }
     
     /* ---------------------------------------------*/
     /* Инфо состав ------------------------------------*/
     
     .product-info__composition {
+        margin: 20px 25px 0 25px;
     }
     .product-info__composition-title {
         font-size: 16px;
         line-height: 101%;
+        margin: 5px 0;
     }
     .product-info__composition-content {
         font-size: 14px;
@@ -1481,73 +1435,56 @@
     /* Инфо штампы ------------------------------------*/
     
     .product-info__stamps {
+        display: none;
     }
     
     /* ---------------------------------------------*/
     /* Инфо температура хранения ------------------------------------*/
     
     .product-info__temperature {
+        margin-top: 25px;
+        margin: 25px 25px 0 25px;
     }
     .product-info__temperature-title {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 101%;
     }
     .product-info__temperature-storage {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
     }
     .product-info__temperature-storage-when-closed {
-        display: flex;
     }
     .product-info__temperature-when-closed-icon {
-        width: 48px;
-        height: 62px;
     }
     .product-info__temperature-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     .product-info__temperature-info-string {
-        display: flex;
     }
     .product-info__temperature-info-string-text {
-        margin-left: 5px;
     }
     .product-info__temperature-when-opened {
-        display: flex;
     }
     .product-info__temperature-when-opened-icon {
-        width: 48px;
-        height: 62px;
     }
     
     /* ---------------------------------------------*/
     /* хрен-его-знает-кнопки ------------------------------------*/
+
+    .product-info__idk-btns {
+        display: block;
+    }
+    /* ---------------------------------------------*/
+    /* хрен-его-знает-кнопки ------------------------------------*/
     
     .idk-btns {
-        width: 90%;
-        margin: 0 auto;
+        display: none;
     }
     .idk-hr {
-        width: 80%;
     }
     .idk-btns__block {
-        display: flex;
-        justify-content: space-between;
     }
     .idk-btns__item {
-        display: flex;
     }
     .idk-btns__item-icon {
     }
     .idk-btns__item-btn {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 150%;text-decoration-line: underline;
-        margin-left: 6px;
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
