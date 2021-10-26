@@ -116,6 +116,11 @@
 }
 .burger-menu__list-item {
 }
+.burger-menu__list-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
 .burger-menu__sub-list {
 }
 .burger-menu__sub-list-item {
