@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const burgerCloseBtn = document.querySelector('.burger-menu__close-btn');
     const burgerBlock = document.querySelector('.burger-menu');
     const header = document.querySelector('.header');
+    const body = document.querySelector('body');
     var kva = 0;
 
     burgerBtn.addEventListener('click', burger);
@@ -14,12 +15,14 @@ document.addEventListener("DOMContentLoaded", function(){
             burgerBlock.style.display = 'block';
             header.style.borderBottomRightRadius = '0px';
             header.style.borderBottomLeftRadius = '0px';
+            body.style.overflow = 'hidden';
             kva = 1;
             console.log('kvaOpen');
         } else if (kva === 1) {
             burgerBlock.style.display = 'none';
             header.style.borderBottomRightRadius = '10px';
             header.style.borderBottomLeftRadius = '10px';
+            body.style.overflow = 'inherit';
             kva = 0;
             console.log('kvaClose');
         }
