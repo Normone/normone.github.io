@@ -76,6 +76,9 @@
 .container {
 
 }
+.content {
+    
+}
 
 .header {
     width: 100%;
@@ -138,6 +141,7 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
     margin-top: 25px;
+    max-width: 1200px;
 }
 .header__top-contacts {
     display: none;
@@ -175,8 +179,10 @@
     margin-right: 25px;
 }
 
+
 .header__bottom-block {
     width: 100%;
+    max-width: 1100px;
 }
 .header__nav-list {
     display: flex;
@@ -197,6 +203,27 @@
 }
 
 
+.header__nav-dd-list {
+    display: none;
+    position: absolute;
+    top: 39px;
+    height: auto;
+    left: -15px;
+}
+.header__nav-dd-list-img {
+}
+.header__nav-dd-list-list {
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header__nav-dd-list-list-item {
+    margin: 3px 15px;
+}
+
+.header__nav-option:hover > div {
+    display: flex;
+}
 /* ---------------------------------------------*/
 
 
@@ -370,6 +397,8 @@
 .offer {
     width: 100%;
     height: 355px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .offer__title {
     font-size: 20px;
@@ -500,6 +529,8 @@
 .newest {
     width: 100%;
     height: 355px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .newest__title {
     font-size: 20px;
@@ -516,6 +547,8 @@
 .promotion {
     width: 100%;
     height: 355px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .promotion__title {
@@ -546,6 +579,7 @@
     display: none;
     width: 80%;
     margin: 0 auto;
+    max-width: 1100px;
 }
 .about__columns {
     display: flex;
@@ -611,6 +645,7 @@
     width: 90%;
     margin: 0 auto;
     font-family: Montserrat;
+    max-width: 1100px;
 }
 .features__title {
     font-weight: 600;
@@ -653,6 +688,8 @@
     background-color: #212121;
     height: 411px;
     width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .review__title {
     font-family: Affect;
@@ -768,6 +805,8 @@
 .clue {
     display: none;
     margin-top: 130px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .clue-hr {
     width: 60%;
