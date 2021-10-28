@@ -207,7 +207,7 @@
     display: none;
     position: absolute;
     top: 39px;
-    height: auto;
+    width: max-content;
     left: -20px;
 }
 .header__nav-dd-list-img {
@@ -219,6 +219,8 @@
 }
 .header__nav-dd-list-list-item {
     margin: 3px 15px;
+    font-size: 13px;
+    line-height: 184.5%;
 }
 
 .header__nav-option:hover > div {
