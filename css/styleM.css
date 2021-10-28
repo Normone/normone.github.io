@@ -211,7 +211,9 @@
     left: -30px;
 }
 .header__nav-dd-list-img {
+    height: 10px;
 }
+
 .header__nav-dd-list-list {
     background-color: #fff;
     border-bottom-left-radius: 10px;
