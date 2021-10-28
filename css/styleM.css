@@ -218,9 +218,12 @@
     border-bottom-right-radius: 10px;
 }
 .header__nav-dd-list-list-item {
-    margin: 3px 15px;
+    margin: 0px 15px;
     font-size: 13px;
     line-height: 184.5%;
+}
+.header__nav-dd-list-list-item:last-child {
+    margin-bottom: 15px;
 }
 
 .header__nav-option:hover > div {
