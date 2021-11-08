@@ -392,6 +392,9 @@
     bottom: 0px;
     right: 6px;
 }
+.catalog__item-img-2 {
+    display: none;
+}
 .catalog__item-img-8 {
     display: none;
 }
@@ -605,9 +608,9 @@
 }
 
 /* ---------------------------------------------*/
-/* О нас ------------------------------------*/
+/* О нас (старый вариант)------------------------------------*/
 
-.about {
+/* .about {
     display: none;
     width: 80%;
     margin: 0 auto;
@@ -666,6 +669,51 @@
     text-decoration-line: underline;
     font-feature-settings: 'liga' off;
     color: #706F6F;
+} */
+
+/* ---------------------------------------------*/
+/* О нас (новый вариант)------------------------------------*/
+
+.about {
+    width: 96%;
+    max-width: 1200px;
+    height: 660px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin: 0 auto;
+    }
+.about__description {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 35px 50px 15px 50px;
+}
+.about__descriptiom-strong {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.about__slider {
+    width: 100%;
+    height: 300px;
+}
+
+.about__more-btn {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 34px;
+    margin: 15px auto;
 }
 
 /* ---------------------------------------------*/
@@ -711,9 +759,9 @@
 }
 
 /* ---------------------------------------------*/
-/* Отзывы ------------------------------------*/
+/* Отзывы (старая версия) ------------------------------------*/
 
-.review {
+/* .review {
     background-image: url('../img/end-bg-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -829,7 +877,115 @@
     margin-top: 25px;
     text-align: center;
     color:#fff;
+} */
+
+/* ---------------------------------------------*/
+/* Отзывы (новая версия) ------------------------------------*/
+
+
+.review {
+    width: 96%;
+    max-width: 1200px;
+    height: 660px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin: 0 auto;
 }
+.review__table {
+    margin: 25px;
+    display: flex;
+}
+.review__item {
+    width: 33%;
+    height: 450px;
+    margin-top: 15px;
+}
+/* ? */
+.review__item-profile {
+    width: 80%;
+    padding: 16px 20px 15px 20px;
+    display: flex;
+}
+.review__item-profile-avatar {
+    height: 34px;
+    border-radius: 50%;
+    padding-right: 7px;
+}
+.review__item-profile-name {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+    font-feature-settings: 'case' on, 'cpsp' on;
+}
+.review__item-profile-time {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+}
+
+.review__item-rating {
+    
+}
+
+
+.review__item-rating-stars-bar {
+    width: 70px;
+    height: 14px;
+    position: relative;
+}
+.review__item-rating-stars-bar-0 {
+    background-image: url('../img/star-0.svg');
+    background-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+.review__item-rating-stars-bar-1 {
+    background-image: url('../img/star-1.svg');
+    background-size: 14px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+/* /? */
+.review__item-profile {
+}
+.review__item-profile-avatar {
+}
+.review__item-profile-name {
+}
+.review__item-profile-time {
+}
+.review__item-product {
+}
+.review__item-product-info {
+}
+.review__item-product-block {
+}
+.review__item-product-img {
+}
+.review__item-product-description {
+}
+.review__item-comment {
+}
+.review__item-comment-info {
+}
+.review__item-comment-content {
+}
+.review__item-rating {
+}
+.review__item-rating-info {
+}
+.review__item-rating-stars-bar {
+}
+.review__item-rating-stars-bar-0 {
+}
+.review__item-rating-stars-bar-1 {
+}
+
 
 /* ---------------------------------------------*/
 /* Подсказка(?) в конце ------------------------------------*/
@@ -1111,10 +1267,14 @@
         margin: 5px 0;
     }
 
+    .catalog__item-img-2 {
+        width: 200px;
+    }
     .catalog__item-img-8 {
         width: 200px;
         display: block;
     }
+    
 }
 
 
@@ -1271,25 +1431,64 @@
 
     .catalog__table {
         display: grid;
-        grid-template-columns: 230px 230px 230px 230px;
-        grid-template-rows: 57px 57px 57px 57px 57px 57px 57px 57px;
-        grid-row-gap: 18px;
-        grid-column-gap: 24px;
+        grid-template-columns: 235px 235px 235px 235px;
+        grid-template-rows: 180px 60px 60px 60px 180px;
+        grid-row-gap: 14px;
+        grid-column-gap: 16px;
         width: fit-content;
         margin: 0 auto;
     }
 
     .catalog__item {
-        background-color: #0000000D;
         border: 1.5px solid #3A2F23;
         border-radius: 19px;
-        display: block;
+        display: flex;
     }
     .catalog__item-title {
-        margin: 24px 0px 0px 15px;
+        margin: 12px 0px 0px 12px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        text-shadow: 0px 2px 4px #FFFFFF;
     }
     .catalog__item-img {
         width: 34%;
+    }
+    .catalog__item-img-2 {
+        display: block;
+        position: absolute;
+        top: 19px;
+        right: 0px;
+        width: 200px;
+        z-index: -1;
+    }
+    .catalog__item-img-3 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        z-index: -1;
+    }
+    .catalog__item-img-4 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+    }
+    .catalog__item-img-5 {
+        display: block;
+        position: absolute;
+    }
+    .catalog__item-img-6 {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    .catalog__item-img-7 {
+        display: block;
+        position: absolute;
     }
     .catalog__item-img-8 {
         display: block;
@@ -1301,40 +1500,66 @@
 
     .catalog__item1 {
         grid-column: 1/3;
-        grid-row: 1/4;
+        grid-row: 1/2;
+        background: linear-gradient(0deg, rgba(238, 71, 63, 0.63) 0%, rgba(238, 71, 63, 0.19) 27.36%, rgba(238, 71, 63, 0.07) 46.05%, rgba(238, 71, 63, 0) 100%);
+
     }
     .catalog__item2 {
         grid-column: 2/3;
-        grid-row: 7/9;
+        grid-row: 5/6;
+        background: linear-gradient(0deg, rgba(157, 149, 255, 0.77) 0%, rgba(183, 176, 255, 0.3) 27.36%, rgba(181, 174, 255, 0.126066) 55.59%, rgba(215, 183, 255, 0) 100%);
+
     }
     .catalog__item3 {
         grid-column: 1/2;
-        grid-row: 7/9;
-        
+        grid-row: 5/6;
+        background: linear-gradient(0deg, rgba(157, 149, 255, 0.77) 0%, rgba(183, 176, 255, 0.3) 27.36%, rgba(181, 174, 255, 0.126066) 55.59%, rgba(215, 183, 255, 0) 100%);
+
+    }
+    .catalog__item3 .catalog__item-category-table {
+        justify-content: flex-end;
+        margin-right: 15px;
+    }
+    .catalog__item3 .catalog__item-title {
+        justify-content: flex-end;
+        margin-right: 15px;
+    }
+    .catalog__item3 .catalog__item-text {
+        width: 100%;
+        text-align: right;
     }
     .catalog__item4 {
         grid-column: 1/3;
-        grid-row: 4/7;
+        grid-row: 2/5;
+        background: linear-gradient(0deg, rgba(238, 71, 63, 0.63) 0%, rgba(238, 71, 63, 0.19) 27.36%, rgba(238, 71, 63, 0.07) 46.05%, rgba(238, 71, 63, 0) 100%);
     }
     .catalog__item5 {
         grid-column: 3/4;
-        grid-row: 4/9;
+        grid-row: 3/6;
+        background: linear-gradient(0deg, rgba(104, 225, 138, 0.77) 0%, rgba(104, 225, 138, 0.3) 27.36%, rgba(104, 225, 138, 0.06) 55.59%, rgba(104, 225, 138, 0) 100%);
+
+
     }
     .catalog__item6 {
         grid-column: 3/4;
-        grid-row: 1/4;
-        
+        grid-row: 1/3;
+        background: linear-gradient(0deg, rgba(255, 153, 0, 0.59) 0%, rgba(255, 153, 0, 0.3) 27.36%, rgba(255, 153, 0, 0.126066) 55.59%, rgba(255, 153, 0, 0) 100%);
+
         
     }
     .catalog__item7 {
         grid-column: 4/5;
-        grid-row: 1/5;
-        
+        grid-row: 1/3;
+        background: linear-gradient(0deg, rgba(255, 153, 0, 0.59) 0%, rgba(255, 153, 0, 0.3) 27.36%, rgba(255, 153, 0, 0.126066) 55.59%, rgba(255, 153, 0, 0) 100%);
+
         
     }
     .catalog__item8 {
         grid-column: 4/5;
-        grid-row: 5/9;
+        grid-row: 3/6;
+        background: linear-gradient(0deg, rgba(104, 225, 138, 0.77) 0%, rgba(104, 225, 138, 0.3) 27.36%, rgba(104, 225, 138, 0.06) 55.59%, rgba(104, 225, 138, 0) 100%);
+
+
     }
 
     .catalog__item-shortcut {
@@ -1360,7 +1585,7 @@
         font-weight: 600;
         font-size: 13px;
         line-height: 183%;
-        text-decoration-line: underline;
+        
         margin-top: 5px;
     }
     .catalog__item-category-link {
@@ -1370,6 +1595,7 @@
         font-size: 12px;
         line-height: 172%;
         white-space: nowrap;
+        text-decoration-line: underline;
     }
 
     /* мобильные части -----------*/

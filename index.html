@@ -418,10 +418,26 @@
                             <h2 class="catalog__item-title">
                                 Сущёные продукты
                             </h2>
+                            <div class="catalog__item-category-table">
+                                <div class="catalog__item-category-item">
+                                    <a class="catalog__item-category-link">
+                                        Овощи
+                                    </a>
+                                    <br>
+                                    <a class="catalog__item-category-link">
+                                        Фрукты
+                                    </a>
+                                    <br>
+                                    <a class="catalog__item-category-link">
+                                        Ягоды
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <img class="category__item-img-2" src="./img/category-img-2.png" alt="#">
+                        <img class="catalog__item-img-2" src="./img/category-img-2.png" alt="#">
                     </div>
                     <div class="catalog__item catalog__item3">
+                        <img class="catalog__item-img-3" src="./img/category-img-3.png" alt="#">
                         <div class="catalog__item-text">
                             <h2 class="catalog__item-title">
                                 Рационы питания
@@ -473,7 +489,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <img src="./img/catalog__item-img-4.png" alt="#" class="catalog__item-img-4">
                     </div>
                     <div class="catalog__item catalog__item5">
                         <div class="catalog__item-text">
@@ -481,7 +497,7 @@
                                 Системы приготовления
                             </h2>
                         </div>
-                        
+                        <img src="./img/catalog__item-img-5.png" alt="#" class="catalog__item-img-5">
                     </div>
     
                     <h1 class="catalog__category-title">
@@ -493,6 +509,17 @@
                             <h2 class="catalog__item-title">
                                 Спортивное питание
                             </h2>
+                            <div class="catalog__item-category-table">
+                                <div class="catalog__item-category-item">
+                                    <a class="catalog__item-category-link">
+                                        Для мужчин
+                                    </a>
+                                    <a class="catalog__item-category-link">
+                                        Для женщин
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./img/catalog__item-img-6.png" alt="#" class="catalog__item-img-6">
                         </div>
                         
                     </div>
@@ -502,7 +529,7 @@
                                 Сопутствующие<br>товары
                             </h2>
                         </div>
-                        
+                        <img src="./img/catalog__item-img-7.png" alt="#" class="catalog__item-img-7">
                     </div>
                     <div class="catalog__item catalog__item8">
                         <div class="catalog__item-text">
@@ -697,7 +724,62 @@
             </div>
     
             <div class="end">
-                <div class="about">
+
+                <div class="about-and-review">
+                    <div class="about-and-review__toggle">
+                        <h1 class="about-and-review__toggle-about">О нас</h1>
+                        <h1 class="about-and-review__toggle-review">Отзывы</h1>
+                    </div>
+                    
+                    <div class="about">
+                        <p class="about__description">
+                            <strong class="about__descriptiom-strong">«Кронидов» -</strong>
+                             российский производитель питания, которое удобно брать в дорогу: в поход и экспедицию, на охоту и рыбалку, в поезд или автотрип. Мы фасуем порции в прочные и легкие реторт-пакеты, в которых готовые блюда и мясные консервы хранятся до 2-х лет. Мы начинали всего с 1 тысячи упаковок в месяц в декабре 2014 года, а в 2020 годумтуристы из России и СНГ съели более 1 млн пакетов нашей еды!
+                        </p>
+                        <div class="about__slider">
+
+                        </div>
+                        <button class="about__more-btn">узнать больше</button>
+                    </div>
+
+                    <div class="review">
+                        <div class="review__table">
+                            <div class="review__item">
+                                <div class="review__item-profile">
+                                    <img src="./img/review-avatar.png" alt="#" class="review__item-profile-avatar">
+                                    <div>
+                                        <p class="review__item-profile-name">Елена Свиридова</p>
+                                        <p class="review__item-profile-time">2 месяца назад</p>
+                                    </div>
+                                </div>
+                                <div class="review__item-product">
+                                    <p class="review__item-product-info">Отзыв оставлен о товаре:</p>
+                                    <div class="review__item-product-block">
+                                        <img src="#" alt="#" class="review__item-product-img">
+                                        <p class="review__item-product-description">
+                                            Буженина в собственном соку 325гр
+                                        </p>
+                                    </div>
+                                    <div class="review__item-comment">
+                                        <p class="review__item-comment-info">Комментарий:</p>
+                                        <p class="review__item-comment-content">
+                                            Формат упаковки удобнее, чем классичес-кая банка. Внутри есть мясо. Очень понравился вкус, но показалось что чуть горчит. Неплохой вариант для похода, гораздо удобнее железной банки, которую нужно открывать ножом.
+                                        </p>
+                                    </div>
+                                    <div class="review__item-rating">
+                                        <p class="review__item-rating-info">Оценка:</p>
+                                        <div class="review__item-rating-stars-bar">
+                                            <div class="review__item-rating-stars-bar-0"></div>
+                                            <div class="review__item-rating-stars-bar-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="about">
                     <h1 class="about__title">о нас</h1>
                     <div class="about__columns">
                         <div class="about__column">
@@ -726,10 +808,9 @@
                         </div>
                     </div>
                     <img src="./img/stamps-desktop.svg" alt="#" class="about__stamps">
-                </div>
+                </div> -->
     
                 <div class="features">
-    
                     <div class="features__title">
                         наши преимущества
                     </div>
