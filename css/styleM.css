@@ -637,69 +637,6 @@
     color: #00000066;
 }
 
-/* ---------------------------------------------*/
-/* О нас (старый вариант)------------------------------------*/
-
-/* .about {
-    display: none;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-.about__columns {
-    display: flex;
-}
-.about__column {
-    width: 80%;
-    margin: 0 20px;
-}
-.about__title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-    text-transform: uppercase;
-}
-.about__sub-title {
-    
-
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: justified;
-
-    margin: 15px 0;
-}
-.about__content {
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: justified;
-    padding: 10px 0;
-}
-.about__stamps {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-}
-.about__read-more-link {
-    display: block;
-    font-family: 'Atomic Alice';
-    font-size: 13px;
-    line-height: 14px;
-    text-align: center;
-    text-decoration-line: underline;
-    font-feature-settings: 'liga' off;
-    color: #706F6F;
-} */
 
 /* ---------------------------------------------*/
 /* О нас (новый вариант)------------------------------------*/
@@ -744,7 +681,7 @@
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 34px;
-    margin: 15px auto;
+    margin: 40px auto;
 }
 
 
@@ -1009,7 +946,7 @@
     width: 90%;
     margin: 0 auto;
     font-family: Montserrat;
-    max-width: 1100px;
+    max-width: 1200px;
 }
 .features__title {
     font-weight: 600;
@@ -1021,25 +958,31 @@
     margin: 34px 0 55px 0;
 }
 .features__table {
-    width: 90%;
     margin: 0 auto;
     display: block;
 }
 .features__item {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 }
 .features__item-img {
     display: block;
+    width: 310px;
 }
-.features__item-description {
-    font-size: 25px;
-    line-height: 30px;
+.features__item-text {
+}
+.features__item-text-title {
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 45px;
     font-feature-settings: 'case' on, 'cpsp' on;
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
+
+}
+.features__item-text-description {
+    font-size: 25px;
+    line-height: 116.9%;
+    font-feature-settings: 'case' on, 'cpsp' on;
 }
 
 /* ---------------------------------------------*/
