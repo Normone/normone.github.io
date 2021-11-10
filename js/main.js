@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const burgerBlock = document.querySelector('.burger-menu');
     const header = document.querySelector('.header');
     const body = document.querySelector('body');
+
     var kva = 0;
 
     burgerBtn.addEventListener('click', burger);
@@ -28,8 +29,26 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
+    const toggleAboutBtn = document.querySelector('.about-and-review__toggle-about');
+    const toggleReviewBtn = document.querySelector('.about-and-review__toggle-review');
+    const aboutBlock = document.querySelector('.about');
+    const reviewBlock = document.querySelector('.review');
 
+    toggleAboutBtn.addEventListener('click', toggleAbout);
+    toggleReviewBtn.addEventListener('click', toggleReview);
 
+    function toggleAbout() {
+        aboutBlock.style.display = 'block';
+        reviewBlock.style.display = 'none';
+        toggleAboutBtn.style.color = '#000'
+        toggleReviewBtn.style.color = '#00000066'
+    }
+    function toggleReview() {
+        aboutBlock.style.display = 'none';
+        reviewBlock.style.display = 'block';
+        toggleAboutBtn.style.color = '#00000066'
+        toggleReviewBtn.style.color = '#000'
+    }
 });
 
 

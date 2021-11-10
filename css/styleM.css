@@ -581,7 +581,7 @@
 
 .promotion {
     width: 100%;
-    height: 355px;
+    height: auto; /* 355 */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -605,6 +605,36 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 410px;
+}
+
+/* ---------------------------------------------*/
+/* Блок с "о нас" и "отзывы" ------------------------------------*/
+
+.about-and-review {
+    display: none;
+    margin-top: 100px;
+}
+.about-and-review__toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.about-and-review__toggle-about {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 9px;
+}
+.about-and-review__toggle-review {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 9px;
+    color: #00000066;
 }
 
 /* ---------------------------------------------*/
@@ -682,6 +712,7 @@
     box-sizing: border-box;
     border-radius: 19px;
     margin: 0 auto;
+    background-color: #fff;
     }
 .about__description {
     font-size: 25px;
@@ -714,6 +745,259 @@
     box-sizing: border-box;
     border-radius: 34px;
     margin: 15px auto;
+}
+
+
+
+/* ---------------------------------------------*/
+/* Отзывы (мобильная версия) ------------------------------------*/
+
+.review-m {
+    background-image: url('../img/end-bg-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #212121;
+    height: 411px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.review-m__title {
+    font-family: Affect;
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    padding: 60px 0px 24px 0;
+}
+.review-m__block {
+    display: flex;
+    font-family: Montserrat;
+    width: 100%;
+
+    height: 240px;
+}
+.review-m__item {
+    position: relative;
+    width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 9px;
+}
+.review-m__item-first {
+    
+}
+.review-m__item-other {
+    display: none;
+}
+.review-m__item-profile {
+    width: 80%;
+    padding: 16px 20px 15px 20px;
+    display: flex;
+}
+.review-m__item-profile-avatar {
+    height: 34px;
+    border-radius: 50%;
+    padding-right: 7px;
+}
+.review-m__item-profile-name {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+    font-feature-settings: 'case' on, 'cpsp' on;
+}
+.review-m__item-profile-time {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+}
+.review-m__item-content {
+    font-size: 14px;
+    line-height: 122%;
+    margin: 0 20px 0 20px;
+}
+.review-m__item-rating {
+    position: absolute;
+    right: 17px;
+    bottom: 17px;
+}
+.review-m__item-rating-place-of-order {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+
+.review-m__item-rating-stars {
+    position: relative;
+}
+.review-m__item-rating-stars-bar {
+    width: 70px;
+    height: 14px;
+    position: relative;
+}
+.review-m__item-rating-stars-bar-0 {
+    background-image: url('../img/star-0.svg');
+    background-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+.review-m__item-rating-stars-bar-1 {
+    background-image: url('../img/star-1.svg');
+    background-size: 14px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.review-m__item-more-btn {
+    width: 162px;
+    height: 31px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    color:#fff;
+}
+
+/* ---------------------------------------------*/
+/* Отзывы (десктоп версия) ------------------------------------*/
+
+
+.review {
+    display: none;
+    width: 96%;
+    max-width: 1200px;
+    height: 660px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.review__table {
+    margin: 25px;
+    display: flex;
+}
+.review__item {
+    width: 30%;
+    height: 450px;
+    margin-top: 15px;
+}
+.review__item-line {
+    display: block;
+    border-right: 1px solid black;
+    width: 0;
+    height: 280px;
+    margin: 160px 2% 0px 2%;
+}
+/* ? */
+.review__item-profile {
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+}
+.review__item-profile-avatar {
+    height: 34px;
+    border-radius: 50%;
+    padding-right: 7px;
+}
+.review__item-profile-name {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+    font-feature-settings: 'case' on, 'cpsp' on;
+}
+.review__item-profile-time {
+    font-size: 9px;
+    line-height: 11px;
+    font-feature-settings: 'case' on, 'cpsp' on;
+    color: #333333;
+}
+
+
+
+.review__item-product {
+}
+.review__item-product-info {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000b3;
+}
+.review__item-product-block {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 25px 0px;
+}
+.review__item-product-img {
+    width: 66px;
+}
+.review__item-product-description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}
+.review__item-comment {
+    
+}
+.review__item-comment-info {
+    color: #000000b3;
+    margin-bottom: 15px;
+}
+.review__item-comment-content {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.review__item-rating {
+    
+}
+.review__item-rating-info {
+    color: #000000b3;
+    margin: 20px 0 10px 0;
+}
+.review__item-rating-stars-bar {
+    width: 85px;
+    height: 17px;
+    position: relative;
+}
+.review__item-rating-stars-bar-0 {
+    background-image: url('../img/star-0.svg');
+    background-size: 17px;
+    height: 100%;
+    width: 100%;
+}
+.review__item-rating-stars-bar-1 {
+    background-image: url('../img/star-1.svg');
+    background-size: 17px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.review__more-btn {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 34px;
+    margin: 100px auto;
 }
 
 /* ---------------------------------------------*/
@@ -757,235 +1041,6 @@
     align-items: center;
     margin: 0 15px;
 }
-
-/* ---------------------------------------------*/
-/* Отзывы (старая версия) ------------------------------------*/
-
-/* .review {
-    background-image: url('../img/end-bg-mobile.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #212121;
-    height: 411px;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-.review__title {
-    font-family: Affect;
-    text-align: center;
-    text-transform: uppercase;
-    
-    font-size: 20px;
-    line-height: 25px;
-    color: #000000;
-    padding: 60px 0px 24px 0;
-}
-.review__block {
-    display: flex;
-    font-family: Montserrat;
-    width: 100%;
-
-    height: 240px;
-}
-.review__item {
-    position: relative;
-    width: 320px;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 9px;
-}
-.review__item-first {
-    
-}
-.review__item-other {
-    display: none;
-}
-.review__item-profile {
-    width: 80%;
-    padding: 16px 20px 15px 20px;
-    display: flex;
-}
-.review__item-profile-avatar {
-    height: 34px;
-    border-radius: 50%;
-    padding-right: 7px;
-}
-.review__item-profile-name {
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: -0.05em;
-    font-feature-settings: 'case' on, 'cpsp' on;
-}
-.review__item-profile-time {
-    font-size: 9px;
-    line-height: 11px;
-    font-feature-settings: 'case' on, 'cpsp' on;
-    color: #333333;
-}
-.review__item-content {
-    font-size: 14px;
-    line-height: 122%;
-    margin: 0 20px 0 20px;
-}
-.review__item-rating {
-    position: absolute;
-    right: 17px;
-    bottom: 17px;
-}
-.review__item-rating-place-of-order {
-    font-size: 9px;
-    line-height: 11px;
-    font-feature-settings: 'case' on, 'cpsp' on;
-    color: #333333;
-    margin-left: 22px;
-    margin-top: 5px;
-}
-
-.review__item-rating-stars {
-    position: relative;
-}
-.review__item-rating-stars-bar {
-    width: 70px;
-    height: 14px;
-    position: relative;
-}
-.review__item-rating-stars-bar-0 {
-    background-image: url('../img/star-0.svg');
-    background-size: 14px;
-    height: 100%;
-    width: 100%;
-}
-.review__item-rating-stars-bar-1 {
-    background-image: url('../img/star-1.svg');
-    background-size: 14px;
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.review__item-more-btn {
-    width: 162px;
-    height: 31px;
-    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
-    border-radius: 25px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 25px;
-    text-align: center;
-    color:#fff;
-} */
-
-/* ---------------------------------------------*/
-/* Отзывы (новая версия) ------------------------------------*/
-
-
-.review {
-    width: 96%;
-    max-width: 1200px;
-    height: 660px;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 19px;
-    margin: 0 auto;
-}
-.review__table {
-    margin: 25px;
-    display: flex;
-}
-.review__item {
-    width: 33%;
-    height: 450px;
-    margin-top: 15px;
-}
-/* ? */
-.review__item-profile {
-    width: 80%;
-    padding: 16px 20px 15px 20px;
-    display: flex;
-}
-.review__item-profile-avatar {
-    height: 34px;
-    border-radius: 50%;
-    padding-right: 7px;
-}
-.review__item-profile-name {
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: -0.05em;
-    font-feature-settings: 'case' on, 'cpsp' on;
-}
-.review__item-profile-time {
-    font-size: 9px;
-    line-height: 11px;
-    font-feature-settings: 'case' on, 'cpsp' on;
-    color: #333333;
-}
-
-.review__item-rating {
-    
-}
-
-
-.review__item-rating-stars-bar {
-    width: 70px;
-    height: 14px;
-    position: relative;
-}
-.review__item-rating-stars-bar-0 {
-    background-image: url('../img/star-0.svg');
-    background-size: 14px;
-    height: 100%;
-    width: 100%;
-}
-.review__item-rating-stars-bar-1 {
-    background-image: url('../img/star-1.svg');
-    background-size: 14px;
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-/* /? */
-.review__item-profile {
-}
-.review__item-profile-avatar {
-}
-.review__item-profile-name {
-}
-.review__item-profile-time {
-}
-.review__item-product {
-}
-.review__item-product-info {
-}
-.review__item-product-block {
-}
-.review__item-product-img {
-}
-.review__item-product-description {
-}
-.review__item-comment {
-}
-.review__item-comment-info {
-}
-.review__item-comment-content {
-}
-.review__item-rating {
-}
-.review__item-rating-info {
-}
-.review__item-rating-stars-bar {
-}
-.review__item-rating-stars-bar-0 {
-}
-.review__item-rating-stars-bar-1 {
-}
-
 
 /* ---------------------------------------------*/
 /* Подсказка(?) в конце ------------------------------------*/
@@ -1618,9 +1673,12 @@
         height: 3000px;
     }
 
+    .review-m {
+        display: none;
+    }
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
-    .about {
+    .about-and-review {
         display: block;
     }
 
@@ -1632,82 +1690,7 @@
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
-    .review {
-        display: block;
-        height: 500px;
-        width: 100%;
-        background: none;
-    }
-    .review__title {
-        font-size: 36px;
-        line-height: 45px;
-        color: #FFFFFF;
-        text-transform: none;
-        padding: 60px 0px 24px 0;
-    }
-    .review__block {
-        height: 280px;
-    }
-    .review__item {
-        margin: 0 auto;
-        background-color: #fff;
-        border-radius: 9px;
-    }
-    .review__item-other {
-        display: block;
-    }
-    .review__item-profile {
-        padding: 20px 20px 25px 20px;
-    }
-    .review__item-profile-avatar {
-        height: 41px;
-        padding-right: 20px;
-    }
-    .review__item-profile-name {
-        font-size: 15px;
-        line-height: 18px;
-        letter-spacing: -0.05em;
-    }
-    .review__item-profile-time {
-        font-size: 11px;
-        line-height: 13px;
-    }
-    .review__item-content {
-        font-size: 15px;
-        line-height: 18px;
-        margin: 0 20px 0 20px;
-    }
-    .review__item-rating {
-        right: 20px;
-        bottom: 20px;
-    }
-    .review__item-rating-place-of-order {
-        font-size: 9px;
-        line-height: 11px;
-        margin-left: 22px;
-        margin-top: 5px;
-    }
     
-    .review__item-rating-stars {
-    }
-    .review__item-rating-stars-bar {
-        width: 80px;
-        height: 16px;
-    }
-    .review__item-rating-stars-bar-0 {
-        background-size: 16px;
-    }
-    .review__item-rating-stars-bar-1 {
-        background-size: 16px;
-    }
-    
-    .review__item-more-btn {
-        width: 162px;
-        height: 31px;
-        background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
-        border-radius: 25px;
-        margin-top: 25px;
-    }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
