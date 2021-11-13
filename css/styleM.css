@@ -1190,6 +1190,19 @@
         display: block;
     }
     
+
+    /* --=--=-=--=-=-=-=--------------= */
+
+    .features__item-img {
+        width: 200px;
+    }
+
+    .features__item-text-title {
+        font-size: 20px;
+    }
+    .features__item-text-description {
+        font-size: 15px;
+    }
 }
 
 
