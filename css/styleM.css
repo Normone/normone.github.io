@@ -600,11 +600,11 @@
 /* Конец страницы ------------------------------------*/
 
 .end {
-    background-image: url('../img/end-bg-mobile.png');
+    background-image: url('../img/end-bg-mobile-2.png');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    height: 2600px;
 }
 
 /* ---------------------------------------------*/
@@ -846,7 +846,7 @@
 /* Преимущества ------------------------------------*/
 
 .features {
-    display: none;
+    display: block;
     color: #fff;
     width: 90%;
     margin: 0 auto;
@@ -869,26 +869,35 @@
 .features__item {
     position: relative;
     display: flex;
-    align-items: center;
-    margin: 90px 0;
+    flex-direction: column;
+    margin: 25px 0;
 }
 .features__item-img {
     display: block;
-    width: 310px;
+    width: 100px;
+    height: 100px;
+}
+.features__item-img svg {
+    width: inherit;
+    height: inherit;
 }
 .features__item-text {
     max-width: 650px; /* 880px */
 }
 .features__item-text-title {
     font-weight: 600;
-    font-size: 37px;
-    line-height: 45px;
+    font-size: 17px;
+    line-height: 20px;
     font-feature-settings: 'case' on, 'cpsp' on;
+    position: absolute;
+    left: 31%;
+    top: 70px;
 
 }
 .features__item-text-description {
-    font-size: 25px;
-    line-height: 116.9%;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 15px;
     font-feature-settings: 'case' on, 'cpsp' on;
     
 }
@@ -1752,7 +1761,38 @@
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .features {
-        display: block;
+    }
+    .features__title {
+    }
+    .features__table {
+    }
+    .features__item {
+        flex-direction: row;
+        align-items: center;
+        margin: 90px 0;
+    }
+    .features__item-img {
+        width: 310px;
+        height: auto;
+    }
+    .features__item-img svg {
+        width: auto;
+        height: auto;
+    }
+    .features__item-text {
+        max-width: 650px; /* 880px */
+    }
+    .features__item-text-title {
+        font-size: 37px;
+        line-height: 45px;
+        position: inherit;
+    
+    }
+    .features__item-text-description {
+        font-size: 25px;
+        line-height: 116.9%;
+        font-feature-settings: 'case' on, 'cpsp' on;
+        
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
