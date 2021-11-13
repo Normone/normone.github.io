@@ -641,7 +641,7 @@
 /* О нас (новый вариант)------------------------------------*/
 
 .about {
-    width: 345px;
+    width: 90%; /* 345px */
     max-width: 1200px;
     height: 510px;
     border: 1px solid #000000;
@@ -694,7 +694,7 @@
 
 .review {
     display: none;
-    width: 345px;
+    width: 90%; /* 345px */
     max-width: 1200px;
     height: 510px;
     border: 1px solid #000000;
