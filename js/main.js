@@ -49,6 +49,44 @@ document.addEventListener("DOMContentLoaded", function(){
         toggleAboutBtn.style.color = '#00000066'
         toggleReviewBtn.style.color = '#000'
     }
+
+
+
+
+    const aboutSlidebackBtn = document.querySelector('.about-slider__btn-left');
+    const aboutSlideNextBtn = document.querySelector('.about-slider__btn-right');
+
+    const aboutSlides = document.querySelectorAll('.about__slider-img');
+
+    aboutSlideNextBtn.addEventListener('click', aboutSlideNext);
+    aboutSlidebackBtn.addEventListener('click', aboutSlideBack);
+
+    let aboutSlideCounter = 0;
+    let oneTwoThree;
+
+    function aboutSlideNext() {
+        oneTwoThree = 1;
+        for (i = 0; i < 3; i++) {
+            aboutSlides[i].src = './img/slides/head-slider-item-' + (aboutSlideCounter + oneTwoThree) + '.jpeg';
+            oneTwoThree++;
+        }
+        aboutSlideCounter = aboutSlideCounter + 1;
+        
+    }
+
+    function aboutSlideBack() {
+        if (aboutSlideCounter > 0) {
+            oneTwoThree = 1;
+            for (i = 0; i < 3; i++) {
+                aboutSlides[i].src = './img/slides/head-slider-item-' + (aboutSlideCounter - oneTwoThree) + '.jpeg';
+                oneTwoThree--;
+            }
+            aboutSlideCounter = aboutSlideCounter - 1;
+        }
+        
+    }
+
+
 });
 
 
