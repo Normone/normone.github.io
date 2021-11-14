@@ -272,7 +272,6 @@
     height: 100%;
     /* background-image: url('../img/bg-mobile1.png'); */
     background-size: cover;
-    border-radius: inherit;
     overflow: hidden;
     margin-left: -282px;
 }
@@ -1298,7 +1297,7 @@
 @media (min-width: 1024px) and (max-width: 1200px) {
 
     .head-slider__back {
-        margin-left: -885px;
+        margin-left: -840px;
     }
     .head-slider__slider {
         width: 2730px;
@@ -1415,7 +1414,7 @@
         height: 758px;
         color: #fff;
         border-radius: 15px;
-        width: 96%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 25px;
     }
@@ -2129,7 +2128,7 @@
 @media (min-width: 1200px) and (max-width: 1300px) {
 
     .head-slider__back {
-        margin-left: -950px;
+        margin-left: -920px;
     }
     .head-slider__slider {
         width: 3030px;
@@ -2150,7 +2149,7 @@
 @media (min-width: 1300px) and (max-width: 1399px) {
 
     .head-slider__back {
-        margin-left: -1020px;
+        margin-left: -1000px;
     }
     .head-slider__slider {
         width: 3330px;
@@ -2172,7 +2171,7 @@
 @media (min-width: 1400px) {
 
     .head-slider__back {
-        margin-left: -1130px;
+        margin-left: -1100px;
     }
     .head-slider__slider {
         width: 3630px;
