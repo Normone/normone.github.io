@@ -758,13 +758,12 @@
 
 .about__slider-container img.about__slider-img {
     min-width: 75%;
-    min-height: 95%;
+    min-height: 101%;
     border-radius: 10px;
 }
 
 
 .about__slider-container > img.about__slider-img {
-    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
