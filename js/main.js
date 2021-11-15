@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const gallery_item_size = gallery_scroller.querySelector('img').clientWidth;
 
     gallery.querySelector('.about-slider__btn-right').addEventListener('click', scrollToNextPage);
-    scrollToNextPage();
+    
     gallery.querySelector('.about-slider__btn-left').addEventListener('click', scrollToPrevPage);
 
     function scrollToNextPage() {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-
+    scrollToNextPage();
 
 });
 
