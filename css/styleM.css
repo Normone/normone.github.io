@@ -262,16 +262,23 @@
 /* ---------------------------------------------*/
 /* Слайдер ------------------------------------*/
 
+
+.head-slider {
+    height: 360px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
     /* sss */
     
-/* .about__slider {
+.head-slider__back {
     position: relative;
     max-width: 100%;
-    height: 160px;
-    padding: 0 10;
-} */
+    height: 360px;
+}
 
-/* .about__slider-container {
+.head-slider__slider {
     scroll-snap-type: x mandatory;
 
     overflow-x: scroll;
@@ -280,82 +287,50 @@
     display: flex;
     align-items: center;
 
-    height: 200px;
+    height: 100%;
 
     
     -webkit-overflow-scrolling: touch;
-} */
+}
 
 
-/* .about__slider-container img {
+.head-slider__slider img {
     scroll-snap-align: center;
     position: relative;
 }
 
-.about__slider-container img {
-    border-radius: 10px;
+.head-slider__slider img {
 }
 
-.about__slider-container img.about__slider-img {
+.head-slider__slider img.head-slider__slider-img {
     min-width: 75%;
-    min-height: 101%;
-    border-radius: 10px;
+    height: 90%;
 }
 
 
-.about__slider-container > img.about__slider-img {
+.head-slider__slider > img.head-slider__slider-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: polygon( 10% 0, 90% 0, 100% 100%, 0 100%);
+    clip-path: polygon( 5% 0, 95% 0, 100% 100%, 0 100%);
 }
 
-.about__slider-container > img.about__slider-img.active{
-    clip-path: polygon( 0 0, 100% 0, 90% 100%, 10% 100%);   
+.head-slider__slider > img.head-slider__slider-img.active{
+    clip-path: polygon( 0 0, 100% 0, 95% 100%, 5% 100%);
+    height: 100%;
 }
 
-.about__slider-container::-webkit-scrollbar {
+.head-slider__slider::-webkit-scrollbar {
     display: none;
-} */
+}
 
 /*sss*/
 
 
-.head-slider {
-    height: 360px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.head-slider__back {
-    height: 100%;
-    /* background-image: url('../img/bg-mobile1.png'); */
-    background-size: cover;
-    overflow: hidden;
-    margin-left: -282px;
-}
-.head-slider__slider {
-    display: flex;
-    -webkit-perspective-origin: center top; 
-    -webkit-perspective: 228.50368107873834;
-    width: 930px;
-    height: 360px;
-    
-}
-.head-slider__slider-img {
-    height: 300px;
-    width: 310px;
-    -webkit-transform: rotateX(-4deg);
-    -webkit-transform-origin: center top;
-    margin-top: 22px;
-}
-.head-slider__slider-img-main {
-    height: 100%;
-    width: 300px;
-    -webkit-transform: rotateX(-4deg);
-    -webkit-transform-origin: center top;
-    margin: 0 10px;
-}
+
+
+
+
 .head-slider__slider-btn-left {
     transform: rotate(180deg);
     position: absolute;
@@ -813,13 +788,10 @@
 }
 
 .about__slider-container img {
-    border-radius: 10px;
 }
 
 .about__slider-container img.about__slider-img {
     min-width: 75%;
-    min-height: 101%;
-    border-radius: 10px;
 }
 
 
@@ -827,11 +799,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: polygon( 10% 0, 90% 0, 100% 100%, 0 100%);
+    clip-path: polygon( 5% 0, 95% 0, 100% 100%, 0 100%);
 }
 
 .about__slider-container > img.about__slider-img.active{
-    clip-path: polygon( 0 0, 100% 0, 90% 100%, 10% 100%);   
+    clip-path: polygon( 0 0, 100% 0, 95% 100%, 5% 100%);   
 }
 
 .about__slider-container::-webkit-scrollbar {
@@ -1975,6 +1947,9 @@
         text-align: center;
         margin: 35px 50px 15px 50px;
     }
+    .about__description br {
+        display: none;
+    }
     .about__description-strong {
         font-size: 30px;
         font-weight: 500;
@@ -1983,9 +1958,13 @@
         text-align: center;
 
     }
+    
     .about__slider {
         width: 100%;
         height: 300px;
+    }
+    .about__slider-container img.about__slider-img {
+        min-width: 50%;
     }
 
     .about__more-btn {
@@ -2253,18 +2232,24 @@
 
 @media (min-width: 1200px) and (max-width: 1300px) {
 
-    
+    .about__slider-container img.about__slider-img {
+        min-width: 41%;
+    }
 
 }
 @media (min-width: 1300px) and (max-width: 1399px) {
 
-    
+    .about__slider-container img.about__slider-img {
+        min-width: 41%;
+    }
 }
 
 
 @media (min-width: 1400px) {
 
-    
+    .about__slider-container img.about__slider-img {
+        min-width: 41%;
+    }
 
     /* 888888000000000000000000000000000000000 */
 

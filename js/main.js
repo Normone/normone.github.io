@@ -51,28 +51,28 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 
+    // about slider
 
+    const aboutSlider = document.querySelector('.about__slider');
+    const aboutSlider_scroller = aboutSlider.querySelector('.about__slider-container');
+    const aboutSlider_item_size = aboutSlider_scroller.querySelector('img').clientWidth;
 
-    const gallery = document.querySelector('.about__slider');
-    const gallery_scroller = gallery.querySelector('.about__slider-container');
-    const gallery_item_size = gallery_scroller.querySelector('img').clientWidth;
-
-    gallery.querySelector('.about-slider__btn-right').addEventListener('click', scrollToNextPage);
+    aboutSlider.querySelector('.about-slider__btn-right').addEventListener('click', aboutSliderScrollToNextPage);
     
-    gallery.querySelector('.about-slider__btn-left').addEventListener('click', scrollToPrevPage);
+    aboutSlider.querySelector('.about-slider__btn-left').addEventListener('click', aboutSliderScrollToPrevPage);
 
-    function scrollToNextPage() {
-        gallery_scroller.scrollBy(gallery_item_size, 0);
+    function aboutSliderScrollToNextPage() {
+        aboutSlider_scroller.scrollBy(aboutSlider_item_size, 0);
     }
-    function scrollToPrevPage() {
-        gallery_scroller.scrollBy(-gallery_item_size, 0); 
+    function aboutSliderScrollToPrevPage() {
+        aboutSlider_scroller.scrollBy(-aboutSlider_item_size, 0); 
     }
 
-    gallery_scroller.onscroll = (event) => {
+    aboutSlider_scroller.onscroll = (event) => {
         let found = false;
-        gallery_scroller.querySelectorAll('img')
+        aboutSlider_scroller.querySelectorAll('img')
         .forEach(div=>{
-            if(!found && div.getBoundingClientRect().left > 0){
+            if(!found && div.getBoundingClientRect().left >= 0){
                 found = true;
                 div.classList.add('active');
                 return;
@@ -81,31 +81,48 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-    scrollToNextPage();
+    aboutSliderScrollToNextPage();
+
+
+
+    // head slider
+
+    const headSlider = document.querySelector('.head-slider__back');
+    const headSlider_scroller = headSlider.querySelector('.head-slider__slider');
+    const headSlider_item_size = headSlider_scroller.querySelector('img').clientWidth;
+
+    headSlider.querySelector('.head-slider__slider-btn-right').addEventListener('click', headSliderScrollToNextPage);
+    
+    headSlider.querySelector('.head-slider__slider-btn-left').addEventListener('click', headSliderScrollToPrevPage);
+
+    function headSliderScrollToNextPage() {
+        headSlider_scroller.scrollBy(headSlider_item_size, 0);
+    }
+    function headSliderScrollToPrevPage() {
+        headSlider_scroller.scrollBy(-headSlider_item_size, 0); 
+    }
+
+    headSlider_scroller.onscroll = (event) => {
+        let found = false;
+        headSlider_scroller.querySelectorAll('img')
+        .forEach(div=>{
+            if(!found && div.getBoundingClientRect().left >= 0){
+                found = true;
+                div.classList.add('active');
+                return;
+            }
+            div.classList.remove('active');
+        });
+    }
+
+    headSliderScrollToNextPage();
+
+
+
+
+
+
 
 });
 
 
-// const burgerBtn = document.querySelector('.header__top-burger');
-// const burgerCloseBtn = document.querySelector('.burger-menu__close-btn');
-// const burgerBlock = document.querySelector('.burger-menu');
-// const header = document.querySelector('.header');
-// var kva = 0;
-
-// burgerBtn.addEventListener('click', burgerO);
-// burgerCloseBtn.addEventListener('click', burgerC);
-
-// function burgerO() {
-//     burgerBlock.style.display = 'block';
-//     header.style.borderBottomRightRadius = '0';
-//     header.style.borderBottomLeftRadius = '0';
-//     kva = 1;
-//     console.log('kvaOpen' + kva);
-// }
-// function burgerC() {
-//     burgerBlock.style.display = 'none';
-//     header.style.borderBottomRightRadius = '10px';
-//     header.style.borderBottomLeftRadius = '10px';
-//     kva = 0;
-//     console.log('kvaClose' + kva);
-// }
