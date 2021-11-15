@@ -457,7 +457,7 @@
 
 .offer {
     width: 100%;
-    height: 355px;
+    height: auto; /* 355 */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -470,107 +470,140 @@
     margin-top: 40px;
 }
 
+.offer__category-list {
+    margin: 0 auto;
+    width: 200px;
+}
+.offer__category-list select {
+    border: none;
+    background: none;
+    font-size: 14px;
+    line-height: 183%;
+}
+
+.offer__filter {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offer__filter-list {
+    width: 190px;
+    height: 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 183%;
+}
+.offer__filter-meat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.offer__filter-meat-img {
+}
+.offer__filter-meat-text {
+    font-size: 11px;
+    line-height: 72.5%;
+    color: #000000c2;
+}
 
 .product-slider {
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
     margin-top: 15px;
+    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
 }
 .product-slider-item {
-    width: 204px;
-    height: 260px;
+    width: 140px;
+    max-width: 270px;
+    height: 220px;
+    max-height: 330px;
     border: 1px solid #333333;
-    box-sizing: border-box;
-    box-shadow: 3px 2px 10px 2px rgba(46, 60, 80, 0.4);
     border-radius: 11px;
     position: relative;
+}
+.product-slider-item-hidden {
+    display: none;
 }
 .product-slider-img {
 }
 .product-slider-description {
-    font-family: 'Atomic Alice';
-    font-size: 14px;
+    font-size: 12px;
     line-height: 15px;
-    margin: 4px 0px 0px 12px;
+    margin: 4px 6px 0px 6px;
 }
 
-
-.product-slider-rating {
-    display: none; /* flex */
-    margin-left: 10px;
-    margin-top: 2.5px;
+.product-slider-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 6px;
 }
-
-.product-slider__rating-stars-bar {
-    width: 66px;
-    height: 12px;
-    position: relative;
-}
-.product-slider__rating-stars-bar-0 {
-    background-image: url('/img/star-0.svg');
-    background-size: 13px;
-    height: 100%;
-    width: 100%;
-}
-.product-slider__rating-stars-bar-1 {
-    background-image: url('/img/star-1.svg');
-    background-size: 13px;
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-.product-slider-int-rating {
-    font-family: 'Atomic Alice';
-    font-weight: 500;
-    font-size: 9px;
-    line-height: 101%;
-    margin: 3px 0 0 5px;
-}
-
 .product-slider-price {
-    font-size: 24px;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 20px;
-    margin-left: 12px;
-    margin-top: 16px;
 }
 .product-slider-price-valute {
-    width: 11px;
+    width: 12px;
+    margin: 2px;
+}
+.product-slider-gramm {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 101%;
 }
 
+
 .product-slider-in-basket-btn {
-    width: 80px;
-    height: 18px;
+    width: 125px;
+    height: 22px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
     border-radius: 21px;
-    position: absolute;
-    right: 14px;
-    bottom: 10px;
+    display: block;
+    margin: 0 auto;
 }
 .product-slider-in-basket-btn-text {
-    font-size: 12px;
-    line-height: 16px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
 }
 
-.product-slider-favorite-icon {
+.product-slider-new-icon {
+    width: 26px;
+    height: 12px;
     position: absolute;
-    top: 11px;
-    right: 10px;
-    
+    right: 4px;
+    top: 120px;
+    border: 1px solid #FDB01A;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.product-slider-new-text {
+    font-family: Affect;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 8px;
+    text-align: center;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
 }
 
 
 .product-slider-btn-back {
     position: absolute;
-    left: 42px;
-    top: 128px;
+    left: -25px;
+    top: 100px;
     
     height: 12px;
     transform: rotate(0.5turn);
@@ -578,8 +611,8 @@
 }
 .product-slider-btn-forward {
     position: absolute;
-    right: 42px;
-    top: 128px;
+    right: -25px;
+    top: 100px;
     
     height: 12px;
 }
@@ -589,7 +622,7 @@
 
 .newest {
     width: 100%;
-    height: 355px;
+    /* height: 355px; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -689,6 +722,65 @@
     letter-spacing: 0em;
 
 }
+/* sss */
+.about__slider {
+    position: relative;
+    max-width: 100%;
+    padding: 0 10;
+}
+
+.about__slider-container {
+    /* snap mandatory on horizontal axis  */
+    scroll-snap-type: x mandatory;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    display: flex;
+    align-items: center;
+
+    height: 200px;
+
+    /* Enable Safari touch scrolling physics which is needed for scroll snap */
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.about__slider-container img {
+    /* snap align center  */
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.about__slider-container img {
+    border-radius: 10px;
+}
+
+.about__slider-container img.about__slider-img {
+    min-width: 75%;
+    min-height: 95%;
+    border-radius: 10px;
+}
+
+
+.about__slider-container > img.about__slider-img {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon( 10% 0, 90% 0, 100% 100%, 0 100%);
+}
+
+.about__slider-container > img.about__slider-img.active{
+    clip-path: polygon( 0 0, 100% 0, 90% 100%, 10% 100%);   
+}
+
+.about__slider-container::-webkit-scrollbar {
+    display: none;
+}
+/* sss */
+
+
 .about__slider {
     width: 100%;
     height: 160px;
@@ -700,20 +792,14 @@
     overflow: hidden;
 }
 
-.about__slider-box {
-    display: flex;
-    -webkit-perspective-origin: center top;
-    -webkit-perspective: 228.50368107873834;
-    width: 720px;
-    height: auto;
-    margin-left: -190px;
-    }
+
 .about__slider-img {
-    width: 230px;
-    -webkit-transform: rotateX(-8deg);
-    -webkit-transform-origin: center top;
-    margin: 0 5px;
+
 }
+.about__slider-img-active {
+
+}
+
 .about-slider__btn-left {
     transform: rotate(180deg);
     position: absolute;
@@ -1275,6 +1361,12 @@
         display: block;
     }
     
+
+    /* --=--=-=--=-=-=-=--------------= */
+
+    .product-slider-item-hidden {
+        display: block;
+    }
 
     /* --=--=-=--=-=-=-=--------------= */
 

@@ -53,38 +53,33 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-    const aboutSlidebackBtn = document.querySelector('.about-slider__btn-left');
-    const aboutSlideNextBtn = document.querySelector('.about-slider__btn-right');
+    const gallery = document.querySelector('.about__slider');
+    const gallery_scroller = gallery.querySelector('.about__slider-container');
+    const gallery_item_size = gallery_scroller.querySelector('img').clientWidth;
 
-    const aboutSlides = document.querySelectorAll('.about__slider-img');
+    gallery.querySelector('.about-slider__btn-right').addEventListener('click', scrollToNextPage);
+    gallery.querySelector('.about-slider__btn-left').addEventListener('click', scrollToPrevPage);
 
-    aboutSlideNextBtn.addEventListener('click', aboutSlideNext);
-    aboutSlidebackBtn.addEventListener('click', aboutSlideBack);
-
-    let aboutSlideCounter = 0;
-    let oneTwoThree;
-
-    function aboutSlideNext() {
-        oneTwoThree = 1;
-        for (i = 0; i < 3; i++) {
-            aboutSlides[i].src = './img/slides/head-slider-item-' + (aboutSlideCounter + oneTwoThree) + '.jpeg';
-            oneTwoThree++;
-        }
-        aboutSlideCounter = aboutSlideCounter + 1;
-        
+    function scrollToNextPage() {
+        gallery_scroller.scrollBy(gallery_item_size, 0);
+    }
+    function scrollToPrevPage() {
+        gallery_scroller.scrollBy(-gallery_item_size, 0); 
     }
 
-    function aboutSlideBack() {
-        if (aboutSlideCounter > 0) {
-            oneTwoThree = 1;
-            for (i = 0; i < 3; i++) {
-                aboutSlides[i].src = './img/slides/head-slider-item-' + (aboutSlideCounter - oneTwoThree) + '.jpeg';
-                oneTwoThree--;
+    gallery_scroller.onscroll = (event) => {
+        let found = false;
+        gallery_scroller.querySelectorAll('img')
+        .forEach(div=>{
+            if(!found && div.getBoundingClientRect().left > 0){
+                found = true;
+                div.classList.add('active');
+                return;
             }
-            aboutSlideCounter = aboutSlideCounter - 1;
-        }
-        
+            div.classList.remove('active');
+        });
     }
+
 
 
 });
