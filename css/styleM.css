@@ -224,7 +224,7 @@
     display: none;
 }
 .header__nav-basket {
-    width: 25px;
+    width: 30px;
     display: flex;
     margin-right: 5px;
 }
@@ -1489,6 +1489,7 @@
     .header__nav-item {
         position: relative;
         top: 30px;
+        font-weight: 500;
     }
     .header__nav-option {
         display: flex;
@@ -1576,7 +1577,7 @@
         grid-template-rows: 180px 60px 60px 60px 180px;
         grid-row-gap: 14px;
         grid-column-gap: 16px;
-        width: fit-content;
+        width: min-content;
         margin: 0 auto;
     }
 
