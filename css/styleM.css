@@ -297,6 +297,7 @@
 
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
 
     display: flex;
     align-items: center;
@@ -787,6 +788,7 @@
 
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
 
     display: flex;
     align-items: center;
