@@ -1601,7 +1601,7 @@
     .catalog__item-img-2 {
         display: block;
         position: absolute;
-        top: 19px;
+        top: 0px;
         right: 0px;
         width: 200px;
         z-index: -1;
@@ -1610,7 +1610,7 @@
         display: block;
         position: absolute;
         left: 0;
-        top: 0;
+        bottom: 0;
         width: 200px;
         z-index: -1;
     }
@@ -1624,6 +1624,7 @@
     .catalog__item-img-5 {
         display: block;
         position: absolute;
+        bottom: 0;
     }
     .catalog__item-img-6 {
         display: block;
@@ -1633,6 +1634,7 @@
     .catalog__item-img-7 {
         display: block;
         position: absolute;
+        bottom: 0;
     }
     .catalog__item-img-8 {
         display: block;
@@ -1640,6 +1642,7 @@
         position: absolute;
         width: 120%;
         left: -27px;
+        bottom: 0;
     }
 
     .catalog__item1 {
