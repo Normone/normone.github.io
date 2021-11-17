@@ -557,6 +557,7 @@
     border: 1px solid #333333;
     border-radius: 11px;
     position: relative;
+    background-color: #fff;
 }
 .product-slider-item-hidden {
     display: none;
@@ -843,13 +844,9 @@
 
 
 
-/* ---------------------------------------------*/
-/* Отзывы (мобильная версия) ------------------------------------*/
-
-
 
 /* ---------------------------------------------*/
-/* Отзывы (десктоп версия) ------------------------------------*/
+/* Отзывы  ------------------------------------*/
 
 
 .review {
@@ -1407,13 +1404,8 @@
 
 
 
-@media (min-width: 1000px) and (max-width: 1200px) {
 
-    
-
-}
-
-@media (min-width: 1024px)  {
+@media (min-width: 1000px)  {
     /* and (max-width: 1400px) */
     .header {
         width: 100%;
