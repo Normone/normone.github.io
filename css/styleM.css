@@ -505,9 +505,9 @@
 /* Раздел "Для вас" ------------------------------------*/
 
 .offer {
-    width: 100%;
+    width: 80%;
     height: auto; /* 355 */
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .offer__title {
@@ -558,7 +558,8 @@
 }
 
 .product-slider {
-    width: 80%;
+    width: 100%;
+    max-width: 1100px;
     height: 100%;
     margin: 0 auto;
     margin-top: 15px;
@@ -570,7 +571,7 @@
 .product-slider-item {
     width: 140px;
     max-width: 270px;
-    height: 220px;
+    height: auto;
     max-height: 330px;
     border: 1px solid #333333;
     border-radius: 11px;
@@ -613,12 +614,13 @@
 
 
 .product-slider-in-basket-btn {
-    width: 125px;
+    width: 80%; /*125*/
     height: 22px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
     border-radius: 21px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .product-slider-in-basket-btn-text {
     font-weight: 500;
@@ -673,9 +675,9 @@
 /* Раздел "Новое" ------------------------------------*/
 
 .newest {
-    width: 100%;
+    width: 80%;
     /* height: 355px; */
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .newest__title {
@@ -691,9 +693,9 @@
 /* Раздел "Акции"------------------------------*/
 
 .promotion {
-    width: 100%;
+    width: 80%;
     height: auto; /* 355 */
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -1056,6 +1058,8 @@
 .features__item-img svg {
     width: inherit;
     height: inherit;
+    display: block;
+    margin: 0 auto;
 }
 .features__item-text {
     max-width: 650px; /* 880px */
@@ -1762,7 +1766,7 @@
     
     .product-slider-item {
         width: 23%;
-        height: 260px;
+        height: auto;
     }
     .product-slider-item-hidden {
         display: block;
@@ -2112,6 +2116,8 @@
     .footer__table {
         grid-template-columns: 1fr 1fr auto 1fr 1fr;
         grid-template-rows: auto auto;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     
     .footer__info {
@@ -2276,7 +2282,7 @@
 
     .product-slider-item {
         width: 23%;
-        height: 300px;
+        height: auto;
     }
     .product-slider-item-hidden {
         display: block;
@@ -2314,7 +2320,7 @@
 
     .product-slider-item {
         width: 23%;
-        height: 300px;
+        height: auto;
     }
     .product-slider-item-hidden {
         display: block;
@@ -2359,7 +2365,7 @@
 
     .product-slider-item {
         width: 23%;
-        height: 300px;
+        height: auto;
     }
     .product-slider-item-hidden {
         display: block;
