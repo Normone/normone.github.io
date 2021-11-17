@@ -572,7 +572,6 @@
     width: 140px;
     max-width: 270px;
     height: auto;
-    max-height: 330px;
     border: 1px solid #333333;
     border-radius: 11px;
     position: relative;
@@ -587,6 +586,13 @@
     font-size: 12px;
     line-height: 15px;
     margin: 4px 6px 0px 6px;
+    max-height: 38px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 
