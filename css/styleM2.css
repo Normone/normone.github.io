@@ -683,8 +683,9 @@
 /* Похожие товары ------------------------------------*/
 
 .similar {
-    width: 100%;
-    height: 355px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
 }
 .similar__title {
     font-size: 20px;
@@ -699,8 +700,9 @@
 /* С этим берут ------------------------------------*/
 
 .together {
-    width: 100%;
-    height: 300px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
 }
 .together__title {
     font-size: 20px;
@@ -715,7 +717,8 @@
 /* Слайдер ------------------------------------*/
 
 .product-slider {
-    width: 80%;
+    width: 100%;
+    max-width: 1100px;
     height: 100%;
     margin: 0 auto;
     margin-top: 15px;
@@ -727,8 +730,7 @@
 .product-slider-item {
     width: 140px;
     max-width: 270px;
-    height: 220px;
-    max-height: 330px;
+    height: auto;
     border: 1px solid #333333;
     border-radius: 11px;
     position: relative;
@@ -743,6 +745,13 @@
     font-size: 12px;
     line-height: 15px;
     margin: 4px 6px 0px 6px;
+    max-height: 38px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -770,12 +779,13 @@
 
 
 .product-slider-in-basket-btn {
-    width: 125px;
+    width: 80%; /*125*/
     height: 22px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
     border-radius: 21px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .product-slider-in-basket-btn-text {
     font-weight: 500;
@@ -831,7 +841,7 @@
 
 .end {
     
-    height: 1300px;
+    /* height: 1300px; */
     background-image: url('../img/end-bg-mobile.png');
     background-position: bottom;
     background-size: cover;
@@ -1005,6 +1015,8 @@
 .clue {
     display: none;
     margin-top: 130px;
+    max-width: 1100px;
+    margin: 30px auto 0 auto;
 }
 .clue-hr {
     width: 60%;
@@ -1037,7 +1049,7 @@
 
 .footer {
     background: #212121;
-
+    margin-top: -30px;
 }
 
 .footer__table {
@@ -1630,7 +1642,6 @@
 
     .product-slider-item {
         width: 23%;
-        height: 260px;
     }
     .product-slider-item-hidden {
         display: block;
@@ -1645,6 +1656,9 @@
     }
     .product-slider-info {
         margin: 5px 15px;
+    }
+    .product-slider-in-basket-btn {
+        height: 25px;
     }
 
 
@@ -1662,7 +1676,7 @@
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .review {
-        display: none;
+        display: block;
         width: 96%;
         max-width: 1200px;
         height: 660px;
@@ -1827,7 +1841,7 @@
 
 
     .footer {
-    
+        
     }
     
     .footer__table {
