@@ -418,7 +418,6 @@
     margin-top: 23px;
 }
 .catalog__category-title {
-    font-family: 'Atomic Alice';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -447,8 +446,6 @@
 
 
 .catalog__item-title {
-    font-family: 'Atomic Alice';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -481,7 +478,6 @@
     margin-left: 15px;
 }
 .catalog__item-category-text {
-    font-family: 'Atomic Alice';
     font-size: 12px;
     line-height: 15px;
     color: #000000;
@@ -1033,7 +1029,6 @@
     color: #fff;
     width: 90%;
     margin: 0 auto;
-    font-family: Montserrat;
     max-width: 1200px;
 }
 .features__title {
@@ -1147,8 +1142,6 @@
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     padding: 60px 30px 50px 30px;
-    font-family: Montserrat;
-    font-style: normal;
 }
 
 .footer__info {
@@ -1471,7 +1464,6 @@
     }
     .header__top-contacts p {
         margin: 0 6px;
-        font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -1737,8 +1729,6 @@
     
     }
     .catalog__item-category-subtitle {
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: 600;
         font-size: 13px;
         line-height: 183%;
@@ -1746,8 +1736,6 @@
         margin-top: 5px;
     }
     .catalog__item-category-link {
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 172%;
