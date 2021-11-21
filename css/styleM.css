@@ -129,6 +129,126 @@
 }
 
 
+
+.entryway {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 46px);
+    z-index: 9;
+    background-color: #fff;
+    margin-top: 46px;
+    overflow-y: scroll;
+}
+.entryway__close-btn {
+    position: fixed;
+    right: 25px;
+    top: 50px;
+}
+.entryway__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.entryway__form-login {
+    width: 80%;
+    margin: 0 auto;
+    display: none; /* flex */
+    flex-direction: column;
+}
+.entryway__form-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.entryway__form-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 0px 5px 0px;
+}
+.entryway__form-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid #000000;
+}
+.entryway__form-forgot-password {
+    font-size: 11px;
+    line-height: 13px;
+    text-decoration-line: underline;
+    margin: 5px 0px 0px 0px;
+}
+.entryway__form-btn {
+    width: auto;
+    height: 30px;
+    background-color: #000;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    padding: 0 15px;
+    
+}
+
+.entryway__form-registration {
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+}
+.entryway__form-terms {
+    margin-top: 15px;
+}
+.entryway__form-terms-item {
+    display: flex;
+}
+.entryway__form-terms-item-check-box  {
+    box-sizing: border-box;
+    all: revert;
+}
+.entryway__form-terms-item-text {
+    margin-top: 2px;
+    font-size: 11px;
+    line-height: 13px;
+    margin-left: 4px;
+}
+.entryway__form-terms-item-link {
+    font-weight: 500;
+}
+
+
+.entryway__alt {
+    margin-top: 30px;
+}
+.entryway__alt-text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+.entryway__alt-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #289648;
+}
+.entryway__alt-icons {
+    display: flex;
+}
+.entryway__alt-icon {
+}
+
+
+
 .header__top-block {
     display: flex;
     width: 100%;
@@ -292,6 +412,12 @@
     font-size: 13px;
     line-height: 16px;
     color: rgba(0, 0, 0, 0.4);
+}
+.header__nav-profile-block-guest {
+    display: none;
+    margin: 25px 25px 0px 25px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 
