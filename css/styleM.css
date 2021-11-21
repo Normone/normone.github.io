@@ -237,9 +237,59 @@
     margin-top: 10px;
     margin-left: -1px;
 }
+
+
+.header__nav-profile {
+    position: relative;
+}
+.header__nav-profile:hover > div {
+    display: block;
+}
 .header__nav-profile svg {
     width: 25px;
 }
+
+.header__nav-profile-window {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    
+}
+.header__nav-profile-corners {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+.header__nav-profile-corner-img {
+    height: 10px;
+}
+.header__nav-profile-block {
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    box-shadow: 3px 2px 8px rgba(46, 60, 80, 0.5);
+}
+.header__nav-profile-block-account {
+    margin: 25px 25px 0 25px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.header__nav-profile-block-other {
+    margin: 8px 25px 0 25px;
+    font-size: 13px;
+    line-height: 16px;
+}
+.header__nav-profile-block-logout {
+    margin: 15px 25px 0 25px;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
 
 
 .header__nav-dd-list {
