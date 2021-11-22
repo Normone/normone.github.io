@@ -118,9 +118,23 @@ document.addEventListener("DOMContentLoaded", function(){
     headSliderScrollToNextPage();
 
 
-    $('.footer__info-title').click(function() {
-        $('.footer__info-content').slideToggle();
+    // $('.footer__info-title').click(function() {
+    //     $('.footer__info-content').slideToggle();
         
+    // });
+
+    
+
+    $('.accordion-title').each(function (idx, el) {
+        debugger
+        $(el).click( function (e) {
+            let cont = $(this).next('.accordion-content');
+            cont.slideToggle(200);
+            if (cont.is(":visible")) {
+                cont.css('display',  'flex');
+                $(this).children('.footer__spoiler').css('transform', 'rotate(45deg)');
+            };
+        });
     });
 
 

@@ -1339,15 +1339,25 @@
     margin-bottom: 11px;
 }
 .footer__info-spoiler {
-    position: absolute;
-    right: 0px;
-    top: -2px;
+
 }
 .footer__info-content {
     display: none;
     flex-direction: column;
 }
 .footer__link {
+    color: #fff;
+}
+.footer__spoiler {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    border-right: 2px solid #EA8D2F;
+    border-bottom: 2px solid #EA8D2F;
+    height: 9px;
+    width: 9px;
+    transform: rotate(315deg);
+    cursor: pointer;
 }
 
 .footer__service {
@@ -1365,12 +1375,11 @@
     margin-bottom: 11px;
 }
 .footer__service-spoiler {
-    position: absolute;
-    right: 0px;
-    top: -2px;
+    
 }
 .footer__service-content {
     display: none;
+    flex-direction: column;
 }
 
 .footer__personal {
@@ -1388,12 +1397,12 @@
     margin-bottom: 11px;
 }
 .footer__personal-spoiler {
-    position: absolute;
-    right: 0px;
-    top: -2px;
+
 }
 .footer__personal-content {
     display: none;
+    flex-direction: column;
+    
 }
 
 .footer__contacts {
