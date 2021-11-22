@@ -119,8 +119,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     $('.footer__info-title').click(function() {
-        $(this).next('.footer__info-content').slideToggle();
-        console.log('1')
+        $('.footer__info-content').slideToggle();
+        
     });
 
 

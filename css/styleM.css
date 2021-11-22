@@ -1344,7 +1344,7 @@
     top: -2px;
 }
 .footer__info-content {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .footer__link {
