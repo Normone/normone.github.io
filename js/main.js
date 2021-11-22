@@ -118,8 +118,10 @@ document.addEventListener("DOMContentLoaded", function(){
     headSliderScrollToNextPage();
 
 
-
-
+    $('.footer__info-title').click(function() {
+        $(this).next('.footer__info-content').slideToggle();
+        console.log('1')
+    });
 
 
 
