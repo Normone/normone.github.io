@@ -126,14 +126,25 @@ document.addEventListener("DOMContentLoaded", function(){
     
 
     $('.accordion-title').each(function (idx, el) {
-        debugger
+        // debugger
         $(el).click( function (e) {
+            
             let cont = $(this).next('.accordion-content');
             cont.slideToggle(200);
-            if (cont.is(":visible")) {
+            
+            if (!$(this).hasClass('opened')) {
+
                 cont.css('display',  'flex');
-                $(this).children('.footer__spoiler').css('transform', 'rotate(45deg)');
-            };
+
+                $(this).addClass('opened');
+                
+
+            } else {
+                $(this).removeClass('opened');
+                
+            }
+
+            
         });
     });
 
