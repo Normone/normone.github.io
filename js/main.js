@@ -33,21 +33,27 @@ document.addEventListener("DOMContentLoaded", function(){
     const toggleReviewBtn = document.querySelector('.about-and-review__toggle-review');
     const aboutBlock = document.querySelector('.about');
     const reviewBlock = document.querySelector('.review');
+    if (toggleAboutBtn) {
+        toggleAboutBtn.addEventListener('click', toggleAbout);
+    }
 
-    toggleAboutBtn.addEventListener('click', toggleAbout);
-    toggleReviewBtn.addEventListener('click', toggleReview);
+    if (toggleReviewBtn) {
+        toggleReviewBtn.addEventListener('click', toggleReview);
+    }
 
     function toggleAbout() {
+        toggleAboutBtn.classList.remove('active');
+        toggleAboutBtn.classList.add('active');
+        toggleReviewBtn.classList.remove('active');
         aboutBlock.style.display = 'block';
         reviewBlock.style.display = 'none';
-        toggleAboutBtn.style.color = '#000'
-        toggleReviewBtn.style.color = '#00000066'
     }
     function toggleReview() {
+        toggleAboutBtn.classList.remove('active');
+        toggleReviewBtn.classList.remove('active');
+        toggleReviewBtn.classList.add('active');
         aboutBlock.style.display = 'none';
         reviewBlock.style.display = 'block';
-        toggleAboutBtn.style.color = '#00000066'
-        toggleReviewBtn.style.color = '#000'
     }
 
 
@@ -117,16 +123,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     headSliderScrollToNextPage();
 
-
-    // $('.footer__info-title').click(function() {
-    //     $('.footer__info-content').slideToggle();
-        
-    // });
-
-    
-
     $('.accordion-title').each(function (idx, el) {
-        // debugger
         $(el).click( function (e) {
             
             let cont = $(this).next('.accordion-content');
@@ -142,8 +139,15 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     });
 
-
-
+    $(window).scroll(function() {    
+        let scroll = $(window).scrollTop();
+        let scrollHeight = $('header').innerHeight() + $('.head-slider__back').innerHeight();
+        if (scroll >= scrollHeight) {
+            $("header").addClass("shadow");
+        } else {
+            $("header").removeClass("shadow");
+        }
+    });
 });
 
 
