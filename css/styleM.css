@@ -74,7 +74,7 @@
 /* ---------------------------------------------*/
 
 .container {
-    
+
 }
 .content {
     
@@ -598,7 +598,6 @@
 .catalog {
     width: 100%;
     height: 100%;
-    overflow-x: hidden
 }
 .catalog__title {
     font-family: Montserrat;
@@ -1366,7 +1365,7 @@
 .footer {
     background: #212121;
     margin-top: -15px;
-} 
+}
 
 .footer__table {
     display: grid;
@@ -2401,7 +2400,7 @@
         border-bottom: none;
         margin-bottom: 11px;
     }
-    .footer__spoiler {
+    .footer__info-spoiler {
         display: none;
     }
     .footer__info-content {
