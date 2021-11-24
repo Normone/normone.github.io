@@ -74,7 +74,7 @@
 /* ---------------------------------------------*/
 
 .container {
-
+    
 }
 .content {
     
@@ -594,6 +594,7 @@
 .catalog {
     width: 100%;
     height: 100%;
+    overflow-x: hidden
 }
 .catalog__title {
     font-family: Montserrat;
@@ -1389,7 +1390,8 @@
     border-bottom: 2px solid #EA8D2F;
     height: 9px;
     width: 9px;
-    transform: rotate(315deg);
+    transform: rotate(-45deg);
+    transition: transform 0.2s;
     cursor: pointer;
 }
 .accordion-title.opened .accordion-spoiler {
@@ -2365,7 +2367,7 @@
         border-bottom: none;
         margin-bottom: 11px;
     }
-    .footer__info-spoiler {
+    .footer__spoiler {
         display: none;
     }
     .footer__info-content {
