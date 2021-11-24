@@ -646,11 +646,14 @@
     top: -38px;
     right: 6px;
 }
+.catalog__item-img-1 {
+    top: none;
+}
 .catalog__item-img-2 {
-    display: none;
+
 }
 .catalog__item-img-8 {
-    display: none;
+
 }
 
 .catalog__item-category {
@@ -680,7 +683,8 @@
 }
 .catalog__item-category-item {
     margin-left: 11px;
-
+    display: flex;
+    flex-direction: column;
 }
 .catalog__item-category-subtitle {
     font-size: 15px;
@@ -1564,6 +1568,7 @@
     }
     .catalog__item-img {
         max-width: 180px;
+        
     }
     .catalog__item-category-table {
         display: flex;
@@ -1816,6 +1821,8 @@
     }
     .catalog__item-img {
         width: 34%;
+        max-height: none;
+        top: auto;
     }
     .catalog__item-img-2 {
         display: block;
