@@ -2101,7 +2101,7 @@
         box-sizing: border-box;
         border-radius: 19px;
         margin: 0 auto;
-        background-color: #fff;
+        background-color: transparent;
     }
     .review__table {
         margin: 25px;
@@ -2252,7 +2252,7 @@
     box-sizing: border-box;
     border-radius: 19px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: transparent;
     }
     .about__description {
         font-size: 25px;
