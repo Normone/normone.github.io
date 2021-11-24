@@ -133,18 +133,12 @@ document.addEventListener("DOMContentLoaded", function(){
             cont.slideToggle(200);
             
             if (!$(this).hasClass('opened')) {
-
                 cont.css('display',  'flex');
-
                 $(this).addClass('opened');
-                
-
             } else {
                 $(this).removeClass('opened');
-                
             }
 
-            
         });
     });
 
