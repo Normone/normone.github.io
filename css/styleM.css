@@ -337,7 +337,9 @@
     display: flex;
     margin-top: 12px;
 }
-
+.header__nav-account {
+    top: 24px;
+}
 
 .header__nav-option {
     display: none;
@@ -347,10 +349,15 @@
     display: none;
 }
 .header__nav-basket {
-    width: 30px;
+    width: auto;
+    height: 30px;
     display: flex;
-    margin-right: 5px;
+    margin: 2px 5px 0px 0px;
 }
+.header__nav-basket svg {
+    min-width: 27px;
+}
+
 .header__nav-basket-amount {
     font-weight: bold;
     font-size: 14px;
@@ -364,6 +371,7 @@
 
 .header__nav-profile {
     position: relative;
+    height: 30px;
 }
 .header__nav-profile:hover > div {
     display: block;
@@ -1715,6 +1723,9 @@
         top: 30px;
         font-weight: 500;
     }
+    .header__nav-account {
+        top: 24px;
+    }
     .header__nav-option {
         display: flex;
     }
@@ -2011,7 +2022,7 @@
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .end {
-        background-image: url('../img/end-bg-mobile.png'); 
+        background-image: url('../img/end-bg.jpg'); 
         height: 3574px;
     }
 
