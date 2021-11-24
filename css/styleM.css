@@ -637,7 +637,7 @@
     display: none;
 }
 .catalog__item-text {
-    /* width: 60%; */
+    width: 100%;
 }
 .catalog__item-img {
     width: 40%;
@@ -680,6 +680,8 @@
 }
 .catalog__item-category-table {
     display: none;
+    margin: 4px 4% 0px 4%;
+    border-top: 1px solid #ccc;
 }
 .catalog__item-category-item {
     margin-left: 11px;
@@ -1574,6 +1576,7 @@
     .catalog__item-category-table {
         display: flex;
         justify-content: space-around;
+        
     }
     .catalog__item-category-arrow {
         display: none;
@@ -1948,6 +1951,7 @@
     
     .catalog__item-category-table {
         display: flex;
+        border-top: none;
     }
     .catalog__item-category-item {
         margin-left: 15px;
