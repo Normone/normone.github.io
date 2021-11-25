@@ -2751,6 +2751,21 @@ ul.burger-menu__sub-list {
 }
 @media (min-width: 1300px) and (max-width: 1399px) {
 
+    .catalog__table {
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px;
+        grid-template-rows: 180px 60px 60px 60px 180px;
+        grid-row-gap: 20px;
+        grid-column-gap: 26px;
+        
+    }
+
+    .catalog__item-img-1 {
+        width: 190px;
+    }
+
+    /* asdasdasd */
+
     .product-slider-item {
         width: 23%;
         height: auto;
@@ -2801,8 +2816,18 @@ ul.burger-menu__sub-list {
         width: 1300px;
     }
 
+    /* sadasd */
 
+    .catalog__table {
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px;
+        grid-template-rows: 180px 60px 60px 60px 180px;
+        grid-row-gap: 20px;
+        grid-column-gap: 26px;
+        
+    }
 
+    /* sadadasd */
 
     .product-slider-item {
         width: 23%;
