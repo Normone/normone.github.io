@@ -2776,7 +2776,7 @@ ul.burger-menu__sub-list {
     }
 
     .catalog__item-img-1 {
-        width: 190px;
+        width: 225px;
     }
 
     /* asdasdasd */
@@ -2837,6 +2837,11 @@ ul.burger-menu__sub-list {
         grid-column-gap: 26px;
         
     }
+
+    .catalog__item-img-1 {
+        width: 225px;
+    }
+
 
     /* sadadasd */
 
