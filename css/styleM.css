@@ -636,6 +636,31 @@
     display: flex;
     position: relative;
 }
+.catalog__item1 {
+    grid-row: 2/3;
+}
+.catalog__item2 {
+    grid-row: 4/5;
+}
+.catalog__item3 {
+    grid-row: 6/7;
+}
+.catalog__item4 {
+    grid-row: 3/4;
+}
+.catalog__item5 {
+    grid-row: 9/10;
+}
+.catalog__item6 {
+    grid-row: 7/8
+}
+.catalog__item7 {
+    grid-row: 10/11;
+}
+.catalog__item8 {
+    grid-row: 11/12;
+
+}
 
 
 .catalog__item-title {
