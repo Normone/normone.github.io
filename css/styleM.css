@@ -1371,7 +1371,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    padding: 60px 30px 50px 30px;
+    padding: 60px 25px 50px 25px;
 }
 
 .accordion-title {
@@ -1441,15 +1441,15 @@
 }
 
 .footer__table-title {
-     font-weight: 600;
-     font-size: 15px;
-     line-height: 18px;
-     /* font-feature-settings: 'case'on,
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    /* font-feature-settings: 'case'on,
      'cpsp'on; */
-     color: #EF861C;
-     border-bottom: 0.5px solid #EA8D2F;
-     margin-bottom: 11px;
-     user-select: none;
+    color: #EF861C;
+    border-bottom: 0.5px solid #EA8D2F;
+    margin-bottom: 11px;
+    user-select: none;
 }
 
 .footer__service-spoiler {
@@ -1482,16 +1482,17 @@
 }
 .footer__contacts-title {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
     font-feature-settings: 'case' on, 'cpsp' on;
     color: #EF861C;
 }
 .footer__contacts-container {
     display: flex;
+    align-items: center;
 }
 .footer__contacts-phone {
-    font-size: 14px;
+    font-size: 12px;
     /* line-height: 15px; */
     color: #fff;
 }
@@ -1502,7 +1503,7 @@
     margin: 0 6px;
 }   
 .footer__contacts-email {
-    font-size: 14px;
+    font-size: 12px;
     /* line-height: 16px; */
     color: #fff;
 }
@@ -1515,17 +1516,19 @@
 }
 .footer__opening-time-title {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
     font-feature-settings: 'case' on, 'cpsp' on;
     color: #EF861C;
 }
 
 .footer__opening-time-text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 19px;
     font-feature-settings: 'case' on, 'cpsp' on;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
     /* margin-left: 0px; */
 }
 
@@ -1536,7 +1539,7 @@
 }
 .footer__social-media-title {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
     font-feature-settings: 'case' on, 'cpsp' on;
     color: #EF861C;
@@ -1564,8 +1567,8 @@
 
 .footer__logo {
     grid-column: 2/3;
-    grid-row: 5/7;
-    margin-top: 6px;
+    grid-row: 4/6;
+    margin-top: 10px;
 }
 
 .footer__logo-desktop {
@@ -1871,9 +1874,17 @@
         text-shadow: 0px 2px 4px #FFFFFF;
     }
     .catalog__item-img {
-        width: 34%;
+        width: inherit;
         max-height: none;
         top: auto;
+    }
+    .catalog__item-img-1 {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        width: 160px;
+        z-index: -1;
     }
     .catalog__item-img-2 {
         display: block;
@@ -1937,7 +1948,7 @@
     .catalog__item3 {
         grid-column: 1/2;
         grid-row: 5/6;
-        background: linear-gradient(0deg, rgba(157, 149, 255, 0.77) 0%, rgba(183, 176, 255, 0.3) 27.36%, rgba(181, 174, 255, 0.126066) 55.59%, rgba(215, 183, 255, 0) 100%);
+        background: linear-gradient(0deg, rgba(34, 95, 254, 0.83) 0%, rgba(34, 95, 254, 0.3) 27.36%, rgba(34, 95, 254, 0.126066) 55.59%, rgba(34, 95, 254, 0) 100%);
 
     }
     .catalog__item3 .catalog__item-category-table {
@@ -1955,19 +1966,19 @@
     .catalog__item4 {
         grid-column: 1/3;
         grid-row: 2/5;
-        background: linear-gradient(0deg, rgba(238, 71, 63, 0.63) 0%, rgba(238, 71, 63, 0.19) 27.36%, rgba(238, 71, 63, 0.07) 46.05%, rgba(238, 71, 63, 0) 100%);
+        background: linear-gradient(0deg, rgba(39, 125, 53, 0.7) 0%, rgba(39, 125, 53, 0.35) 27.36%, rgba(39, 125, 53, 0.19) 46.05%, rgba(39, 125, 53, 0) 100%);
     }
     .catalog__item5 {
         grid-column: 3/4;
         grid-row: 3/6;
-        background: linear-gradient(0deg, rgba(104, 225, 138, 0.77) 0%, rgba(104, 225, 138, 0.3) 27.36%, rgba(104, 225, 138, 0.06) 55.59%, rgba(104, 225, 138, 0) 100%);
+        background: linear-gradient(0deg, #6E99BB 0%, rgba(110, 153, 187, 0.3) 27.36%, rgba(110, 153, 187, 0.06) 55.59%, rgba(110, 153, 187, 0) 100%);
 
 
     }
     .catalog__item6 {
         grid-column: 3/4;
         grid-row: 1/3;
-        background: linear-gradient(0deg, rgba(255, 153, 0, 0.59) 0%, rgba(255, 153, 0, 0.3) 27.36%, rgba(255, 153, 0, 0.126066) 55.59%, rgba(255, 153, 0, 0) 100%);
+        background: linear-gradient(0deg, #A6C664 0%, rgba(166, 198, 100, 0.52) 27.36%, rgba(166, 198, 100, 0.31) 55.59%, rgba(166, 198, 100, 0) 100%);
 
         
     }
@@ -1981,7 +1992,7 @@
     .catalog__item8 {
         grid-column: 4/5;
         grid-row: 3/6;
-        background: linear-gradient(0deg, rgba(104, 225, 138, 0.77) 0%, rgba(104, 225, 138, 0.3) 27.36%, rgba(104, 225, 138, 0.06) 55.59%, rgba(104, 225, 138, 0) 100%);
+        background: linear-gradient(0deg, #FE8D47 0%, rgba(255, 140, 73, 0.65) 27.36%, rgba(253, 141, 77, 0.31) 55.59%, rgba(254, 141, 73, 0) 100%);
 
 
     }
@@ -2507,7 +2518,6 @@
     .footer__opening-time-text {
         font-size: 17px;
         line-height: 21px;
-        display: flex;
         flex-direction: column;
         
     }
