@@ -324,6 +324,7 @@ ul.burger-menu__sub-list {
     margin-left: 2px;
 }
 .header__top-menu-desk-search-input {
+    display: none;
     border: none;
     width: 190px;
     height: 18px;
