@@ -108,8 +108,6 @@
     top: 50px;
 }
 ul.burger-menu__list {
-    margin-top: 24px;
-    width: 85%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -118,6 +116,7 @@ ul.burger-menu__list {
     width: 80%;
     padding: 0px;
     list-style: none;
+    margin-top: 25px;
 }
 
 ul.burger-menu__sub-list {
@@ -273,49 +272,64 @@ ul.burger-menu__sub-list {
 .entryway__alt-icon {
 }
 
+.header__top-phone {
+    font-size: 14px;
+    display: inline-flex;
+}
 
+.header__top-email {
+    font-size: 15px;
+    display: inline-flex;
+}
+
+.header__mobile button {
+    cursor: pointer;
+}
 
 .header__top-block {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: 25px;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* margin-right: -50%; */
+    /* transform: translate(-50%, -50%); */
+    padding-top: 19px;
     max-width: 1200px;
 }
 .header__top-contacts {
     display: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 .header__top-contacts:first-child {
     font-size: 14px;
 }
 
-.header__top-mobile {
+.header__mobile-left {
     display: flex;
 }
 .header__top-burger {
-    margin-left: 10px;
-    padding: 0px 5px 5px 5px;
+    padding: 0 5px 0 3px;
+    /* padding: 0px 5px 5px 5px; */
 }
 .header__top-search {
-    margin-left: 8px;
-    width: 25px;
-    padding: 2px 4px 4px 4px;
+    /* width: 25px; */
+    padding: 0 14px;
+    box-sizing: content-box;
 }
-.header__top-mobile-logo {
-    margin: 0 auto;
-    position: relative;
-    margin-top: 6px;
+.header__mobile-logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2px;
 }
 
-.header__top-menu-desk {
+.header-desktop {
     display: none;
 }
+
 .header__top-menu-desk-search {
+    
     border: 1px solid #000;
     border-radius: 12px;
     height: 22px;
@@ -323,6 +337,7 @@ ul.burger-menu__sub-list {
     display: flex;
     align-items: center;
     margin-right: 10px;
+    display: none;
 }
 .header__top-menu-desk-search-icon {
     margin-left: 2px;
@@ -340,18 +355,31 @@ ul.burger-menu__sub-list {
     line-height: 129.4%;
 }
 
+.header__top-menu-desk-links a {
+    margin-left: 7px;
+}
 
-.header__top-menu-mobile {
+
+.header__mobile-right {
     display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.header__top-menu-mobile-basket {
-    margin-right: 10px;
-    padding: 4px 9px 4px 4px;
+.header__mobile {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 116px 1fr;
 }
-.header__top-menu-mobile-profile {
-    margin-right: 16px;
-    padding: 4px 9px 4px 4px;
+
+.header__mobile-right .basket {
+    padding: 0 10px;
+    height: 100%;
+    padding-top: 4px;
+}
+.header__mobile-right .profile {
+    padding: 0 10px;
+    height: 100%;
 }
 
 
@@ -362,19 +390,25 @@ ul.burger-menu__sub-list {
 .header__nav-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* padding-bottom: 6px; */
 }
 .header__nav-item {
     display: flex;
-    margin-top: 12px;
+    padding-top: 0px;
 }
-.header__nav-account {
-    top: 24px;
+
+.header-desktop-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__nav-option {
     display: none;
     font-size: 17px;
-    line-height: 21px;
+    /* line-height: 21px; */
 }
 
 .header__nav-desk-logo {
@@ -384,8 +418,11 @@ ul.burger-menu__sub-list {
     width: auto;
     height: 30px;
     display: flex;
-    margin: 2px 5px 0px 0px;
+    grid-template-columns: 1fr 10em 1fr;
+    margin: 0px 10px 0px 0px;
     cursor: pointer;
+    top: -2px;
+    position: relative;
 }
 .header__nav-basket svg {
     min-width: 27px;
@@ -487,12 +524,14 @@ ul.burger-menu__sub-list {
     position: relative;
     height: 30px;
     cursor: pointer;
+    top: -4px;
+    left: 3px;
 }
 .header__nav-profile:hover > div {
     display: block;
 }
 .header__nav-profile svg {
-    width: 25px;
+    width: 31px;
 }
 
 .header__nav-profile-window {
@@ -1398,7 +1437,7 @@ ul.burger-menu__sub-list {
 }
 .features__title {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
@@ -1516,8 +1555,6 @@ ul.burger-menu__sub-list {
 
 .accordion-content {
     display: none;
-    margin-bottom: 5px;
-    margin-left: 5px;
 }
 
 .footer__info {
@@ -1848,65 +1885,105 @@ ul.burger-menu__sub-list {
     /* and (max-width: 1400px) */
     .header {
         width: 100%;
-        height: 82px;
+        height: 102px;
         background-color: #fff;
-    }
-    
-    .header__top-block {
         display: flex;
-        width: 93%;
-        justify-content: space-between;
-        position: absolute;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        margin-top: 25px;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-    .header__top-mobile {
+
+    .header__mobile {
         display: none;
     }
-    .header__top-mobile-logo {
+
+    .header-mobile {
         display: none;
+    }
+
+    .header-desktop {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 100px 1fr;
+        max-width: 1200px;
     }
     
     .header__top-contacts {
         display: flex;
+        justify-content: center;
+        align-items: end;
     }
+
     .header__top-contacts p {
-        margin: 0 6px;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
+        display: inline-flex;
+        margin: 0px 16px 2px 16px;
     }
-    .header__top-menu-mobile {
-        display: none;
-    }
+
     .header__top-menu-mobile-btn {
         border: none;
         background-color: #fff;
         display: flex;
     }
 
-    .header__top-menu-desk {
+    .header-desktop-left {
         display: flex;
+        flex-direction: column;
+    }
+
+    .header-desktop .top {
+        display: flex;
+        height: 54px;
+    }
+
+    .header-desktop-left .top {
+        align-items: center;
+        justify-content: start;
+    }
+
+    .header-desktop .bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        height: 48px;
+    }
+
+    .header-desktop-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-desktop-right .top {
+        align-items: center;
+        justify-content: end;
+    }
+
+    .header-desktop-right .bottom {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
     }
     
     .header__bottom-block {
-        width: 93%;
-        margin: 0 auto;
+        width: 100%;
+        /* margin: 0 auto; */
+        margin-top: 8px;
     }
-    .header__nav-list {
-        display: flex;
-        justify-content: space-between;
-    }
+
     .header__nav-item {
-        position: relative;
-        top: 30px;
+        /* position: relative; */
+        /* top: 6px; */
         font-weight: 500;
     }
     .header__nav-account {
-        top: 24px;
+        /* top: 24px; */
+        margin-right: 0px;
     }
     .header__nav-option {
         display: flex;
@@ -1918,27 +1995,9 @@ ul.burger-menu__sub-list {
     }
     .header__nav-desk-logo {
         display: block;
-        margin-top: 10px;
-    }
-    
-    /* dsadasdaasdasdasdasd*/
-
-    
-
-    /*sadasdasdasdasdasasasd */
-
-    /* ÃÅ“ÃÂ¾ÃÂ±ÃÂ¸ÃÂ»Ã‘Å’ÃÂ½Ã‘â€¹ÃÂµ Ã‘â€¡ÃÂ°Ã‘ÂÃ‘â€šÃÂ¸ */
-    .header__nav-burger {
-        display: none;
-    }
-    .header__nav-mobile-logo {
-        display: none;
-    }
-    .header__nav-mobile-basket {
-        display: none;
-    }
-    .header__nav-mobile-profile {
-        display: none;
+        margin-top: -46px;
+        position: relative;
+        top: 7px;
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
@@ -2488,13 +2547,13 @@ ul.burger-menu__sub-list {
         max-width: 650px; /* 880px */
     }
     .features__item-text-title {
-        font-size: 37px;
+        font-size: 2.3125rem;
         line-height: 45px;
         position: inherit;
     
     }
     .features__item-text-description {
-        font-size: 26px;
+        font-size: 1.5rem;
         line-height: 116.9%;
         font-feature-settings: 'case' on, 'cpsp' on;
         
@@ -2568,6 +2627,7 @@ ul.burger-menu__sub-list {
         line-height: 21px;
         border-bottom: none;
         margin-bottom: 11px;
+        pointer-events: none;
     }
     .footer__info-spoiler {
         display: none;
@@ -2607,10 +2667,6 @@ ul.burger-menu__sub-list {
         grid-row: 1/2;
         position: relative;
         text-align: right;
-    }
-
-    .footer__table-title {
-        pointer-events: none;
     }
 
     .footer__personal-title {
