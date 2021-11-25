@@ -652,8 +652,8 @@ ul.burger-menu__sub-list {
     position: absolute;
     left: 10px;
     top: 150px;
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     height: 12px;
     width: 12px;
     transform: rotate(135deg);
@@ -663,8 +663,8 @@ ul.burger-menu__sub-list {
     position: absolute;
     right: 10px;
     top: 150px;
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     height: 12px;
     width: 12px;
     transform: rotate(-45deg);
@@ -1979,23 +1979,15 @@ ul.burger-menu__sub-list {
         position: absolute;
         left: 75px;
         top: 300px;
-        border-right: 2px solid #ccc;
-        border-bottom: 2px solid #ccc;
         height: 14px;
         width: 14px;
-        transform: rotate(135deg);
-        cursor: pointer;
     }
     .head-slider__slider-btn-right {
         position: absolute;
         right: 75px;
         top: 300px;
-        border-right: 2px solid #ccc;
-        border-bottom: 2px solid #ccc;
         height: 14px;
         width: 14px;
-        transform: rotate(-45deg);
-        cursor: pointer;
     }
 
     
