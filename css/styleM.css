@@ -1516,7 +1516,7 @@
 }
 .footer__link {
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
 }
 .footer__spoiler {
     position: absolute;
@@ -1649,7 +1649,7 @@
 }
 .footer__social-media-title {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 18px;
     font-feature-settings: 'case' on, 'cpsp' on;
     color: #EF861C;
