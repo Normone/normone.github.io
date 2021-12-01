@@ -741,6 +741,10 @@ ul.burger-menu__sub-list {
     display: flex;
     justify-content: flex-start;
 }
+.footer__social-media-icon {
+    width: 50px;
+    margin: 0 2.5px;
+}
 .footer__social-media-youtube {
     width: 50px;
 }

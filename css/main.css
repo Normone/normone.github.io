@@ -1779,15 +1779,11 @@ ul.burger-menu__sub-list {
     display: flex;
     justify-content: flex-start;
 }
-.footer__social-media-youtube {
+.footer__social-media-icon {
     width: 50px;
+    margin: 0 2.5px;
 }
-.footer__social-media-instagram {
-    width: 50px;
-}
-.footer__social-media-vk {
-    width: 50px;
-}
+
 .footer__social-media-copyright {
     font-size: 10px;
     line-height: 13px;
