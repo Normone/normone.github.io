@@ -123,6 +123,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     headSliderScrollToNextPage();
 
+    //accprdion
+
     $('.accordion-title').each(function (idx, el) {
         $(el).click( function (e) {
             
@@ -142,12 +144,23 @@ document.addEventListener("DOMContentLoaded", function(){
     $(window).scroll(function() {    
         let scroll = $(window).scrollTop();
         let scrollHeight = $('header').innerHeight() + $('.head-slider__back').innerHeight();
-        if (scroll >= scrollHeight) {
-            $("header").addClass("shadow");
+        // debugger
+        if ($('.head-slider__back').lenght) {
+            if (scroll >= scrollHeight) {
+                $("header").addClass("shadow");
+            } else {
+                $("header").removeClass("shadow");
+            }
         } else {
-            $("header").removeClass("shadow");
+            if (scroll > 0) {
+                $("header").addClass("shadow");
+            } else {
+                $("header").removeClass("shadow");
+            }
         }
+        
     });
+
 });
 
 
