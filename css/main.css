@@ -1614,6 +1614,7 @@ ul.burger-menu__sub-list {
 
 .accordion-content {
     display: none;
+    flex-direction: column;
 }
 
 .footer__info {
