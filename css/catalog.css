@@ -193,7 +193,7 @@
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 
     grid-column: 1/2;
@@ -207,8 +207,15 @@
     border-radius: 11px;
     position: relative;
     background-color: #fff;
-    margin-bottom: 10px;
+    margin: 5px 10px;
 }
+
+.product-slider::after {
+    content: "";
+    flex: auto;
+    
+}
+
 .product-slider-item-hidden {
     display: none;
 }
