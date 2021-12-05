@@ -2187,10 +2187,10 @@ ul.burger-menu__sub-list {
         background: linear-gradient(0deg, rgba(39, 125, 53, 0.7) 0%, rgba(39, 125, 53, 0.35) 27.36%, rgba(39, 125, 53, 0.19) 46.05%, rgba(39, 125, 53, 0) 100%);
     }
 
-     .catalog__item4 .catalog__item-category-table {
-         margin: 0 8px;
-     }
-     
+    .catalog__item4 .catalog__item-category-table {
+        margin: 0 8px;
+    }
+    
     .catalog__item5 {
         grid-column: 3/4;
         grid-row: 3/6;
