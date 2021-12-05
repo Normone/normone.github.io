@@ -888,7 +888,7 @@ ul.burger-menu__sub-list {
     justify-content: space-between;
     position: relative;
 }
-.product-box {
+.product-item {
     width: 140px;
     max-width: 270px;
     height: auto;
@@ -897,11 +897,11 @@ ul.burger-menu__sub-list {
     position: relative;
     background-color: #fff;
 }
-.product-box-hidden {
+.product-item-hidden {
     display: none;
 }
 
-.product-box .description {
+.product-item .description {
     font-size: 12px;
     line-height: 15px;
     margin: 4px 6px 0px 6px;
@@ -915,13 +915,13 @@ ul.burger-menu__sub-list {
 }
 
 
-.product-box .info {
+.product-item .info {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 6px;
 }
-.product-box .price {
+.product-item .price {
     display: flex;
     font-weight: 600;
     font-size: 20px;
@@ -929,7 +929,7 @@ ul.burger-menu__sub-list {
     font-family: Arial;
 }
 
-.product-box .weight {
+.product-item .weight {
     font-weight: 500;
     font-size: 13px;
     line-height: 101%;
@@ -954,7 +954,7 @@ ul.burger-menu__sub-list {
     color: #fff;
 }
 
-.product-box .sticker {
+.product-item .sticker {
     width: 26px;
     height: 12px;
     position: absolute;
@@ -966,7 +966,7 @@ ul.burger-menu__sub-list {
     background-color: #fff;
 }
 
-.product-box .sticker p {
+.product-item .sticker p {
     font-family: Affect;
     font-style: normal;
     font-weight: bold;
@@ -1770,7 +1770,7 @@ ul.burger-menu__sub-list {
 
     /* --=--=-=--=-=-=-=--------------= */
 
-    .product-box-hidden {
+    .product-item-hidden {
         display: block;
     }
 
@@ -2267,22 +2267,22 @@ ul.burger-menu__sub-list {
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     
-    .product-box {
+    .product-item {
         width: 23%;
         height: auto;
     }
-    .product-box-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-box .description {
+    .product-item .description {
         font-size: 15px;
         line-height: 18px;
         margin: 5px 15px;
     }
-    .product-box .description br {
+    .product-item .description br {
         display: none;
     }
-    .product-box .info {
+    .product-item .info {
         margin: 5px 15px;
     }
 
@@ -2804,21 +2804,21 @@ ul.burger-menu__sub-list {
         max-width: 1200px;
     }
 
-    .product-box {
+    .product-item {
         width: 23%;
         height: auto;
     }
-    .product-box-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-box .description {
+    .product-item .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-box .info {
+    .product-item .info {
         margin: 15px 15px;
     }
-    .product-box .price {
+    .product-item .price {
         font-size: 28px;
         line-height: 20px;
     }
@@ -2852,21 +2852,21 @@ ul.burger-menu__sub-list {
 
     /* asdasdasd */
 
-    .product-box {
+    .product-item {
         width: 23%;
         height: auto;
     }
-    .product-box-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-box .description {
+    .product-item .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-box .info {
+    .product-item .info {
         margin: 15px 15px;
     }
-    .product-box .price {
+    .product-item .price {
         font-size: 28px;
         line-height: 20px;
     }
@@ -2916,21 +2916,21 @@ ul.burger-menu__sub-list {
 
     /* sadadasd */
 
-    .product-box {
+    .product-item {
         width: 23%;
         height: auto;
     }
-    .product-box-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-box .description {
+    .product-item .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-box .info {
+    .product-item .info {
         margin: 15px 15px;
     }
-    .product-box .price {
+    .product-item .price {
         font-size: 28px;
         line-height: 20px;
     }
