@@ -185,7 +185,7 @@
                 </div>
 
                 <div class="header__mobile-right">
-                    <button class="header__top-menu-mobile-btn basket">
+                    <button class="header__top-menu-mobile-btn cart">
                         <svg width="26" height="25" viewBox="0 0 26 25" viewBox="0 0 19 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -211,7 +211,7 @@
             </div>
 
             <div class="header-desktop">
-                <div class="header-desktop-top">
+                <div class="header-upper">
                     <div class="header__top-contacts">
                         <a class="header__top-phone" href="tel:+78001001604">8 (800)-100-16-04</a>
                         <p></p>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-desktop-bottom">
+                <div class="header-lower">
                     <ul class="header__nav-list">
                         <li class="header__nav-option header__nav-item">
                             <a href="#">каталог</a>
@@ -371,7 +371,7 @@
                             <a href="#">новинки</a>
                         </li>
                         <li class="header__nav-option header__nav-item header__nav-account">
-                            <div class="header__nav-basket">
+                            <div class="header__nav-cart">
                                 <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1290_308)">
@@ -397,55 +397,55 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="header__nav-basket-amount">2</p>
+                                <p class="header__nav-cart-amount">2</p>
 
-                                <div class="header__nav-basket-window">
-                                    <div class="header__nav-basket-corners">
-                                        <img src="./img/corner.png" alt="#" class="header__nav-basket-corner-img"
+                                <div class="header__nav-cart-window">
+                                    <div class="header__nav-cart-corners">
+                                        <img src="./img/corner.png" alt="#" class="header__nav-cart-corner-img"
                                             style="transform: rotate(0.5turn) scale(-1, 1)">
-                                        <img src="./img/corner.png" alt="#" class="header__nav-basket-corner-img"
+                                        <img src="./img/corner.png" alt="#" class="header__nav-cart-corner-img"
                                             style="transform: rotate(0.5turn)">
                                     </div>
-                                    <div class="header__nav-basket-block">
-                                        <h1 class="header__nav-basket-block-title">
+                                    <div class="header__nav-cart-block">
+                                        <h1 class="header__nav-cart-block-title">
                                             В корзине
                                         </h1>
-                                        <div class="header__nav-basket-block-item">
-                                            <h2 class="header__nav-basket-block-number">
+                                        <div class="header__nav-cart-block-item">
+                                            <h2 class="header__nav-cart-block-number">
                                                 1.
                                             </h2>
-                                            <img class="header__nav-basket-block-img" src="./img/basket-img.png"
+                                            <img class="header__nav-cart-block-img" src="./img/cart-img.png"
                                                 alt="#">
-                                            <div class="header__nav-basket-block-info">
-                                                <p class="header__nav-basket-block-text">
+                                            <div class="header__nav-cart-block-info">
+                                                <p class="header__nav-cart-block-text">
                                                     Говядина тушеная высший сорт 325 гр
                                                 </p>
-                                                <div class="header__nav-basket-block-price-and-btn">
-                                                    <p class="header__nav-basket-block-price">
+                                                <div class="header__nav-cart-block-price-and-btn">
+                                                    <p class="header__nav-cart-block-price">
                                                         245
                                                     </p>
-                                                    <button class="header__nav-basket-block-btn">
+                                                    <button class="header__nav-cart-block-btn">
                                                         удалить
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="header__nav-basket-block-item">
-                                            <h2 class="header__nav-basket-block-number">
+                                        <div class="header__nav-cart-block-item">
+                                            <h2 class="header__nav-cart-block-number">
                                                 2.
                                             </h2>
-                                            <img class="header__nav-basket-block-img" src="./img/basket-img.png"
+                                            <img class="header__nav-cart-block-img" src="./img/cart-img.png"
                                                 alt="#">
-                                            <div class="header__nav-basket-block-info">
-                                                <p class="header__nav-basket-block-text">
+                                            <div class="header__nav-cart-block-info">
+                                                <p class="header__nav-cart-block-text">
                                                     Говядина тушеная высший сорт 325 гр
                                                 </p>
-                                                <div class="header__nav-basket-block-price-and-btn">
-                                                    <p class="header__nav-basket-block-price">
+                                                <div class="header__nav-cart-block-price-and-btn">
+                                                    <p class="header__nav-cart-block-price">
                                                         245
                                                     </p>
-                                                    <button class="header__nav-basket-block-btn">
+                                                    <button class="header__nav-cart-block-btn">
                                                         удалить
                                                     </button>
                                                 </div>
@@ -838,265 +838,201 @@
                         <p class="offer__filter-meat-text">не выбрано</p>
                     </div>
                 </div>
-                <div class="product-slider">
-                    <div class="product-slider-item">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                <div class="product-grid">
+                    <div class="product-box">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку и слезами врага
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
-                    <div class="product-slider-item">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
-                    <div class="product-slider-item product-slider-item-hidden">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box product-box-hidden">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
                     </div>
-                    <div class="product-slider-item product-slider-item-hidden">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box product-box-hidden">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
                     </div>
-                    <img src="./img/sliderArrow.png" alt="#" class="product-slider-btn-back">
-                    <img src="./img/sliderArrow.png" alt="#" class="product-slider-btn-forward">
+                    <img src="./img/sliderArrow.png" alt="#" class="product-grid-btn-back">
+                    <img src="./img/sliderArrow.png" alt="#" class="product-grid-btn-forward">
                 </div>
             </div>
             <div class="newest">
                 <h1 class="newest__title">
                     новинки
                 </h1>
-                <div class="product-slider">
+                <div class="product-grid">
 
-                    <div class="product-slider-item">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <div class="product-slider-item">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <div class="product-slider-item product-slider-item-hidden">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box product-box-hidden">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <div class="product-slider-item product-slider-item-hidden">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box product-box-hidden">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <img src="./img/sliderArrow.png" alt="#" class="product-slider-btn-back">
-                    <img src="./img/sliderArrow.png" alt="#" class="product-slider-btn-forward">
+                    <img src="./img/sliderArrow.png" alt="#" class="product-grid-btn-back">
+                    <img src="./img/sliderArrow.png" alt="#" class="product-grid-btn-forward">
                 </div>
             </div>
 
@@ -1104,142 +1040,110 @@
                 <h1 class="promotion__title">
                     скидки
                 </h1>
-                <div class="product-slider">
+                <div class="product-grid">
 
-                    <div class="product-slider-item">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <div class="product-slider-item">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <div class="product-slider-item product-slider-item-hidden">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box product-box-hidden">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <div class="product-slider-item product-slider-item-hidden">
-                        <img src="img/offer-slider-item-1.png" alt="#" class="product-slider-img">
-                        <p class="product-slider-description">
+                    <div class="product-box product-box-hidden">
+                        <img src="img/offer-slider-item-1.png" alt="#" class="product-grid-img">
+                        <p class="description">
                             Буженина <br>в собственном соку
                         </p>
-                        <div class="product-slider-info">
-                            <div class="product-slider-price">
+                        <div class="info">
+                            <div class="price">
                                 <p>245</p>
-                                <svg class="product-slider-price-valute" width="12" height="15" viewBox="0 0 12 15"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3.13636 13.2V1.5H8.04546C8.69644 1.5 9.32077 1.76414 9.78108 2.23433C10.2414 2.70451 10.5 3.34221 10.5 4.00714C10.5 4.67208 10.2414 5.30978 9.78108 5.77996C9.32077 6.25014 8.69644 6.51429 8.04546 6.51429H1.5"
-                                        stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.04545 9.85712H1.5" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                ₽
                             </div>
-                            <div class="product-slider-gramm">325 гр</div>
+                            <div class="weight">325 гр</div>
                         </div>
-                        <button class="product-slider-in-basket-btn">
-                            <p class="product-slider-in-basket-btn-text">
+                        <button class="add-in-cart-btn">
+                            <p>
                                 в корзину
                             </p>
                         </button>
 
-                        <div class="product-slider-new-icon">
-                            <p class="product-slider-new-text">
+                        <div class="sticker new">
+                            <p>
                                 new
                             </p>
                         </div>
                     </div>
 
-                    <img src="./img/sliderArrow.png" alt="#" class="product-slider-btn-back">
-                    <img src="./img/sliderArrow.png" alt="#" class="product-slider-btn-forward">
+                    <img src="./img/sliderArrow.png" alt="#" class="product-grid-btn-back">
+                    <img src="./img/sliderArrow.png" alt="#" class="product-grid-btn-forward">
                 </div>
             </div>
 

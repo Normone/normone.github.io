@@ -323,7 +323,7 @@ ul.burger-menu__sub-list {
     grid-template-columns: 1fr 116px 1fr;
 }
 
-.header__mobile-right .basket {
+.header__mobile-right .cart {
     padding: 0 10px;
     height: 100%;
     padding-top: 4px;
@@ -345,19 +345,15 @@ ul.burger-menu__sub-list {
     width: 100%;
     /* padding-bottom: 6px; */
 }
-.header__nav-item {
-    display: none;
-    padding-top: 0px;
-}
 
-.header__nav-option {
+.header__nav-list li {
     display: none;
     /* position: relative; */
     font-size: 17px;
     /* line-height: 21px; */
 }
 
-.header__nav-basket {
+.header__nav-cart {
     width: auto;
     height: 30px;
     display: flex;
@@ -366,11 +362,11 @@ ul.burger-menu__sub-list {
     cursor: pointer;
     top: -2px;
 }
-.header__nav-basket svg {
+.header__nav-cart svg {
     min-width: 27px;
 }
 
-.header__nav-basket-amount {
+.header__nav-cart-amount {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -381,25 +377,25 @@ ul.burger-menu__sub-list {
 }
 
 
-.header__nav-basket:hover > div {
+.header__nav-cart:hover > div {
     display: block;
 }
-.header__nav-basket-window {
+.header__nav-cart-window {
     display: none;
     position: absolute;
     top: 90px;
     margin-left: -230px;
 }
-.header__nav-basket-corners {
+.header__nav-cart-corners {
     display: flex;
     justify-content: flex-end;
     margin-right: 43px;
     margin-bottom: -1px;
 }
-.header__nav-basket-corner-img {
+.header__nav-cart-corner-img {
     height: 10px;
 }
-.header__nav-basket-block {
+.header__nav-cart-block {
     background-color: #fff;
     border-radius: 8px;
     width: 300px;
@@ -408,47 +404,47 @@ ul.burger-menu__sub-list {
     flex-direction: column;
     box-shadow: 3px 2px 8px rgba(46, 60, 80, 0.5);
 }
-.header__nav-basket-block-title {
+.header__nav-cart-block-title {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     margin-left: 20px;
     margin: 25px 0px 0px 20px;
 }
-.header__nav-basket-block-item {
+.header__nav-cart-block-item {
     width: 85%;
     height: 65px;
     display: flex;
     margin: 20px 0px 0px 20px;
 }
-.header__nav-basket-block-number {
+.header__nav-cart-block-number {
     font-size: 13px;
     line-height: 15px;
 }
-.header__nav-basket-block-img {
+.header__nav-cart-block-img {
     height: 65px;
     margin-left: 5px;
 }
-.header__nav-basket-block-info {
+.header__nav-cart-block-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
 }
-.header__nav-basket-block-text {
+.header__nav-cart-block-text {
     font-size: 13px;
     line-height: 15px;
 }
-.header__nav-basket-block-price-and-btn {
+.header__nav-cart-block-price-and-btn {
     display: flex;
     justify-content: space-between;
 }
-.header__nav-basket-block-price {
+.header__nav-cart-block-price {
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
 }
-.header__nav-basket-block-btn {
+.header__nav-cart-block-btn {
     width: 80px;
     height: 18px;
     background: #FFFFFF;
@@ -531,9 +527,8 @@ ul.burger-menu__sub-list {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 90px;
-    width: max-content;
-    margin-left: -14px;
+    top: 40px;
+    width: 200px;
 }
 .header__nav-dd-list-corners {
     display: flex;
@@ -543,23 +538,28 @@ ul.burger-menu__sub-list {
     height: 10px;
 }
 
-.header__nav-dd-list-list {
+.header__nav-dd-list {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 3px 2px 8px rgba(46, 60, 80, 0.5);
+    /* border-radius: 10px;
+    box-shadow: 3px 2px 8px rgba(46, 60, 80, 0.5); */
+    border: 1px solid grey;
 }
-.header__nav-dd-list-list-item {
-    margin: 0px 15px;
+.header__nav-dd-list a {
+    padding: 5px 15px;
+    width: 100%;
     font-size: 13px;
     line-height: 184.5%;
 }
-.header__nav-dd-list-list-item:last-child {
-    margin-bottom: 15px;
-}
 
-.header__nav-option:hover > div {
+.header__nav-list li:hover > .header__nav-dd-list,
+.header__nav-list li:focus > .header__nav-dd-list {
     display: flex;
 }
+
+ .header__nav-list .header__nav-dd-list .header__nav-dd-list {
+     top: -1px;
+     left: 100% !important;
+ }
 /* ---------------------------------------------*/
 
 
@@ -815,6 +815,14 @@ ul.burger-menu__sub-list {
 
 /* ---------------------------------------------*/
 /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â» "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â" ------------------------------------*/
+.homepage__section-title {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
+    margin-top: 70px;
+}
 
 .offer {
     width: 80%;
@@ -869,7 +877,7 @@ ul.burger-menu__sub-list {
     color: #000000c2;
 }
 
-.product-slider {
+.product-grid {
     width: 100%;
     max-width: 1100px;
     height: 100%;
@@ -880,7 +888,7 @@ ul.burger-menu__sub-list {
     justify-content: space-between;
     position: relative;
 }
-.product-slider-item {
+.product-box {
     width: 140px;
     max-width: 270px;
     height: auto;
@@ -889,12 +897,11 @@ ul.burger-menu__sub-list {
     position: relative;
     background-color: #fff;
 }
-.product-slider-item-hidden {
+.product-box-hidden {
     display: none;
 }
-.product-slider-img {
-}
-.product-slider-description {
+
+.product-box .description {
     font-size: 12px;
     line-height: 15px;
     margin: 4px 6px 0px 6px;
@@ -908,30 +915,28 @@ ul.burger-menu__sub-list {
 }
 
 
-.product-slider-info {
+.product-box .info {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 6px;
 }
-.product-slider-price {
+.product-box .price {
     display: flex;
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
+    font-family: Arial;
 }
-.product-slider-price-valute {
-    width: 12px;
-    margin: 2px;
-}
-.product-slider-gramm {
+
+.product-box .weight {
     font-weight: 500;
     font-size: 13px;
     line-height: 101%;
 }
 
 
-.product-slider-in-basket-btn {
+.add-in-cart-btn {
     width: 80%; /*125*/
     height: 22px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
@@ -940,7 +945,7 @@ ul.burger-menu__sub-list {
     margin: 0 auto;
     margin-bottom: 10px;
 }
-.product-slider-in-basket-btn-text {
+.add-in-cart-btn p {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -949,7 +954,7 @@ ul.burger-menu__sub-list {
     color: #fff;
 }
 
-.product-slider-new-icon {
+.product-box .sticker {
     width: 26px;
     height: 12px;
     position: absolute;
@@ -960,7 +965,8 @@ ul.burger-menu__sub-list {
     border-radius: 3px;
     background-color: #fff;
 }
-.product-slider-new-text {
+
+.product-box .sticker p {
     font-family: Affect;
     font-style: normal;
     font-weight: bold;
@@ -971,8 +977,7 @@ ul.burger-menu__sub-list {
     text-transform: uppercase;
 }
 
-
-.product-slider-btn-back {
+.product-grid-btn-back {
     position: absolute;
     left: -25px;
     top: 100px;
@@ -981,7 +986,7 @@ ul.burger-menu__sub-list {
     transform: rotate(0.5turn);
     display: none;
 }
-.product-slider-btn-forward {
+.product-grid-btn-forward {
     position: absolute;
     right: -25px;
     top: 100px;
@@ -1765,7 +1770,7 @@ ul.burger-menu__sub-list {
 
     /* --=--=-=--=-=-=-=--------------= */
 
-    .product-slider-item-hidden {
+    .product-box-hidden {
         display: block;
     }
 
@@ -1806,7 +1811,7 @@ ul.burger-menu__sub-list {
 
 @media (min-width: 1000px) and (max-width: 1100px) {
 
-    .header__nav-item {
+    .header__nav-list li {
         font-size: 14px;
     }
 
@@ -1847,7 +1852,6 @@ ul.burger-menu__sub-list {
         display: block;
         width: 100%;
         max-width: 1000px;
-        overflow: hidden;
     }
 
     .header__top-menu__right {
@@ -1880,7 +1884,7 @@ ul.burger-menu__sub-list {
         display: flex;
     }
 
-    .header-desktop-top {
+    .header-upper {
         width: 100%;
         display: grid;
         /* flex-direction: column; */
@@ -1889,12 +1893,11 @@ ul.burger-menu__sub-list {
         grid-template-columns: 1fr 100px 1fr;
     }
 
-    .header-desktop-bottom {
+    .header-lower {
         width: 100%;
         display: grid;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 14px;
         height: 48px;
         grid-template-columns: 1fr 100px 1fr;
     }
@@ -1905,16 +1908,17 @@ ul.burger-menu__sub-list {
         margin-top: 8px;
     }
 
-    .header__nav-item {
-        /* position: relative; */
+    .header__nav-list > li {
+        position: relative;
         /* top: 6px; */
         font-weight: 500;
+        padding-bottom: 14px;
     }
     .header__nav-account {
         /* top: 24px; */
         margin-right: 0px;
     }
-    .header__nav-option {
+    .header__nav-list li {
         display: flex;
         
     }
@@ -1922,7 +1926,7 @@ ul.burger-menu__sub-list {
         left: 0px;
         top: 48px;
     }
-    .header-desktop-top .logo {
+    .header-upper .logo {
         position: relative;
         top: 13px;
         display: flex;
@@ -2263,22 +2267,22 @@ ul.burger-menu__sub-list {
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     
-    .product-slider-item {
+    .product-box {
         width: 23%;
         height: auto;
     }
-    .product-slider-item-hidden {
+    .product-box-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-box .description {
         font-size: 15px;
         line-height: 18px;
         margin: 5px 15px;
     }
-    .product-slider-description br {
+    .product-box .description br {
         display: none;
     }
-    .product-slider-info {
+    .product-box .info {
         margin: 5px 15px;
     }
 
@@ -2294,7 +2298,6 @@ ul.burger-menu__sub-list {
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .end {
-        header-desktop-top
         background-image: url('../img/end-bg.jpg'); 
         height: 3574px;
     }
@@ -2801,28 +2804,23 @@ ul.burger-menu__sub-list {
         max-width: 1200px;
     }
 
-    .product-slider-item {
+    .product-box {
         width: 23%;
         height: auto;
     }
-    .product-slider-item-hidden {
+    .product-box-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-box .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-slider-info {
+    .product-box .info {
         margin: 15px 15px;
     }
-    .product-slider-price {
+    .product-box .price {
         font-size: 28px;
         line-height: 20px;
-    }
-    .product-slider-price-valute {
-        width: 16px;
-        height: 20px;
-        margin: 0 0 0 4px;
     }
 
     /* sadsdasdasd */
@@ -2854,28 +2852,23 @@ ul.burger-menu__sub-list {
 
     /* asdasdasd */
 
-    .product-slider-item {
+    .product-box {
         width: 23%;
         height: auto;
     }
-    .product-slider-item-hidden {
+    .product-box-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-box .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-slider-info {
+    .product-box .info {
         margin: 15px 15px;
     }
-    .product-slider-price {
+    .product-box .price {
         font-size: 28px;
         line-height: 20px;
-    }
-    .product-slider-price-valute {
-        width: 16px;
-        height: 20px;
-        margin: 0 0 0 4px;
     }
     
     /* asdasdasdasdasdasd */
@@ -2923,28 +2916,23 @@ ul.burger-menu__sub-list {
 
     /* sadadasd */
 
-    .product-slider-item {
+    .product-box {
         width: 23%;
         height: auto;
     }
-    .product-slider-item-hidden {
+    .product-box-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-box .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-slider-info {
+    .product-box .info {
         margin: 15px 15px;
     }
-    .product-slider-price {
+    .product-box .price {
         font-size: 28px;
         line-height: 20px;
-    }
-    .product-slider-price-valute {
-        width: 16px;
-        height: 20px;
-        margin: 0 0 0 4px;
     }
 
     /* sadasdasdasdasd */
