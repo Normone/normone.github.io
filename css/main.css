@@ -1,70 +1,3 @@
-@font-face {
-    font-family: 'Affect';
-    src: url('../fonts/Affect.eot');
-    src: url('../fonts/Affect.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Affect.woff') format('woff'),
-    url('../fonts/Affect.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Lester Deco';
-    src: url('../fonts/Lester Deco.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Muller Regular';
-    src: url('../fonts/ofont.ru_Muller.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Atomic Alice';
-    src: url('../fonts/AtomicAlice-Light.eot');
-    src: local('Atomic Alice Light'), local('AtomicAlice-Light'),
-        url('../fonts/AtomicAlice-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AtomicAlice-Light.woff2') format('woff2'),
-        url('../fonts/AtomicAlice-Light.woff') format('woff'),
-        url('../fonts/AtomicAlice-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Atomic Alice';
-    src: url('../fonts/AtomicAlice-Regular.eot');
-    src: local('Atomic Alice Regular'), local('AtomicAlice-Regular'),
-        url('../fonts/AtomicAlice-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AtomicAlice-Regular.woff2') format('woff2'),
-        url('../fonts/AtomicAlice-Regular.woff') format('woff'),
-        url('../fonts/AtomicAlice-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Atomic Alice';
-    src: url('../fonts/AtomicAlice-Medium.eot');
-    src: local('Atomic Alice Medium'), local('AtomicAlice-Medium'),
-        url('../fonts/AtomicAlice-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AtomicAlice-Medium.woff2') format('woff2'),
-        url('../fonts/AtomicAlice-Medium.woff') format('woff'),
-        url('../fonts/AtomicAlice-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Atomic Alice';
-    src: url('../fonts/AtomicAlice-Bold.eot');
-    src: local('Atomic Alice Bold'), local('AtomicAlice-Bold'),
-        url('../fonts/AtomicAlice-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AtomicAlice-Bold.woff2') format('woff2'),
-        url('../fonts/AtomicAlice-Bold.woff') format('woff'),
-        url('../fonts/AtomicAlice-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
 * {font-family: Montserrat;}
 
 
@@ -86,18 +19,6 @@
 
 .f-a-center {
     align-items: center;
-}
-
-/* ---------------------------------------------*/
-/* ---------------------------------------------*/
-/* ---------------------------------------------*/
-/* ---------------------------------------------*/
-
-.container {
-
-}
-.content {
-    
 }
 
 .mobile-hide {
@@ -381,10 +302,12 @@ ul.burger-menu__sub-list {
 .header__top-menu-desk-links {
     font-size: 14px;
     line-height: 129.4%;
+    display: flex;
+    align-items: center;
 }
 
 .header__top-menu-desk-links a {
-    margin-left: 7px;
+    margin-left: 11px;
 }
 
 
@@ -415,10 +338,6 @@ ul.burger-menu__sub-list {
     top: 1px;
 }
 
-.header__bottom-block {
-    width: 100%;
-    max-width: 1200px;
-}
 .header__nav-list {
     display: flex;
     justify-content: space-between;
@@ -431,12 +350,6 @@ ul.burger-menu__sub-list {
     padding-top: 0px;
 }
 
-.header-desktop-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .header__nav-option {
     display: none;
     /* position: relative; */
@@ -444,9 +357,6 @@ ul.burger-menu__sub-list {
     /* line-height: 21px; */
 }
 
-.header__nav-desk-logo {
-    display: none;
-}
 .header__nav-basket {
     width: auto;
     height: 30px;
@@ -756,38 +666,6 @@ ul.burger-menu__sub-list {
     border-radius: inherit;
     display: none;
     color: #fff;
-}
-.head-slider__h1 {
-    font-family: 'Lester Deco';
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-top: 112px;
-}
-.head-slider__h2 {
-    font-family: 'Muller Regular';
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: -0.05em;
-}
-.head-slider__link-btn {
-    display: block;
-    width: 103px;
-    height: 20px;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 35px;
-    color: #fff;
-    font-family: Affect;
-    font-size: 12px;
-    line-height: 17px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 130px;
 }
 
 /* ---------------------------------------------*/
@@ -1966,26 +1844,34 @@ ul.burger-menu__sub-list {
     }
 
     .header-desktop {
-        display: grid;
+        display: block;
         width: 100%;
-        grid-template-columns: 1fr 100px 1fr;
         max-width: 1000px;
         overflow: hidden;
+    }
+
+    .header__top-menu__right {
+        align-items: center;
+            display: flex;
+            justify-content: end;
+            height: 54px;
     }
     
     .header__top-contacts {
         display: flex;
-        justify-content: center;
-        align-items: end;
+        justify-content: flex-start;
+        align-items: center;
+        height: 54px;
     }
 
     .header__top-contacts p {
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 20px;
         display: inline-flex;
-        margin: 0px 16px 2px 16px;
+        margin: 0px 18px 1px 20px;
+        width: 1px;
+        height: 15px;
+        background: #000;
     }
 
     .header__top-menu-mobile-btn {
@@ -1994,45 +1880,23 @@ ul.burger-menu__sub-list {
         display: flex;
     }
 
-    .header-desktop-left {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header-desktop .top {
-        display: flex;
-        height: 54px;
-    }
-
-    .header-desktop-left .top {
-        align-items: center;
-        justify-content: start;
-    }
-
-    .header-desktop .bottom {
+    .header-desktop-top {
         width: 100%;
-        display: flex;
+        display: grid;
+        /* flex-direction: column; */
+        height: 54px;
+        align-items: flex-start;
+        grid-template-columns: 1fr 100px 1fr;
+    }
+
+    .header-desktop-bottom {
+        width: 100%;
+        display: grid;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 14px;
         height: 48px;
-    }
-
-    .header-desktop-right {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header-desktop-right .top {
-        align-items: center;
-        justify-content: end;
-    }
-
-    .header-desktop-right .bottom {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        grid-template-columns: 1fr 100px 1fr;
     }
     
     .header__bottom-block {
@@ -2058,11 +1922,13 @@ ul.burger-menu__sub-list {
         left: 0px;
         top: 48px;
     }
-    .header__nav-desk-logo {
-        display: block;
-        margin-top: -46px;
+    .header-desktop-top .logo {
         position: relative;
-        top: 7px;
+        top: 13px;
+        display: flex;
+        height: 54px;
+        justify-content: center;
+        left: -1px;
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
@@ -2428,6 +2294,7 @@ ul.burger-menu__sub-list {
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .end {
+        header-desktop-top
         background-image: url('../img/end-bg.jpg'); 
         height: 3574px;
     }
