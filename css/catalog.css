@@ -208,13 +208,9 @@
     position: relative;
     background-color: #fff;
     margin: 5px 10px;
-}
-
-.product-slider::after {
-    content: "";
-    flex: auto;
     
 }
+
 
 .product-slider-item-hidden {
     display: none;
