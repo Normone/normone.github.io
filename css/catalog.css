@@ -193,7 +193,7 @@
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     
 
     grid-column: 1/2;
@@ -396,6 +396,7 @@
     .product-slider-item {
         width: 160px;
         height: auto;
+        margin: 5px;
     }   
 
 }
