@@ -1,0 +1,179 @@
+* {font-family: Montserrat;}
+
+/* ---------------------------------------------*/
+
+.content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------*/
+
+.page-path {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.page-path__link {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+.page-path__divider {
+}
+
+/* ---------------------------------------------*/
+
+.map-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.map-block > .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+
+.map {
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 16px;
+    filter: drop-shadow(3px 2px 10px rgba(46, 60, 80, 0.4));
+}
+
+.pick-up-points {
+    margin-top: 40px;
+}
+.pick-up-points > .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.pick-up-points > .block {
+    height: 520px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 11px;
+    margin-top: 16px;
+}
+
+.drop-down-lists {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.drop-down-lists > .item {
+    width: 48%;
+}
+.drop-down-lists > .item > .title {
+    font-size: 11px;
+    line-height: 183%;
+    color: #000000b3;
+}
+.drop-down-lists > .item > .drop-down-list {
+    width: 95%;
+    height: 23px;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 183%;
+}
+
+.list {
+    width: 90%;
+    margin: 0 auto;
+}
+.list > .item {
+    margin-top: 10px;
+}
+.list > .item > .name {
+    display: flex;
+}
+.list > .item > .name > .icon {
+}
+.list > .item > .name > .text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+.list > .item > .address {
+    display: flex;
+}
+.list > .item > .address > .favicon {
+    width: 20px;
+    height: 100%;
+
+}
+.list > .item > .address > .favicon > div {
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+    margin: 5px auto 0 auto;
+    border-radius: 50%;
+}
+.list > .item > .address > .text {
+    font-size: 14px;
+    line-height: 19px;
+}
+.map-block > .description {
+    
+}
+.map-block > .description > p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 117%;
+    margin-top: 25px;
+}
+.map-block > .description > span {
+    font-weight: 600;
+}
+
+
+
+
+/* ---------------------------------------------*/
+
+.clue {
+    display: block;
+    max-width: 1100px;
+    margin: 90px auto 0 auto;
+    height: 173px;
+}
+.clue-hr-m {
+    width: 70%;
+    border-color: #FFFFFF;
+    opacity: 0.7;
+    margin: 15px 0;
+}
+.clue-hr-d {
+    display: none;
+    width: 60%;
+    opacity: 0.7;
+}
+.clue__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+.clue__item {
+    display: flex;
+    align-items: center;
+}
+.clue__item-img {
+    display: none;
+}
+.clue__item-link {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EF861C;
+}
