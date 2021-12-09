@@ -3,6 +3,9 @@
 /* ---------------------------------------------*/
 
 .content {
+    background: url(../img/map-bg-mobile.png) bottom no-repeat;
+}
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -219,6 +222,14 @@
 
 @media screen and (min-width: 1000px) {
 
+    .content {
+        background: url(../img/map-bg-desk.png) bottom no-repeat;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
     .map-block {
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -251,6 +262,8 @@
         height: 90%;
     }
 
+    
+
     .map-block > .description {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -265,11 +278,21 @@
     .list {
         height: 490px;
     }
+    
+    .list > .item > .name > .text {
+        
+    }
 
     .list > .item > .address > .text {
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .list > .item > .address > .text {
+        flex-direction: column;
     }
 }
 
