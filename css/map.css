@@ -89,41 +89,41 @@
     line-height: 183%;
 }
 
-.list {
+.pick-up-points > .block > .list {
     width: 90%;
     height: 400px;
     margin: 15px auto 0 auto;
     overflow-y: scroll;
 }
-.list > .item {
+.pick-up-points > .block > .list > .item {
     margin-bottom: 20px;
 }
-.list > .item > .name {
+.pick-up-points > .block > .list > .item > .name {
     display: flex;
 }
-.list > .item > .name > .icon {
+.pick-up-points > .block > .list > .item > .name > .icon {
 }
-.list > .item > .name > .text {
+.pick-up-points > .block > .list > .item > .name > .text {
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
 }
-.list > .item > .address {
+.pick-up-points > .block > .list > .item > .address {
     display: flex;
 }
-.list > .item > .address > .favicon {
+.pick-up-points > .block > .list > .item > .address > .favicon {
     width: 20px;
     height: 100%;
 
 }
-.list > .item > .address > .favicon > div {
+.pick-up-points > .block > .list > .item > .address > .favicon > div {
     background-color: #000000;
     width: 10px;
     height: 10px;
     margin: 5px auto 0 auto;
     border-radius: 50%;
 }
-.list > .item > .address > .text {
+.pick-up-points > .block > .list > .item > .address > .text {
     font-size: 14px;
     line-height: 19px;
 }
@@ -287,6 +287,42 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+
+
+    .clue {
+        margin-top: 130px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .clue-hr-m {
+        display: none;
+    }
+    .clue-hr-d {
+        display: block;
+    }
+    
+    .clue__block {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin: 25px 0;
+    }
+    .clue__item {
+        display: flex;
+        align-items: center;
+    }
+    .clue__item-img {
+        display: block;
+    }
+    .clue__item-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        text-transform: none;
+        color: #FFFFFF;
+        margin-left: 15px;
     }
 }
 
