@@ -1,5 +1,10 @@
 * {font-family: Montserrat;}
 
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 /* ---------------------------------------------*/
 /* Путь самурая ------------------------------------*/
 
@@ -40,7 +45,9 @@
     height: 255px;
     margin: 0 auto;
 }
-
+.gallery__sub-preview {
+    display: none;
+}
 .gallery__points {
     display: flex;
     margin: 0 auto;
@@ -75,7 +82,7 @@
 /* Большой блок с информацией о продукте ------------------------------------*/
 
 .product-info {
-    width:310px;
+    width: 86%;
     margin: 0 auto;
     margin-top: 35px;
 }   
@@ -189,15 +196,15 @@
     
 }
 .product-info__purchase-price-value {
-    font-family: Affect;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 20px;
-    color: #FDB01A;
 }
 .product-info__purchase-price-valute {
     margin: 3px 0px 0px 10px;
+    font-size: 36px;
+    line-height: 20px;
 }
 
 
@@ -211,7 +218,7 @@
 }
 .product-info__details-bonus {
     display: flex;
-    margin-right: 30px;
+    width: 50%;
 }
 .product-info__details-bonus-text {
     font-weight: 600;
@@ -224,7 +231,6 @@
 }
 .product-info__details-availability {
     display: flex;
-    margin-left: 30px;
 }
 .product-info__details-availability-text {
     font-weight: 600;
@@ -241,10 +247,9 @@
 
 .product-info__in-busket {
     display: flex;
-    width: 355px;
     height: 26px;
     position: relative;
-    margin: 10px auto 15px auto;
+    margin: 10px auto 10px auto;
     
 }
 .product-info__in-busket-back {
@@ -259,16 +264,18 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 101%;
-    margin: 5px;
+    margin: 5px 10px 0 0;
 }
 .product-info__in-busket-back-icon {
     margin-top: 2px;
+    margin-right: 10px;
 }
 .product-info__in-busket-btn {
     position: absolute;
     width: 50%;
-    height: 100%;
+    height: 28px;
     left: 0px;
+    top: -1px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
     border-radius: 16px;
     
@@ -278,7 +285,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 4px;
     color: #FFFFFF;
 }
 /* ---------------------------------------------*/
@@ -303,11 +310,13 @@
     width: 173px;
 }
 .product-info__with-gramm {
+    font-weight: 400;
     font-size: 14px;
     line-height: 101%;
     text-align: left;
 }
 .product-info__with-portion {
+    font-weight: 400;
     font-size: 14px;
     line-height: 101%;
     text-align: left;
@@ -504,7 +513,6 @@
 }
 .preheat__alert {
     display: flex;
-    
 }
 .preheat__alert b {
     font-size: 12px;
@@ -960,14 +968,24 @@
         margin: 0;
     }
     .gallery__img-block {
-
+        display: flex;
     }
     .gallery__main-preview {
         width: 100%;
         height: 500px;
     }
-    .gallery__points {
+    .gallery__sub-preview {
         display: flex;
+        flex-direction: column;
+        margin-top: 280px;
+    }
+    .gallery__sub-preview-item {
+        margin-top: 10px;
+        width: 62px;
+        height: 62px;
+    }
+    .gallery__points {
+        display: none;
     }
     .gallery__points-item {
         margin: 0 2px;
@@ -1083,6 +1101,9 @@
         font-size: 18px;
         line-height: 101%;
     }
+    .product-info__in-busket {
+        width: 90%;
+    }
 
     
     /* ---------------------------------------------*/
@@ -1097,6 +1118,8 @@
     .product-info__details-bonus-info-icon {
     }
     .product-info__details-availability {
+        width: 90%;
+        margin: 0 auto;
     }
     .product-info__details-availability-text {
     }
