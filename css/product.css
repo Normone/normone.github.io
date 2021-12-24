@@ -9,16 +9,23 @@
 /* Путь самурая ------------------------------------*/
 
 .page-path {
-    margin-top: 20px;
-    margin-bottom: 24px;
-    text-align: center;
+    margin: 20px auto 24px auto;
+    text-align: left;
+    width: 89%;
+    
 }
+
 .page-path__link {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 15px;
     letter-spacing: 0em;
 }
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
 .page-path__divider {
+    font-size: 12px;
+    line-height: 15px;
 }
 
 /* ---------------------------------------------*/
@@ -76,6 +83,7 @@
 .gallery__stamps {
     display: none;
     margin-top: 20px;
+    height: 80px;
 }
 
 /* ---------------------------------------------*/
@@ -100,23 +108,28 @@
     margin: 5px 0;
 }
 .product-info__weight-option {
-    font-size: 16px;
-    line-height: 16px;
+    display: block;
+    font-size: 13px;
+    line-height: 101%;
     letter-spacing: 0em;
     text-decoration-line: underline;
-    margin: 7px 7.5px 10px 7.5px;
+    margin: 10px 7.5px 10px 7.5px;
 }
 .product-info__weight-option-selected {
+    display: block;
     width: 66px;
     height: 22px;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 101%;
     letter-spacing: 0em;
     border: 1.5px solid #289648;
     box-sizing: border-box;
     border-radius: 5px;
     margin: 7px 5px 10px 5px;
     text-align: center;
+}
+.product-info__weight-option-selected > p {
+    margin-top: 2px;
 }
 .product-info__food-category-icon {
     position: absolute;
@@ -128,7 +141,7 @@
 .product-info__rating {
     display: flex;
     justify-content: space-between;
-    width: 310px;
+    width: 100%;
     margin: 10px 0 15px 0;
 }
 .product-info__rating-stars {
@@ -202,9 +215,11 @@
     line-height: 20px;
 }
 .product-info__purchase-price-valute {
-    margin: 3px 0px 0px 10px;
+    margin-left: 10px;
     font-size: 36px;
     line-height: 20px;
+    font-family: auto;
+    font-weight: 600;
 }
 
 
@@ -213,7 +228,7 @@
 
 .product-info__details {
     display: flex;
-    margin: 5px auto;
+    margin: 12px auto 10px auto;
     width: 355px;
 }
 .product-info__details-bonus {
@@ -231,6 +246,7 @@
 }
 .product-info__details-availability {
     display: flex;
+    margin-top: 10px;
 }
 .product-info__details-availability-text {
     font-weight: 600;
@@ -243,9 +259,9 @@
 }
 
 /* ---------------------------------------------*/
-/* Кнопка "в корзину" ------------------------------------*/
+/* Кнопка "в корзину" (старая) ------------------------------------*/
 
-.product-info__in-busket {
+/* .product-info__in-busket {
     display: flex;
     height: 26px;
     position: relative;
@@ -287,12 +303,36 @@
     text-align: center;
     margin-top: 4px;
     color: #FFFFFF;
+} */
+
+/* ---------------------------------------------*/
+/* Кнопка "в корзину" -----------------------------*/
+
+.product-info__in-busket {
+    width: 80%;
+    height: 28px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 16px;
 }
+.product-info__in-busket > p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 3px;
+    color: #FFFFFF;
+}
+
+
 /* ---------------------------------------------*/
 /* Описание ------------------------------------*/
 
 .product-info__description {
-    display: none;
+    display: block;
+    font-size: 13px;
+    line-height: 101%;
+    margin-top: 10px;
 }
 
 /* ---------------------------------------------*/
@@ -355,7 +395,13 @@
 /* Инфо штампы ------------------------------------*/
 
 .product-info__stamps {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
     margin: 20px 0;
+}
+.product-info__stamps > img {
+
 }
 
 /* ---------------------------------------------*/
@@ -950,7 +996,13 @@
 @media (min-width: 1000px)  {
     /* and (max-width: 1400px) */
     
+    .page-path__link {
+        font-size: 15px;
+    }
 
+    .page-path__divider {
+        font-size: 15px;
+    }
 /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
@@ -1000,7 +1052,8 @@
         display: block;
     }
     .gallery__stamps {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
     
     /* ---------------------------------------------*/
@@ -1094,7 +1147,9 @@
     }
     .product-info__purchase-price-valute {
     }
-    .product-info__purchase-busket-btn {
+
+
+    /* .product-info__purchase-busket-btn {
         width: 150px;
         height: 40px;
         border-radius: 20px;
@@ -1103,7 +1158,7 @@
     }
     .product-info__in-busket {
         width: 90%;
-    }
+    } */
 
     
     /* ---------------------------------------------*/
@@ -1143,6 +1198,12 @@
     .product-info__with-int {
     }
     
+    /* ---------------------------------------------*/
+    /* описание ------------------------------------*/
+
+    .product-info__description {
+        display: none;
+    }
     /* ---------------------------------------------*/
     /* Инфо состав ------------------------------------*/
     
