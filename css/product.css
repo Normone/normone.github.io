@@ -1015,6 +1015,12 @@
 
 @media (min-width: 1000px)  {
     /* and (max-width: 1400px) */
+    .container {
+        background-image: url(../img/end-bg-desk.png);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     
     .page-path__link {
         font-size: 13px;
@@ -1405,10 +1411,11 @@
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .end {
-        background-image: url('../img/end-bg-mobile.png');
+        /* background-image: url('../img/end-bg-mobile.png');
         background-position: bottom;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
+        background: none;
         height: auto;
     }
 
@@ -1449,6 +1456,7 @@
         font-size: 24px;
         line-height: 29px;
         color: #fff;
+        margin-top: 80px;
     }
 
     .review {
@@ -1604,7 +1612,7 @@
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
     .clue {
-        display: block;
+        display: none;
     }
 
 
