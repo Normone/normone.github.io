@@ -498,7 +498,7 @@
 /* Разогрев ------------------------------------*/
 
 .preheat {
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto;
@@ -591,7 +591,7 @@
 /* Похожие товары ------------------------------------*/
 
 .similar {
-    width: 80%;
+    width: 86%;
     height: auto;
     margin: 0 auto;
 }
@@ -608,7 +608,7 @@
 /* С этим берут ------------------------------------*/
 
 .together {
-    width: 80%;
+    width: 86%;
     height: auto;
     margin: 0 auto;
 }
@@ -643,6 +643,7 @@
     border-radius: 11px;
     position: relative;
     background-color: #fff;
+    overflow: hidden;
 }
 .product-slider-item-hidden {
     display: none;
@@ -694,6 +695,21 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+.product-slider-in-basket-btn-desk {
+    display: none;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 10px;
+}
+.product-slider-in-basket-btn-text-desk {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
 .product-slider-in-basket-btn-text {
     font-weight: 500;
@@ -1360,9 +1376,9 @@
         display: block;
     }
     .product-slider-description {
-        font-size: 15px;
-        line-height: 18px;
-        margin: 5px 15px;
+        font-size: 17px;
+        line-height: 20px;
+        margin: 10px 15px;
     }
     .product-slider-description br {
         display: none;
@@ -1370,7 +1386,18 @@
     .product-slider-info {
         margin: 5px 15px;
     }
+    .product-slider-gramm {
+        display: none;
+    }
+    .product-slider-in-basket-btn-desk {
+        display: block;
+        height: 25px;
+    }
+    .product-slider-in-basket-btn-text-desk {
+
+    }
     .product-slider-in-basket-btn {
+        display: none;
         height: 25px;
     }
 
@@ -1382,7 +1409,7 @@
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 1500px;
+        height: auto;
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
@@ -1393,13 +1420,25 @@
 
     .similar__title {
         text-align: left;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
     }
 
 
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
-
+    .together {
+        width: 90%;
+        margin-top: 80px;
+    }
+    .together__title {
+        text-align: left;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 
