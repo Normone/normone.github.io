@@ -956,6 +956,50 @@ ul.burger-menu__sub-list {
     letter-spacing: 0.02em;
     color: #fff;
 }
+.add-in-cart-btn-desk {
+    display: none;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 10px;
+}
+.add-in-cart-btn-desk.active {
+    background: #fff;
+    border: 1px solid #289648;
+}
+.add-in-cart-btn.active {
+    background: #fff;
+    border: 1px solid #289648;
+}
+
+.add-in-cart-btn-desk p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.product-qty {
+    display: none;
+    justify-content: space-between;
+}
+.product-qty-minus-btn {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 4px;
+}
+.product-qty-input {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.product-qty-plus-btn {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 4px;
+}
 
 .product-item .sticker {
     width: 26px;
@@ -2271,7 +2315,7 @@ ul.burger-menu__sub-list {
 
     
     .product-item {
-        width: 23%;
+        width: 24%;
         height: auto;
     }
     .product-item-hidden {
@@ -2287,6 +2331,33 @@ ul.burger-menu__sub-list {
     }
     .product-item .info {
         margin: 5px 15px;
+    }
+    .product-item .weight {
+        display: none;
+    }
+
+    .add-in-cart-btn-desk {
+        display: block;
+        height: 25px;
+    }
+    .add-in-cart-btn-desk p {
+        margin-top: 3px;
+    }
+    .add-in-cart-btn {
+        display: none;
+        height: 25px;
+    }
+    .product-qty {
+        justify-content: space-between;
+    }
+    .product-qty-input {
+        font-size: 19px;
+    }
+    .product-qty-minus-btn {
+        line-height: 22px;
+    }
+    .product-qty-plus-btn {
+        line-height: 22px;
     }
 
     .newest__title {

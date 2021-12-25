@@ -769,7 +769,7 @@
 }
 
 
-.product-slider-btn-back {
+.product-grid-btn-back {
     position: absolute;
     left: -25px;
     top: 100px;
@@ -778,7 +778,7 @@
     transform: rotate(0.5turn);
     display: none;
 }
-.product-slider-btn-forward {
+.product-grid-btn-forward {
     position: absolute;
     right: -25px;
     top: 100px;
