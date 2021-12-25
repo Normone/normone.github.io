@@ -10,8 +10,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var kva = 0;
 
-    burgerBtn.addEventListener('click', burger);
-    burgerCloseBtn.addEventListener('click', burger);
+    if (burgerBtn) {
+        burgerBtn.addEventListener('click', burger);
+        burgerCloseBtn.addEventListener('click', burger);
+    }
 
     function burger() {
         if (kva === 0) {

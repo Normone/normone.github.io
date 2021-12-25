@@ -829,7 +829,7 @@ ul.burger-menu__sub-list {
 .offer {
     width: 80%;
     height: auto; /* 355 */
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .offer__title {
@@ -898,6 +898,7 @@ ul.burger-menu__sub-list {
     border-radius: 11px;
     position: relative;
     background-color: #fff;
+    overflow: hidden;
 }
 .product-item-hidden {
     display: none;
@@ -1002,7 +1003,7 @@ ul.burger-menu__sub-list {
 .newest {
     width: 80%;
     /* height: 355px; */
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .newest__title {
@@ -1020,7 +1021,7 @@ ul.burger-menu__sub-list {
 .promotion {
     width: 80%;
     height: auto; /* 355 */
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
