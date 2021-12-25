@@ -733,7 +733,7 @@
 .product-qty-minus-btn {
     font-size: 18px;
     line-height: 21px;
-    margin: 0 3px;
+    padding: 0 4px;
 }
 .product-qty-input {
     width: 20px;
@@ -743,7 +743,7 @@
 .product-qty-plus-btn {
     font-size: 18px;
     line-height: 21px;
-    margin: 0 3px;
+    padding: 0 4px;
 }
 
 .product-item .sticker {

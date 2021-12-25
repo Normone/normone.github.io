@@ -25,9 +25,16 @@ document.addEventListener("DOMContentLoaded", function(){
             text.css('display', 'none')
             qtyBlock.css('display', 'flex');
             
+            
 
         });
     });
 
-
+    $('.product-qty-minus-btn').each(function (idx, el) {
+        $(el).click( function (e) {
+            debugger
+            const parent = $(this).parentNode;
+            $(this).closest("input").value -= 1;
+        });
+    });
 });
