@@ -1402,7 +1402,7 @@
 
     .product-item {
         width: 30%;
-        height: 330px;
+        height: auto;
     }
     .product-item-hidden {
         display: block;
@@ -1422,14 +1422,14 @@
         display: none;
     }
     .add-in-cart-btn-desk {
-        display: block;
+        display: none;
         height: 25px;
     }
     .add-in-cart-btn-desk p {
         margin-top: 3px;
     }
     .add-in-cart-btn {
-        display: none;
+        display: block;
         height: 25px;
     }
     .product-qty {

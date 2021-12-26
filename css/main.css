@@ -2337,14 +2337,14 @@ ul.burger-menu__sub-list {
     }
 
     .add-in-cart-btn-desk {
-        display: block;
+        display: none;
         height: 25px;
     }
     .add-in-cart-btn-desk p {
         margin-top: 3px;
     }
     .add-in-cart-btn {
-        display: none;
+        display: block;
         height: 25px;
     }
     .product-qty {
