@@ -183,7 +183,7 @@
 
 /* ---------------------------------------------*/
 
-.product-slider {
+.product-grid {
     width: 100%;
     max-width: 1100px;
     height: 100%;
@@ -199,7 +199,7 @@
     grid-column: 1/2;
     grid-row: 5/6;
 }
-.product-slider-item {
+.product-item {
     width: 140px;
     max-width: 200px;
     height: auto;
@@ -212,12 +212,12 @@
 }
 
 
-.product-slider-item-hidden {
+.product-item-hidden {
     display: none;
 }
-.product-slider-img {
+.product-grid-img {
 }
-.product-slider-description {
+.product-item .description {
     font-size: 12px;
     line-height: 15px;
     margin: 4px 6px 0px 6px;
@@ -231,30 +231,26 @@
 }
 
 
-.product-slider-info {
+.product-item .info {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 6px;
 }
-.product-slider-price {
+.product-item .price{
     display: flex;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 20px;
 }
-.product-slider-price-valute {
-    width: 12px;
-    margin: 2px;
-}
-.product-slider-gramm {
+.product-item .weight{
     font-weight: 500;
     font-size: 13px;
     line-height: 101%;
 }
 
 
-.product-slider-in-basket-btn {
+.add-in-cart-btn{
     width: 80%; /*125*/
     height: 22px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
@@ -263,7 +259,7 @@
     margin: 0 auto;
     margin-bottom: 10px;
 }
-.product-slider-in-basket-btn-text {
+.add-in-cart-btn p {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -272,7 +268,52 @@
     color: #fff;
 }
 
-.product-slider-new-icon {
+.add-in-cart-btn-desk {
+    display: none;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 10px;
+}
+.add-in-cart-btn-desk.active {
+    background: #fff;
+    border: 1px solid #289648;
+}
+.add-in-cart-btn.active {
+    background: #fff;
+    border: 1px solid #289648;
+}
+
+.add-in-cart-btn-desk p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.product-qty {
+    display: none;
+    justify-content: space-between;
+}
+.product-qty-minus-btn {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 4px;
+}
+.product-qty-input {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.product-qty-plus-btn {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 4px;
+}
+
+.product-item .sticker{
     width: 26px;
     height: 12px;
     position: absolute;
@@ -283,7 +324,7 @@
     border-radius: 3px;
     background-color: #fff;
 }
-.product-slider-new-text {
+.product-item .sticker p {
     font-family: Affect;
     font-style: normal;
     font-weight: bold;
@@ -295,7 +336,7 @@
 }
 
 
-.product-slider-btn-back {
+.product-grid-btn-back  {
     position: absolute;
     left: -25px;
     top: 100px;
@@ -304,7 +345,7 @@
     transform: rotate(0.5turn);
     display: none;
 }
-.product-slider-btn-forward {
+.product-grid-btn-forward {
     position: absolute;
     right: -25px;
     top: 100px;
@@ -384,7 +425,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 325px) {
 
-    .product-slider-item {
+    .product-item {
         height: auto;
         margin: 5px 2px ;
     }   
@@ -393,7 +434,7 @@
 
 @media screen and (min-width: 740px) and (max-width: 999px) {
 
-    .product-slider-item {
+    .product-item {
         width: 160px;
         height: auto;
         margin: 5px;
@@ -427,31 +468,41 @@
         grid-row: 3/5;
     }
 
-    .product-slider {
+    .product-grid {
         grid-column: 2/3;
         grid-row: 4/6;
     }
 
-    .product-slider-item {
+    .product-item {
         width: 23%;
         height: auto;
         margin: 0 7px 15px 7px;
     }
-    .product-slider-item-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-item .description {
         font-size: 15px;
         line-height: 18px;
         margin: 5px 15px;
     }
-    .product-slider-description br {
+    .product-item .description br {
         display: none;
     }
-    .product-slider-info {
+    .product-item .info {
         margin: 5px 15px;
     }
+    .product-item .weight {
+        /* display: none; */
+    }
 
+    /* .add-in-cart-btn {
+        display: none;
+    }
+
+    .add-in-cart-btn-desk {
+        display: block;
+    } */
 
     .clue {
         margin-top: 130px;
@@ -490,31 +541,32 @@
 
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+    
+}
 
 @media (min-width: 1200px) and (max-width: 1300px) {
 
-    .product-slider-item {
+    .product-item {
 
     }
-    .product-slider-item-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-item .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-slider-info {
+    .product-item .info {
         margin: 15px 15px;
     }
-    .product-slider-price {
-        font-size: 28px;
+    .product-item .price{
+        font-size: 23px;
         line-height: 20px;
     }
-    .product-slider-price-valute {
-        width: 16px;
-        height: 20px;
-        margin: 0 0 0 4px;
-    }
+    
+    
 
 }
 
@@ -524,28 +576,24 @@
 
 @media (min-width: 1300px) and (max-width: 1399px) {
 
-    .product-slider-item {
+    .product-item {
 
     }
-    .product-slider-item-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-item .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-slider-info {
+    .product-item .info {
         margin: 15px 15px;
     }
-    .product-slider-price {
-        font-size: 28px;
+    .product-item .price{
+        font-size: 23px;
         line-height: 20px;
     }
-    .product-slider-price-valute {
-        width: 16px;
-        height: 20px;
-        margin: 0 0 0 4px;
-    }
+    
 
 
 }
@@ -553,28 +601,24 @@
 
 @media (min-width: 1400px) {
 
-    .product-slider-item {
+    .product-item {
 
     }
-    .product-slider-item-hidden {
+    .product-item-hidden {
         display: block;
     }
-    .product-slider-description {
+    .product-item .description {
         font-size: 17px;
         line-height: 20px;
     }
-    .product-slider-info {
+    .product-item .info {
         margin: 15px 15px;
     }
-    .product-slider-price {
-        font-size: 28px;
+    .product-item .price{
+        font-size: 23px;
         line-height: 20px;
     }
-    .product-slider-price-valute {
-        width: 16px;
-        height: 20px;
-        margin: 0 0 0 4px;
-    }
+    
 
 
 }
