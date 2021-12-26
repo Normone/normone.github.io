@@ -955,6 +955,7 @@ ul.burger-menu__sub-list {
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    padding-top: 1px;
 }
 .add-in-cart-btn-desk {
     display: none;
@@ -2340,8 +2341,8 @@ ul.burger-menu__sub-list {
         display: none;
         height: 25px;
     }
-    .add-in-cart-btn-desk p {
-        margin-top: 3px;
+    .add-in-cart-btn p {
+        padding-top: 3px;
     }
     .add-in-cart-btn {
         display: block;

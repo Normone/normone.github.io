@@ -266,6 +266,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    padding-top: 1px;
 }
 
 .add-in-cart-btn-desk {
@@ -494,6 +495,9 @@
     }
     .product-item .weight {
         /* display: none; */
+    }
+    .add-in-cart-btn p {
+        padding-top: 3px;
     }
 
     /* .add-in-cart-btn {

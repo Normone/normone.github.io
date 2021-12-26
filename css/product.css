@@ -699,6 +699,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    padding-top: 2px;
 }
 
 .add-in-cart-btn-desk {
@@ -1431,6 +1432,9 @@
     .add-in-cart-btn {
         display: block;
         height: 25px;
+    }
+    .add-in-cart-btn p {
+        padding-top: 3px;
     }
     .product-qty {
         justify-content: space-between;
