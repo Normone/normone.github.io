@@ -311,7 +311,7 @@
 
 .product-info__in-cart {
     width: 80%;
-    height: 28px;
+    height: 28px!important;
     margin: 0 auto;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
     border-radius: 16px;
@@ -321,7 +321,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    padding-top: 3px;
+    padding-top: 4px!important;
     color: #FFFFFF;
 }
 
@@ -458,6 +458,9 @@
 }
 .product-info__idk-btns-item {
     display: flex;
+}
+.product-info__idk-btns-item-desk {
+    display: none;
 }
 .product-info__idk-btns-item-icon {
 }
@@ -685,7 +688,7 @@
 
 .add-in-cart-btn {
     width: 80%; /*125*/
-    height: 22px;
+    height: 21px;
     background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
     border-radius: 21px;
     display: block;
@@ -700,6 +703,15 @@
     letter-spacing: 0.02em;
     color: #fff;
     padding-top: 2px;
+}
+
+.product-info__in-cart > .product-qty > div {
+    font-size: 25px;
+    padding-top: 2px;
+}
+
+.product-info__in-cart > .product-qty > input {
+    font-size: 18px;
 }
 
 .add-in-cart-btn-desk {
@@ -737,7 +749,7 @@
     padding: 0 4px;
 }
 .product-qty-input {
-    width: 24px;
+    width: 50px;
     text-align: center;
     font-size: 16px;
 }
@@ -1219,10 +1231,10 @@
         border-radius: 20px;
         font-size: 18px;
         line-height: 101%;
-    }
-    .product-info__in-cart {
-        width: 90%;
     } */
+    .product-info__in-cart {
+        width: 65%;
+    }
 
     
     /* ---------------------------------------------*/
@@ -1326,6 +1338,12 @@
     .product-info__idk-btns {
         display: block;
     }
+    .product-info__idk-btns-item {
+        display: none;
+    }
+    .product-info__idk-btns-item-desk {
+        display: flex;
+    }
     /* ---------------------------------------------*/
     /* хрен-его-знает-кнопки ------------------------------------*/
     
@@ -1424,29 +1442,26 @@
     }
     .add-in-cart-btn-desk {
         display: none;
-        height: 25px;
+        height: 21px;
     }
     .add-in-cart-btn-desk p {
         margin-top: 3px;
     }
     .add-in-cart-btn {
         display: block;
-        height: 25px;
+        height: 21px;
     }
     .add-in-cart-btn p {
-        padding-top: 3px;
+        padding-top: 1px;
     }
     .product-qty {
         justify-content: space-between;
     }
     .product-qty-input {
-        font-size: 19px;
     }
     .product-qty-minus-btn {
-        line-height: 22px;
     }
     .product-qty-plus-btn {
-        line-height: 22px;
     }
 
 

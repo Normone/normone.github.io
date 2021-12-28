@@ -2383,6 +2383,7 @@ ul.burger-menu__sub-list {
         margin-top: 100px;
     }
     .about-and-review__toggle {
+        
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
@@ -2394,6 +2395,7 @@ ul.burger-menu__sub-list {
         text-align: center;
         text-transform: uppercase;
         margin-right: 9px;
+        cursor: pointer;
     }
     .about-and-review__toggle-review {
         font-weight: 600;
@@ -2403,6 +2405,7 @@ ul.burger-menu__sub-list {
         text-transform: uppercase;
         margin-left: 9px;
         color: #00000066;
+        cursor: pointer;
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
