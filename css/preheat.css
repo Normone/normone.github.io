@@ -247,27 +247,21 @@
     /* -------------------------------------- */
 
     .clue {
-        display: block;
+        margin-top: 130px;
         max-width: 1100px;
-        margin: 90px auto 0 auto;
-        height: 173px;
+        margin: 0 auto;
     }
     .clue-hr-m {
-        width: 70%;
-        border-color: #FFFFFF;
-        opacity: 0.7;
-        margin: 15px 0;
+        display: none;
     }
     .clue-hr-d {
-        display: none;
-        width: 60%;
-        opacity: 0.7;
+        display: block;
     }
+    
     .clue__block {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: space-evenly;
+        flex-direction: row;
         margin: 25px 0;
     }
     .clue__item {
@@ -275,14 +269,15 @@
         align-items: center;
     }
     .clue__item-img {
-        display: none;
+        display: block;
     }
     .clue__item-link {
-        font-weight: 600;
-        font-size: 19px;
-        line-height: 23px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #EF861C;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        text-transform: none;
+        color: #FFFFFF;
+        margin-left: 15px;
     }
 }
