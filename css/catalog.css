@@ -72,6 +72,13 @@ body {
     grid-column: 1/2;
     grid-row: 3/4;
 }
+.catalog-filter-lists {
+    display: flex;
+}
+.catalog-filter-list:first-child {
+    display: none;
+    margin-right: 30px;
+}
 .catalog-filter-list {
     display: block;
     width: 190px;
@@ -459,14 +466,17 @@ body {
     }
 
     .catalog-title {
+        margin-bottom: 30px;
         grid-column: 1/3;
         grid-row: 1/2;
     }
     .catalog-category-list {
+        display: none;
         grid-column: 2/3;
         grid-row: 2/3;
     }
     .catalog-filter {
+        align-items: flex-start;
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -479,6 +489,10 @@ body {
     .product-grid {
         grid-column: 2/3;
         grid-row: 4/6;
+    }
+
+    .catalog-filter-list:first-child {
+        display: block;
     }
 
     .product-item {
