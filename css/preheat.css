@@ -6,7 +6,7 @@
     
 }
 .container {
-    width: 90%;
+    width: 84%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -14,12 +14,12 @@
 /* ---------------------------------------------*/
 
 .page-path {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 16px;
     text-align: left;
 }
 .page-path__link {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 15px;
     letter-spacing: 0em;
 }
@@ -36,21 +36,22 @@
 }
 
 .preheat {
-    width: 310px;
+    width: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 310px;
+    grid-template-columns: 330px;
     grid-template-rows: auto auto auto auto;
 }
 .preheat__title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 101%;
-    margin: 20px 0px 24px 0px;
+    letter-spacing: -0.021em;
+    margin: 27px 0px 15px 0px;
 }
 
 .preheat__block-1 {
-
+    margin-top: 1px;
 }
 .preheat__block-2 {
 
@@ -69,16 +70,16 @@
 .preheat__sub-title-icon {
 }
 .preheat__sub-title-icon svg {
-    height: 40px;
+    height: 50px;
 }
 .preheat__sub-title-text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 101%;
-    margin-left: 5px;
+    margin-left: 4px;
 }
 .preheat__content {
-    margin-top: 12px;
+    margin-top: 8px;
 }
 .preheat__content-box {
     display: flex;
@@ -86,18 +87,18 @@
 .preheat__content-number {
     font-size: 14px;
     line-height: 101%;
-    padding-right: 5px;
+    padding-right: 4px;
 }
 .preheat__content-text {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 101%;
 }
 .preheat__content-time {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 101%;
     color: #289648;
-    margin: 5px 0px 5px 25px;
+    margin: 6px 0px 5px 13px;
 }
 .preheat__alert {
     display: flex;
