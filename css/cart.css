@@ -1,0 +1,182 @@
+* {font-family: Montserrat;}
+
+/* ---------------------------------------------*/
+
+.content {
+    
+}
+.container {
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------*/
+
+.page-path {
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+.page-path__link {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+.page-path__divider {
+}
+
+/* ---------------------------------------------*/
+
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+    margin-top: 10px;
+}
+
+
+
+
+.stage {
+    display: flex;
+}
+.stage > .item {
+    height: 24px;
+    margin-right: 8px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.stage > .item.active {
+    border: 1px solid #289648;
+}
+.stage > .item > p {
+    margin-top: 6px;
+}
+.stage > .item > p > span {
+}
+.stage > .item.active > p {
+}
+.stage > .item.active > p > span {
+}
+
+
+
+.cart {
+}
+.cart > .title {
+}
+.cart > .product-list {
+}
+.cart > .product-list > .item {
+}
+.cart > .product-list > .item > .icon {
+}
+.cart > .product-list > .item > .info {
+}
+.cart > .product-list > .item > .info > .block-1 {
+}
+.cart > .product-list > .item > .info > .block-1 > .name {
+}
+.cart > .product-list > .item > .info > .block-1 > .name > p {
+
+}
+.cart > .product-list > .item > .info > .block-1 > .table {
+}
+.cart > .product-list > .item > .info > .block-1 > .table > .text1 {
+
+}
+.cart > .product-list > .item > .info > .block-1 > .table > .text2 {
+
+}
+
+.cart > .product-list > .item > .info > .block-2 {
+}
+.cart > .product-list > .item > .info > .block-2 > .price {
+}
+.cart > .product-list > .item > .info > .block-2 > .amount {
+}
+.cart > .product-list > .item > .info > .block-2 > .amount > .pluse {
+}
+.cart > .product-list > .item > .info > .block-2 > .amount > .minus {
+}
+.cart > .product-list > .item > .info > .block-2 > .amount > input {
+
+}
+
+
+
+.block-info-m {
+}
+.block-info-m > .total {
+}
+.block-info-m > .total > div {
+
+}
+.block-info-m > .total > div > p {
+
+}
+.block-info-m > .total > div > div {
+
+}
+.block-info-m > .total > div > div > span {
+    
+}
+.block-info-m > .total > div > div > p {
+
+}
+.block-info-m > .total > .price {
+
+}
+.block-info-m > .total > .promo {
+}
+
+.block-info-m > .table {
+
+}
+.block-info-m > .table > .item {
+
+}
+.block-info-m > .table > .item > .name {
+
+}
+.block-info-m > .table > .item > .value {
+}
+.block-info-m > .promo {
+
+}
+.block-info-m > .promo > input {
+
+}
+.block-info-m > .promo > .btn {
+
+}
+
+.block-info-m > .delNpay {
+}
+.block-info-m > .delNpay > .item {
+
+}
+.block-info-m > .delNpay > .item > .title {
+
+}
+.block-info-m > .delNpay > .item > .value {
+
+}
+.block-info-m > .delNpay > .item > .value > p {
+
+}
+.block-info-m > .pay-btn {
+}
+.block-info-m > .checkboxs {
+}
+.block-info-m > .checkboxs > .item {
+
+}
+.block-info-m > .checkboxs > .item > input {
+
+}
+.block-info-m > .checkboxs > .item > p {
+
+}
