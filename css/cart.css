@@ -168,6 +168,8 @@
 .cart > .product-list > .item > .info .pluse  p {
     margin-top: 3px;
     text-align: center;
+    font-size: 17px;
+    font-weight: 500;
 }
 .cart > .product-list > .item > .info .minus {
     width: 30px;
@@ -179,6 +181,8 @@
 .cart > .product-list > .item > .info .minus p {
     margin-top: 3px;
     text-align: center;
+    font-size: 17px;
+    font-weight: 500;
 }
 .cart > .product-list > .item > .info .amount input {
     width: 44px;
