@@ -138,9 +138,19 @@
     font-size: 14px;
     line-height: 101%;
     color: red;
+    
 }
 .cart > .product-list > .item > .info > .block-2 > .old-price .value {
-    
+    position: relative;
+}
+.cart > .product-list > .item > .info > .block-2 > .old-price .value:before {
+    border-bottom: 2px solid red;
+    position: absolute;
+    content: "";
+    width: 120%;
+    height: 50%;
+    right: 0;
+    transform: rotate(-16deg);
 }
 .cart > .product-list > .item > .info > .block-2 > .old-price .valute {
     padding-left: 4px;
@@ -232,11 +242,24 @@
     font-size: 18px;
     line-height: 101%;
     color: #EA0303;
+    position: relative;
+}
+
+.block-info-m > .block1 > .total > .price span:before {
+    border-bottom: 2px solid red;
+    position: absolute;
+    content: "";
+    width: 120%;
+    height: 50%;
+    top: -20px;
+    right: 0;
+    transform: rotate(-16deg);
 }
 .block-info-m > .block1 > .total > .price p {
     font-weight: 500;
     font-size: 18px;
     padding-left: 4px;
+    color: #EA0303;
 }
 .block-info-m > .block1 > .total .promo {
     font-size: 13px;
