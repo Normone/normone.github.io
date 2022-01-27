@@ -665,6 +665,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 101%;
+    margin-top: 2px;
 }
 .delivery-method .description {
     margin-bottom: 20px;
@@ -679,10 +680,138 @@
 
 /* -----------------=-------------------- */
 
+.payment-method {
+    max-width: 1200px;
+}
+.payment-method .title {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.payment-method .sub-title {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 101%;
+}
+.payment-method .options {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+.payment-method .option {
+    width: 100%;
+    margin-top: 45px;
+}
+.payment-method .option img {
+    height: 75px;
+    margin: 0 auto;
+}
+.payment-method .checkbox {
+    display: flex;
+    margin-top: 6px;
+}
+.payment-method .checkbox input {
+    margin-right: 6px;
+    all: revert;
+}
+.payment-method .checkbox label {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 101%;
+    margin-top: 2px;
+}
+.payment-method .bonus {
+    display: flex;
+    margin-top: 50px;
+}
+.payment-method .bonus input {
+    all: revert;
+}
+.payment-method .bonus label {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 101%;
+    margin-top: 2px;
+}
+.payment-method .bonus span {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 101%;
+    color: orange;
+}
+.payment-method .pay-btn {
+    width: 160px;
+    height: 32px;
+    margin: 40px auto 0 auto;
+    background: linear-gradient(0deg, #289648, #289648), #FFFFFF;
+    border-radius: 16px;
+}
+.payment-method .pay-btn p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 101%;
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+}
 
+/* -----------------=-------------------- */
+
+.endpoint {
+    max-width: 1200px;
+}
+.endpoint .title {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.endpoint > p {
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 20px;
+}
+.endpoint > p > b {
+    font-weight: 500;
+}
+.endpoint .back-to-shopping {
+    display: flex;
+    margin-top: 36px;
+}
+.endpoint .back-to-shopping svg {
+    height: 10px;
+    margin-right: 4px;
+}
+.endpoint .back-to-shopping p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 101%;
+    /* or 15px */
+
+
+    color: #FFFFFF;
+}
 
 
 /* -----------------=-------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -852,14 +981,59 @@
     .delivery-method .checkbox label {
         font-size: 17px;
     }
+    .delivery-method .price {
+        margin-left: 20px;
+    }
 
+    /* -----------------=-------------------- */
+
+    .payment-method .title {
+        margin-top: 60px;
+        font-size: 26px;
+    }
+    .payment-method .sub-title {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .payment-method .options {
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: auto;
+        grid-column-gap: 1%;
+    }
+    .payment-method .option img {
+        height: 90px;
+    }
+    .payment-method .checkbox {
+        margin-top: 12px;
+    }
+    .payment-method .checkbox label {
+        font-size: 17px;
+    }
 
     /* -----------------=-------------------- */
 
-
-
-
-    /* -----------------=-------------------- */
+    .endpoint .title {
+        margin-top: 60px;
+        font-size: 26px;
+    }
+    .endpoint > p {
+        font-size: 15px;
+        line-height: 15px;
+        color: #000000;
+        margin-top: 30px;
+    }
+    .endpoint .back-to-shopping {
+        margin-top: 75px;
+    }
+    .endpoint .back-to-shopping {
+        margin-right: 10px;
+    }
+    .endpoint .back-to-shopping p {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 101%;
+        color: #000000;
+    }
 }
 
 
