@@ -546,11 +546,136 @@
 
 /* -----------------=-------------------- */
 
+.ordering {
+    max-width: 1200px;
+}
+.ordering .title {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.ordering .sub-title {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 101%;
+}
+.ordering .list {
 
+}
+.ordering .item {
+}
+.ordering .item .sub-title {
+    font-size: 15px;
+    line-height: 183%;
+    color: #000000b3;
+}
+.ordering .item span {
+    color: red;
+}
+.ordering .item input {
+    width: 100%;
+    height: 28px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    margin-top: 6px;
+}
+.ordering .comment {
+    margin-top: 12px;
+}
+.ordering .comment .sub-title {
+    font-size: 15px;
+    line-height: 183%;
+    color: #000000b3;
+}
+.ordering .comment input {
+    width: 100%;
+    height: 71px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+}
 
 /* -----------------=-------------------- */
 
+.delivery-method {
+    max-width: 1200px;
+    margin-bottom: 40px;
 
+}
+.delivery-method .title {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.delivery-method .sub-title {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 101%;
+}
+.delivery-method .whereabouts {
+    display: flex;
+    margin-top: 12px;
+}
+.delivery-method .whereabouts p {
+    font-size: 14px;
+    line-height: 183%;
+    color: #000000b3;
+    margin-right: 10px;
+}
+.delivery-method .whereabouts select {
+    width: 50%;
+    max-width: 170px;
+    font-size: 15px;
+    line-height: 183%;
+    border: 0.8px solid #000000;
+    box-sizing: border-box;
+    border-radius: 46px;
+}
+.delivery-method .options {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+.delivery-method .option {
+    width: 100%;
+    margin-top: 45px;
+}
+.delivery-method .option img {
+    height: 75px;
+    margin: 0 auto;
+}
+.delivery-method .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+.delivery-method .checkbox {
+    display: flex;
+    margin-top: 6px;
+}
+.delivery-method .checkbox input {
+    margin-right: 6px;
+    all: revert;
+}
+.delivery-method .checkbox label {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 101%;
+}
+.delivery-method .description {
+    margin-bottom: 20px;
+}
+.delivery-method .price {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 101%;
+    color: #289648;
+    text-transform: uppercase;
+}
 
 /* -----------------=-------------------- */
 
@@ -670,9 +795,71 @@
 
     /* -----------------=-------------------- */
 
+    .ordering .title {
+        margin-top: 60px;
+        font-size: 26px;
+    }
+    .ordering .sub-title {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .ordering .list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ordering .item {
+        width: 23%;
+    }
+    .ordering .item .sub-title {
+        font-size: 14px;
+        line-height: 183%;
+    }
+    .ordering .comment input {
+        width: 410px;
+        height: 90px;
+    }
+    .ordering .comment .sub-title {
+        font-size: 14px;
+        line-height: 183%;
+    }
+
+
+    /* -----------------=-------------------- */
+
+
+    .delivery-method .title {
+        margin-top: 60px;
+        font-size: 26px;
+    }
+    .delivery-method .sub-title {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .delivery-method .whereabouts {
+        margin-top: 20px;
+    }
+    .delivery-method .options {
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: auto;
+        grid-column-gap: 1%;
+    }
+    .delivery-method .option img {
+        height: 90px;
+    }
+    .delivery-method .checkbox {
+        margin-top: 16px;
+    }
+    .delivery-method .checkbox label {
+        font-size: 17px;
+    }
+
+
+    /* -----------------=-------------------- */
 
 
 
+
+    /* -----------------=-------------------- */
 }
 
 

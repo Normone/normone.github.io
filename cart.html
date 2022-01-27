@@ -363,21 +363,30 @@
             
             <div class="ordering">
                 <h1 class="title">
-                    1. Ваши данные
+                    Оформление заказа
                 </h1>
+                <h2 class="sub-title">1. Ваши данные</h2>
                 <form action="#">
-                    <div>
-                    <h2 class="sub-title">Имя<span>*</span></h2>
-                    <input type="text">
-                    <h2 class="sub-title">Фамилия<span>*</span></h2>
-                    <input type="text">
-                    <h2 class="sub-title">Телефон<span>*</span></h2>
-                    <input type="text">
-                    <h2 class="sub-title">E-mail</h2>
-                    <input type="text">
+                    <div class="list">
+                        <div class="item">
+                            <h3 class="sub-title">Имя<span>*</span></h3>
+                            <input type="text">
+                        </div>
+                        <div class="item">
+                            <h3 class="sub-title">Фамилия<span>*</span></h3>
+                            <input type="text">
+                        </div>
+                        <div class="item">
+                            <h3 class="sub-title">Телефон<span>*</span></h3>
+                            <input type="text">
+                        </div>
+                        <div class="item">
+                            <h3 class="sub-title">E-mail<span>*</span></h3>
+                            <input type="text">
+                        </div>
                     </div>
                     <div class="comment">
-                        <h2 class="sub-title">Комментарий к заказу</h2>
+                        <h3 class="sub-title">Комментарий к заказу</h3>
                         <input type="text">
                     </div>
                 </form>
@@ -385,7 +394,8 @@
             </div>
 
             <div class="delivery-method">
-                <h1 class="title">2. Способ доставки</h1>
+                <h1 class="title">Доставка</h1>
+                <h2 class="sub-title">2. Способ доставки</h2>
                 <div class="whereabouts">
                     <p>Населённый пункт</p>
                     <select>
@@ -395,37 +405,45 @@
                 </div>
                 <div class="options">
                     <div class="option">
-                        <img src="#" alt="#">
-                        <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Самовывоз</label>
+                        <img src="./img/cart-deli-meth-1.svg" alt="#">
+                        <div class="text">
+                            <div class="checkbox">
+                                <input type="checkbox" name="#" id="#">
+                                <label for="#">Самовывоз</label>
+                            </div>
+                            <p class="description">ул. Пушкина, д. Колотушкина</p>
+                            <p class="price">Бесплатно</p>
                         </div>
-                        <p class="description">ул. Пушкина, д. Колотушкина</p>
-                        <p class="price">Бесплатно</p>
                     </div>
                     <div class="option">
-                        <img src="#" alt="#">
-                        <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Пункты выдачи СДЭК</label>
+                        <img src="./img/cart-deli-meth-2.svg" alt="#">
+                        <div class="text">
+                            <div class="checkbox">
+                                <input type="checkbox" name="#" id="#">
+                                <label for="#">Пункты выдачи СДЭК</label>
+                            </div>
+                            <p class="price">От 150 ₽</p>
                         </div>
-                        <p class="price">От 150 ₽</p>
                     </div>
                     <div class="option">
-                        <img src="#" alt="#">
-                        <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Курьер СДЭК</label>
+                        <img src="./img/cart-deli-meth-3.svg" alt="#">
+                        <div class="text">
+                            <div class="checkbox">
+                                <input type="checkbox" name="#" id="#">
+                                <label for="#">Курьер СДЭК</label>
+                            </div>
+                            <p class="price">От 250 ₽</p>
                         </div>
-                        <p class="price">От 250 ₽</p>
                     </div>
                     <div class="option">
-                        <img src="#" alt="#">
-                        <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Почта России</label>
+                        <img src="./img/cart-deli-meth-4.svg" alt="#">
+                        <div class="text">
+                            <div class="checkbox">
+                                <input type="checkbox" name="#" id="#">
+                                <label for="#">Почта России</label>
+                            </div>
+                            <p class="price">От 350 ₽</p>
                         </div>
-                        <p class="price">От 350 ₽</p>
                     </div>
                 </div>
             </div>
