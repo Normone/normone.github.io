@@ -19,11 +19,17 @@
     text-align: left;
 }
 .page-path__link {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
 }
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
 .page-path__divider {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
 }
 
 /* ---------------------------------------------*/
@@ -225,6 +231,15 @@
     .content {
         background: url(../img/map-bg-desk.png) bottom no-repeat;
     }
+
+    .page-path__link {
+        font-size: 15px;
+    }
+    .page-path__divider {
+        font-size: 15px;
+    }
+
+    /* --------------------------- */
 
     .title {
         font-size: 27px;

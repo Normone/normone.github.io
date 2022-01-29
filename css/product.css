@@ -16,7 +16,7 @@
 }
 
 .page-path__link {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
 }
@@ -24,7 +24,7 @@
     text-decoration-line: underline;
 }
 .page-path__divider {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
 }
 
@@ -1068,11 +1068,11 @@
     }
     
     .page-path__link {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .page-path__divider {
-        font-size: 13px;
+        font-size: 15px;
     }
 /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
 /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */

@@ -23,11 +23,17 @@ body {
     text-align: center;
 }
 .page-path__link {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
 }
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
 .page-path__divider {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
 }
 
 /* ---------------------------------------------*/
@@ -459,6 +465,15 @@ body {
 
 
 @media (min-width: 1000px) {
+
+    .page-path__link {
+        font-size: 15px;
+    }
+    .page-path__divider {
+        font-size: 15px;
+    }
+
+    /* --------------------------- */
 
     .catalog {
         grid-template-columns: 1fr 4fr;

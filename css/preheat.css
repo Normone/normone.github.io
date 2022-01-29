@@ -19,11 +19,17 @@
     text-align: left;
 }
 .page-path__link {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
 }
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
 .page-path__divider {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
 }
 
 /* ---------------------------------------------*/
@@ -180,6 +186,15 @@
 
 
 @media screen and (min-width: 1000px) {
+
+    .page-path__link {
+        font-size: 15px;
+    }
+    .page-path__divider {
+        font-size: 15px;
+    }
+
+    /* --------------------------- */
 
     .title {
         font-size: 26px;

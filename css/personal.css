@@ -19,11 +19,17 @@
     text-align: left;
 }
 .page-path__link {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
 }
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
 .page-path__divider {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
 }
 
 /* ---------------------------------------------*/
@@ -34,7 +40,7 @@
     width: 90%;
     margin: 0 auto;
 }
-.main-info > .title p {
+.main-info > .title h1 {
     margin-top: 22px;
     font-weight: 600;
     font-size: 20px;
@@ -80,8 +86,9 @@
 .main-info .personal .title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.main-info .personal .title p {
+.main-info .personal .title p:first-child {
     font-size: 15px;
     line-height: 183%;
     color: #000000b3;
@@ -212,6 +219,25 @@
 
 @media screen and (min-width: 1000px) {
 
+    .page-path {
+        width: 94%;
+    }
+    .page-path__link {
+        font-size: 15px;
+    }
+    .page-path__divider {
+        font-size: 15px;
+    }
+
+    /* --------------------------- */
+
+    .main-info > .title {
+        width: 94%;
+    }
+    .main-info > .title h1 {
+        font-size: 26px;
+    }
+
     .main-info > div {
         display: flex;
     }
@@ -220,9 +246,30 @@
         max-width: 440px;
         margin-right: 5%;
     }
+    .main-info .name img {
+        height: 58px;
+    }
+    .main-info .icon {
+        height: 42px;
+    }
+
     .main-info .bonus {
         width: 55%;
+        margin: 45px;
     }
+    .main-info .bonus .title {
+        font-size: 23px;
+    }
+    .main-info .sub-title {
+        font-size: 20px;
+    }
+    .main-info .info {
+        font-size: 17px;
+    }
+    .main-info .bonus .notice {
+        font-size: 15px;
+    }
+
 
     /* -----------------------------*/
 
