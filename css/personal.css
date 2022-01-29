@@ -1,0 +1,233 @@
+* {font-family: Montserrat;}
+
+/* ---------------------------------------------*/
+
+.content {
+    
+}
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------*/
+
+.page-path {
+    width: 90%;
+    margin: 15px auto 16px auto;
+    text-align: left;
+}
+.page-path__link {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+.page-path__divider {
+}
+
+/* ---------------------------------------------*/
+
+.main-info {
+}
+.main-info > .title {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-info > .title p {
+    margin-top: 22px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.main-info > div {
+    margin-top: 16px;
+}
+.main-info .personal {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 11px;
+}
+.main-info .personal > div {
+    width: 90%;
+    margin: 13px auto;
+}
+.main-info .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-info .name p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 101%;
+}
+.main-info .name img {
+    height: 32px;
+}
+.main-info .personal .item {
+    margin: 6px 0;
+}
+.main-info .personal .item input {
+    /* display: none; */
+    width: 100%;
+    height: 28px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.main-info .personal .title {
+    display: flex;
+    justify-content: space-between;
+}
+.main-info .personal .title p {
+    font-size: 15px;
+    line-height: 183%;
+    color: #000000b3;
+}
+.main-info .personal .change {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+}
+.main-info .personal .notice {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 90.5%;
+    color: #000000b3;
+    margin-top: 6px;
+}
+.main-info .sex {
+    display: flex;
+    margin-top: 10px;
+}
+.main-info .sex > div {
+    display: flex;
+}
+.main-info .sex p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000b3;
+}
+.main-info .sex input {
+    all: revert;
+}
+.main-info .other {
+}
+.main-info .col {
+    display: flex;
+    margin-bottom: 8px;
+}
+.main-info .other .title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000b3;
+    margin-right: 26px;
+}
+.main-info .other .title b {
+    font-weight: bold;
+}
+.main-info .other .value {
+    font-size: 16px;
+    line-height: 101%;
+}
+.main-info .social {
+    margin-top: 8px;
+    display: flex;
+}
+.main-info .icon {
+    height: 30px;
+    margin-right: 6px;
+}
+
+.orange {
+    color: orange;
+}
+
+.main-info .bonus {
+    width: 90%;
+    margin: 26px auto 0 auto;
+}
+.main-info .bonus .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+.main-info .sub-title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 101%;
+    margin-top: 10px;
+}
+.main-info .info {
+    font-size: 15px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    margin-top: 16px;
+}
+.main-info .bonus .notice {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 117%;
+    margin-top: 32px;
+}
+
+
+
+/* ---------------------------------------------*/
+
+
+
+
+
+/* ---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .main-info > div {
+        display: flex;
+    }
+    .main-info .personal {
+        width: 35%;
+        max-width: 440px;
+        margin-right: 5%;
+    }
+    .main-info .bonus {
+        width: 55%;
+    }
+
+    /* -----------------------------*/
+
+
+
+}
+
+
