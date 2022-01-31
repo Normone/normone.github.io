@@ -39,13 +39,12 @@
 .main-info > .title {
     width: 90%;
     margin: 0 auto;
-}
-.main-info > .title h1 {
     margin-top: 22px;
     font-weight: 600;
     font-size: 20px;
     line-height: 101%;
 }
+
 .main-info > div {
     margin-top: 16px;
 }
@@ -184,14 +183,177 @@
 
 /* ---------------------------------------------*/
 
+.orders {
+    margin-top: 40px;
+}
+.orders .title {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 101%;
+}
+.orders > div {
+    margin-top: 12px;
+}
+
+.orders .current {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 11px;
+    width: 100%;
+}
+.orders .sub-title {
+    width: 90%;
+    margin: 0 auto;
+}
+.orders .sub-title h2 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000b3;
+    margin-top: 6px;
+}
+
+.orders .item {
+    margin: 10px 0 10px 0
+}
+.orders .status {
+    display: flex;
+    align-items: center;
+    margin: 12px 5%;
+}
+.orders .date {
+    font-size: 11px;
+    line-height: 183%;
+    color: #000000b3;
+}
+.orders .time {
+
+}
+.orders .state {
+    font-size: 13px;
+    line-height: 183%;
+    margin-left: 10px;
+}
 
 
+.orders .product {
+    width: 90%;
+    display: flex;
+    margin: 10px auto;
+    
+}
+.orders .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+.orders .info {
+    width: 100%;
+}
+.orders .block-1 {
+    margin-top: 6px;
+}
+.orders .name p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 101%;
+}
+.orders .table {
+    margin-top: 10px;
+}
+.orders .table td {
+    padding-right: 6px;
+    font-size: 13px;
+    line-height: 101%;
+}
+.orders .text1 td {
+    padding-right: 6px;
+    font-size: 13px;
+    line-height: 101%;
+    color: #000000b3;
+}
+.orders .text2 td {
+    font-size: 13px;
+}
+
+.orders .last {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 11px;
+    width: 100%;
+    margin-top: 12px;
+}
+.orders .nothink {
+    font-size: 15px;
+    line-height: 183%;
+    color: #000000b3;
+    margin: 10px 5%;
+}
 
 
 /* ---------------------------------------------*/
 
+.reviews {
+    margin-top: 20px;
+}
+.reviews .title {
+    width: 90%;
+    margin: 10px auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 101%;
+}
+.reviews > div {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 11px;
+    width: 100%;
+}
+.reviews .item {
+    margin: 10px 0 10px 0;
+}
+.reviews .product {
+    width: 90%;
+    display: flex;
+    margin: 10px auto;
+}
+.reviews .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+.reviews .info {
+    width: 100%;
+}
+.reviews .block-1 {
+    margin-top: 6px;
+}
+.reviews .name p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 101%;
+}
+.reviews .review-btn {
+    width: 140px;
+    height: 22px;
+    background: linear-gradient(0deg, #289648, #289648);
+    border: 1px solid #289648;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-top: 12px;
+}
+.reviews .review-btn p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
+/* ---------------------------------------------*/
 
 
 
@@ -273,7 +435,71 @@
 
     /* -----------------------------*/
 
+    .orders > div {
+        display: flex;
+        width: 94%;
+        margin: 0 auto;
+    }
+    .orders .title {
+        width: 94%;
+        font-size: 26px;
+        margin: 26px auto;
+    }
+    .orders .current {
+        width: 40%;
+        border: none;
+    }
+    .orders .sub-title {
+        width: auto;
+    }
+    .orders .sub-title h2 {
+        font-size: 20px;
+    }
+    .orders .status {
+        margin: 12px 0;
+    }
+    .orders .date {
+        font-size: 13px;
+    }
+    .orders .state {
+        font-size: 15px;
+    }
+    .orders .product {
+        width: auto;
+    }
+    .orders .name p {
+        font-size: 15px;
+    }
+    .orders .text2 td {
+        font-size: 16px;
+    }
 
+    .orders .last {
+        width: 40%;
+        border: none;
+        margin-top: 0;
+    }
+
+    /* -----------------------------*/
+
+    .reviews {
+        width: 94%;
+        margin: 40px auto;
+    }
+    .reviews > div {
+        width: 40%;
+        border: none;
+    }
+    .reviews .title {
+        width: 100%;
+        font-size: 26px;
+    }
+    .reviews .product {
+        width: 100%;
+    }
+    .reviews .name p {
+        font-size: 15px;
+    }
 
 }
 
