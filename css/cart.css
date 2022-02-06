@@ -23,7 +23,13 @@
     line-height: 15px;
     letter-spacing: 0em;
 }
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
 .page-path__divider {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
 }
 
 /* ---------------------------------------------*/

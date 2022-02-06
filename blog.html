@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            
+            <div class="page-path">
+                <a href="#" class="page-path__link">
+                    Главная
+                </a>
+                <span class="page-path__divider">
+                    >
+                </span>
+                <a href="#" class="page-path__link">
+                    Блог
+                </a>
+            </div>
+
+            <div class="blog">
+
+                <h1 class="title">Блог</h1>
+
+                <div class="tags">
+                    <p class="sharp">#</p>
+                    <div class="item active">
+                        <p>Еда в горах</p>
+                    </div>
+                    <div class="item">
+                        <p>Рецепты</p>
+                    </div>
+                    <div class="item">
+                        <p>Армия и комплектующие</p>
+                    </div>
+                    <div class="item">
+                        <p>Лайфхаки</p>
+                    </div>
+                    <div class="item">
+                        <p>Путишествия</p>
+                    </div>
+                    <div class="item">
+                        <p>Выживание</p>
+                    </div>
+                    <span class="sus-points">...</span>
+                </div>
+
+                <div class="filter">
+                    <select>
+                        <option>Популярные</option>
+                        <option>Новые</option>
+                    </select>
+
+                    <div class="search">
+                        <input type="text" placeholder="Поиск по блогу">
+                        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.929 11.861L12.929 11.8609L9.79329 8.72519C10.5092 7.74792 10.8423 6.54043 10.7273 5.33143C10.6082 4.0784 10.0162 2.91781 9.0718 2.08576C8.12737 1.25371 6.90145 0.812712 5.64342 0.852473C4.38539 0.892234 3.18976 1.40977 2.29976 2.29979C1.40975 3.18982 0.892232 4.38548 0.852473 5.64354C0.812713 6.90159 1.2537 8.12754 2.08573 9.072C2.91775 10.0164 4.07832 10.6085 5.33132 10.7276C6.54034 10.8425 7.7478 10.5089 8.725 9.79291L11.8606 12.9286C11.8606 12.9286 11.8607 12.9286 11.8607 12.9287C12.0022 13.0703 12.1943 13.1499 12.3946 13.15C12.5948 13.1501 12.787 13.0706 12.9286 12.929C13.0703 12.7874 13.1499 12.5954 13.15 12.3951C13.1501 12.1948 13.0706 12.0027 12.929 11.861ZM8.23962 8.23921C7.59265 8.88619 6.71517 9.24967 5.80022 9.24967C4.88527 9.24967 4.00779 8.88619 3.36082 8.23921C2.71386 7.59222 2.35039 6.71472 2.35039 5.79974C2.35039 4.88476 2.71386 4.00726 3.36082 3.36028C4.00779 2.71329 4.88527 2.34982 5.80022 2.34982C6.71517 2.34982 7.59265 2.71329 8.23962 3.36028C8.88659 4.00726 9.25006 4.88476 9.25006 5.79974C9.25006 6.71472 8.88659 7.59222 8.23962 8.23921Z" fill="black" stroke="black" stroke-width="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="archive-m">
+                        <div class="years">
+                            <p>Архив</p>
+                            <div>
+                                <p class="year active">2022</p>
+                                <p class="year">2021</p>
+                                <p class="year">2020</p>
+                                <p class="year">2019</p>
+                                <span class="sus-points">...</span>
+                            </div>
+                        </div>
+                        
+                        <div class="months">
+                            <div class="left">
+                                <div class="month">
+                                    <p class="name">Январь</p>
+                                    <p class="value">1</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Февраль</p>
+                                    <p class="value">2</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Март</p>
+                                    <p class="value">1</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Апрель</p>
+                                    <p class="value">3</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Май</p>
+                                    <p class="value">1</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Июнь</p>
+                                    <p class="value">2</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="month">
+                                    <p class="name">Июль</p>
+                                    <p class="value">4</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Август</p>
+                                    <p class="value">1</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Сентябрь</p>
+                                    <p class="value">2</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Октябрь</p>
+                                    <p class="value">3</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Ноябрь</p>
+                                    <p class="value">1</p>
+                                </div>
+                                <div class="month">
+                                    <p class="name">Декабрь</p>
+                                    <p class="value">4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-m">
+                        <select>
+                            <option>Популярные</option>
+                            <option>Новые</option>
+                        </select>
+                    </div>
+
+                    <div class="top">
+
+                        <div class="archive-d">
+                            <div class="item">
+                                <div class="title accordion-title">
+                                    2022
+                                    <div class="spoiler accordion-spoiler">
+            
+                                    </div>
+                                </div>
+            
+                                <div class="content accordion-content">
+                                    <div class="item">
+                                        <p class="name">Январь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Февраль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Март</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Апрель</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Май</p>
+                                        <p class="value">3</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июнь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Август</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Сентябрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Октябрь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Ноябрь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Декабрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title accordion-title">
+                                    2021
+                                    <div class="spoiler accordion-spoiler">
+            
+                                    </div>
+                                </div>
+            
+                                <div class="content accordion-content">
+                                    <div class="item">
+                                        <p class="name">Январь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Февраль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Март</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Апрель</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Май</p>
+                                        <p class="value">3</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июнь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Август</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Сентябрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Октябрь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Ноябрь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Декабрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="title accordion-title">
+                                    2020
+                                    <div class="spoiler accordion-spoiler">
+            
+                                    </div>
+                                </div>
+            
+                                <div class="content accordion-content">
+                                    <div class="item">
+                                        <p class="name">Январь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Февраль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Март</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Апрель</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Май</p>
+                                        <p class="value">3</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июнь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Август</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Сентябрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Октябрь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Ноябрь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Декабрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title accordion-title">
+                                    2019
+                                    <div class="spoiler accordion-spoiler">
+            
+                                    </div>
+                                </div>
+            
+                                <div class="content accordion-content">
+                                    <div class="item">
+                                        <p class="name">Январь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Февраль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Март</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Апрель</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Май</p>
+                                        <p class="value">3</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июнь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Июль</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Август</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Сентябрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Октябрь</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Ноябрь</p>
+                                        <p class="value">4</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">Декабрь</p>
+                                        <p class="value">2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="#" alt="#" class="preview">
+                            <h2 class="title">Домашняя тушёнка vs тушёнка в автоклаве на производвстве</h2>
+                            <p class="description">
+                                Тушенка на все случаи жизни. Мясные консервы ценятся как за свои питательные и вкусовые качества, так и за долгий срок хранения. Тушенка пользуется спросом у всех, кто проводит много времени в лесу - туристов, охотников, рыбаков и т.д.
+                            </p>
+                            <div class="info">
+                                <p class="date">3 октября 2021</p>
+                                <div class="read-btn">
+                                    <p>читать</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="#" alt="#" class="preview">
+                            <h2 class="title">Домашняя тушёнка vs тушёнка в автоклаве на производвстве</h2>
+                            <p class="description">
+                                Тушенка на все случаи жизни. Мясные консервы ценятся как за свои питательные и вкусовые качества, так и за долгий срок хранения. Тушенка пользуется спросом у всех, кто проводит много времени в лесу - туристов, охотников, рыбаков и т.д.
+                            </p>
+                            <div class="info">
+                                <p class="date">3 октября 2021</p>
+                                <div class="read-btn">
+                                    <p>читать</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <div class="item">
+                            <img src="#" alt="#" class="preview">
+                            <h2 class="title">Домашняя тушёнка vs тушёнка в автоклаве на производвстве</h2>
+                            <p class="description">
+                                Тушенка на все случаи жизни. Мясные консервы ценятся как за свои питательные и вкусовые качества, так и за долгий срок хранения. Тушенка пользуется спросом у всех, кто проводит много времени в лесу - туристов, охотников, рыбаков и т.д.
+                            </p>
+                            <div class="info">
+                                <p class="date">3.10.2021</p>
+                                <div class="read-btn">
+                                    <p>читать</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="#" alt="#" class="preview">
+                            <h2 class="title">Домашняя тушёнка vs тушёнка в автоклаве на производвстве</h2>
+                            <p class="description">
+                                Тушенка на все случаи жизни. Мясные консервы ценятся как за свои питательные и вкусовые качества, так и за долгий срок хранения. Тушенка пользуется спросом у всех, кто проводит много времени в лесу - туристов, охотников, рыбаков и т.д.
+                            </p>
+                            <div class="info">
+                                <p class="date">3.10.2021</p>
+                                <div class="read-btn">
+                                    <p>читать</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="#" alt="#" class="preview">
+                            <h2 class="title">Домашняя тушёнка vs тушёнка в автоклаве на производвстве</h2>
+                            <p class="description">
+                                Тушенка на все случаи жизни. Мясные консервы ценятся как за свои питательные и вкусовые качества, так и за долгий срок хранения. Тушенка пользуется спросом у всех, кто проводит много времени в лесу - туристов, охотников, рыбаков и т.д.
+                            </p>
+                            <div class="info">
+                                <p class="date">3.10.2021</p>
+                                <div class="read-btn">
+                                    <p>читать</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="#" alt="#" class="preview">
+                            <h2 class="title">Домашняя тушёнка vs тушёнка в автоклаве на производвстве</h2>
+                            <p class="description">
+                                Тушенка на все случаи жизни. Мясные консервы ценятся как за свои питательные и вкусовые качества, так и за долгий срок хранения. Тушенка пользуется спросом у всех, кто проводит много времени в лесу - туристов, охотников, рыбаков и т.д.
+                            </p>
+                            <div class="info">
+                                <p class="date">3.10.2021</p>
+                                <div class="read-btn">
+                                    <p>читать</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pages">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p class="sus-points">...</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
