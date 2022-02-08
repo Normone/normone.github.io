@@ -544,6 +544,7 @@
 
     .blog .bottom .item {
         margin: 0 4px 15px 4px;
+        height: 330px;
     }
 
     .blog .bottom .read-btn {
@@ -568,9 +569,13 @@
 
 @media screen and (min-width: 1401px) {
 
+    .blog .archive-d {
+        width: 23%;
+    }
+
     .blog .top > .item {
-        width: 36%;
-        margin: 0 11px 20px 11px;
+        width: 35%;
+        margin: 0px 0px 20px 30px;
     }
 
     .blog .bottom .item {
