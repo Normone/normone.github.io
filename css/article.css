@@ -570,6 +570,10 @@
         grid-row: 2/3;
     }
 
+    .article .content-article > .slider {
+        height: 500px;
+    }
+
     .article .content-article > h2 {
         width: 100%;
         font-size: 26px;
