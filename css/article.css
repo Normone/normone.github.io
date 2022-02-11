@@ -552,6 +552,7 @@
     }
     .article .table > .title {
         width: 100%;
+        margin-top: 30px;
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -576,27 +577,32 @@
     }
     .article .content-article > h3 {
         width: 100%;
+        margin-top: 40px;
         font-size: 20px;
         line-height: 24px;
     }
     .article .content-article > h4 {
         width: 100%;
+        margin-top: 32px;
         font-size: 17px;
         line-height: 22px;
     }
     .article .content-article .introduction {
         width: 100%;
+        margin-top: 26px;
         font-size: 20px;
         line-height: 24px;
     }
     .article .content-article .regular {
         width: 100%;
+        margin-top: 32px;
         font-size: 17px;
         line-height: 22px;
     }
 
     .article .content-article > img {
-        height: 492px;
+        margin-top: 16px;
+        height: auto;
     }
 
 
