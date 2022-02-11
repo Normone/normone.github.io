@@ -189,7 +189,7 @@
 .blog .archive-d .spoiler {
 }
 .blog .archive-d .content {
-    
+    margin: 10px 0;
 }
 .accordion-content {
     display: none;
@@ -201,7 +201,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 101%;
-    margin-top: 4px;
+    margin: 3px 0;
 }
 .blog .archive-d .content .name {
 
