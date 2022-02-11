@@ -1439,6 +1439,10 @@
 
     /*-0-0---0-0--0-0--0--0-0-0-0-0--0---*/
 
+    .product-grid {
+        margin-top: 32px;
+    }
+    
     .product-item {
         width: 30%;
         height: auto;

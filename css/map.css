@@ -251,6 +251,7 @@
         grid-template-rows: 500px auto;
         grid-column-gap: 25px;
         margin-top: 20px;
+        margin-bottom: 200px;
     }
 
     .map {
@@ -274,10 +275,21 @@
 
     .pick-up-points > .block {
         border: none;
-        height: 90%;
+        height: auto;
     }
 
-    
+    .pick-up-points > .block > .list {
+        height: 430px;
+    }
+    .scroll-btn {
+        position: relative;
+        height: 50px;
+        
+    }
+    .scroll-btn > .icon {
+        position: absolute;
+        left: 46%;
+    }
 
     .map-block > .description {
         grid-column: 1/2;
@@ -292,6 +304,9 @@
 
     .list {
         height: 490px;
+    }
+    .pick-up-points > .block > .list {
+        height: 500px;
     }
     
     .list > .item > .name > .text {
@@ -348,3 +363,10 @@
 }
 
 
+
+@media screen and (min-width: 1400px) {
+
+    .pick-up-points > .block > .list {
+        height: 450px;
+    }
+}

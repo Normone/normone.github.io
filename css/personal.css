@@ -700,6 +700,10 @@
         margin-bottom: 34px;
     }
 
+    .product-grid {
+        margin-top: 32px;
+    }
+    
     .product-item {
         width: 24%;
         height: auto;

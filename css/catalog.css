@@ -510,6 +510,9 @@ body {
         display: block;
     }
 
+    .product-grid {
+        margin-top: 32px;
+    }
     .product-item {
         width: 23%;
         height: auto;
