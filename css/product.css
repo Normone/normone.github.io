@@ -1442,6 +1442,7 @@
     .product-item {
         width: 30%;
         height: auto;
+        border-radius: 19px;
     }
     .product-item-hidden {
         display: block;

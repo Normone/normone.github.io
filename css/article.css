@@ -626,6 +626,7 @@
     .product-item {
         width: 24%;
         height: auto;
+        border-radius: 19px;
     }
     .product-item-hidden {
         display: block;

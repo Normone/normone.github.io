@@ -514,6 +514,7 @@ body {
         width: 23%;
         height: auto;
         margin: 0 7px 15px 7px;
+        border-radius: 14px;
     }
     .product-item-hidden {
         display: block;
