@@ -14,8 +14,8 @@
 /* ---------------------------------------------*/
 
 .page-path {
-    width: 90%;
-    margin: 15px auto 16px auto;
+    width: 91%;
+    margin: 13px auto 16px auto;
     text-align: left;
 }
 .page-path__link {
@@ -37,7 +37,7 @@
 .main-info {
 }
 .main-info > .title {
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
     margin-top: 22px;
     font-weight: 600;
@@ -55,7 +55,7 @@
     border-radius: 11px;
 }
 .main-info .personal > div {
-    width: 90%;
+    width: 91%;
     margin: 13px auto;
 }
 .main-info .name {
@@ -152,7 +152,7 @@
 }
 
 .main-info .bonus {
-    width: 90%;
+    width: 91%;
     margin: 26px auto 0 auto;
 }
 .main-info .bonus .title {
@@ -187,7 +187,7 @@
     margin-top: 40px;
 }
 .orders .title {
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
     font-weight: 500;
     font-size: 20px;
@@ -204,7 +204,7 @@
     width: 100%;
 }
 .orders .sub-title {
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
 }
 .orders .sub-title h2 {
@@ -239,7 +239,7 @@
 
 
 .orders .product {
-    width: 90%;
+    width: 91%;
     display: flex;
     margin: 10px auto;
     
@@ -299,7 +299,7 @@
     margin-top: 30px;
 }
 .reviews .title {
-    width: 90%;
+    width: 91%;
     margin: 10px auto;
     font-weight: 500;
     font-size: 20px;
@@ -315,7 +315,7 @@
     margin: 10px 0 10px 0;
 }
 .reviews .product {
-    width: 90%;
+    width: 91%;
     display: flex;
     margin: 10px auto;
 }
@@ -356,7 +356,7 @@
 /* ---------------------------------------------*/
 
 .slider-product {
-    width: 90%;
+    width: 91%;
     margin: 40px auto;
 }
 .slider-product .title {
