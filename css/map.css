@@ -3,7 +3,10 @@
 /* ---------------------------------------------*/
 
 .content {
-    background: url(../img/map-bg-mobile.png) bottom no-repeat;
+    background-image: url('../img/preheat-bg.webp');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container {
     width: 90%;
@@ -14,7 +17,7 @@
 /* ---------------------------------------------*/
 
 .page-path {
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -221,6 +224,12 @@
 
 @media screen and (min-width: 760px) and (max-width: 999px) {
 
+    .content {
+        background-image: url('../img/map-bg-desk.webp');
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
     .map {
         height: 400px;
     }
@@ -229,7 +238,10 @@
 @media screen and (min-width: 1000px) {
 
     .content {
-        background: url(../img/map-bg-desk.png) bottom no-repeat;
+        background-image: url('../img/map-bg-desk.webp');
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     .page-path__link {
@@ -251,7 +263,7 @@
         grid-template-rows: 500px auto;
         grid-column-gap: 25px;
         margin-top: 20px;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
     }
 
     .map {

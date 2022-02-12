@@ -3,7 +3,10 @@
 /* ---------------------------------------------*/
 
 .content {
-    
+    background-image: url('../img/preheat-bg.webp');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container {
     width: 84%;
@@ -265,7 +268,7 @@
     .clue {
         margin-top: 130px;
         max-width: 1100px;
-        margin: 0 auto;
+        margin: 500px auto 0 auto;
     }
     .clue-hr-m {
         display: none;
