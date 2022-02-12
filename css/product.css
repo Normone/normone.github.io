@@ -1,7 +1,13 @@
 * {font-family: Montserrat;}
 
 .content {
-    max-width: 1100px;
+    background-image: url('../img/map-bg-desk.webp');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -840,6 +846,7 @@
     box-sizing: border-box;
     border-radius: 19px;
     margin: 0 auto;
+    margin-bottom: 30px;
     background-color: #fff;
 }
 .review__table {
@@ -1558,6 +1565,7 @@
         box-sizing: border-box;
         border-radius: 19px;
         margin: 0 auto;
+        margin-bottom: 80px;
         background-color: #fff;
     }
     .review__table {
