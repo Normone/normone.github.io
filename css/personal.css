@@ -3,7 +3,10 @@
 /* ---------------------------------------------*/
 
 .content {
-    
+    background-image: url('../img/map-bg-desk.webp');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container {
     width: 92%;

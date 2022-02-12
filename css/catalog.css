@@ -9,7 +9,7 @@
 }
 
 .content {
-    background-image: url('../img/bg-end-desk.png');
+    background-image: url('../img/map-bg-desk.webp');
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -549,7 +549,7 @@
     } */
 
     .clue {
-        margin-top: 130px;
+        margin-top: 400px;
         max-width: 1100px;
     }
     .clue-hr-m {

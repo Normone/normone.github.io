@@ -3,7 +3,10 @@
 /* ---------------------------------------------*/
 
 .content {
-    
+    background-image: url('../img/map-bg-desk.webp');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container {
     width: 84%;
@@ -73,6 +76,7 @@
 
 .cart {
     max-width: 1200px;
+    padding-bottom: 300px;
 }
 .cart > .title {
     font-weight: 600;
@@ -554,6 +558,7 @@
 
 .ordering {
     max-width: 1200px;
+    padding-bottom: 500px;
 }
 .ordering .title {
     margin-top: 24px;
@@ -606,7 +611,7 @@
 
 .delivery-method {
     max-width: 1200px;
-    margin-bottom: 40px;
+    padding-bottom: 350px;
 
 }
 .delivery-method .title {
@@ -688,6 +693,7 @@
 
 .payment-method {
     max-width: 1200px;
+    padding-bottom: 250px;
 }
 .payment-method .title {
     margin-top: 24px;
@@ -768,6 +774,7 @@
 
 .endpoint {
     max-width: 1200px;
+    padding-bottom: 350px;
 }
 .endpoint .title {
     margin-top: 24px;
