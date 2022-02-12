@@ -39,7 +39,7 @@
 /* Галлерея ------------------------------------*/
 
 .gallery {
-    width: 310px;
+    width: auto;
     height: 255px;
     margin: 0 auto;
 }
@@ -230,7 +230,7 @@
 .product-info__details {
     display: flex;
     margin: 12px auto 10px auto;
-    width: 355px;
+    width: auto;
 }
 .product-info__details-bonus {
     display: flex;
