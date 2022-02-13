@@ -37,6 +37,51 @@
 
 /* ---------------------------------------------*/
 
+input[type=checkbox] {
+	display: none;
+}
+label {
+    display: flex;
+    /* align-items: center; */
+    cursor: pointer;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+    margin-top: 0px;
+    padding-right: 14px;
+	background: url('../img/radio-0.svg') 0 0 no-repeat;
+}
+input[type=checkbox]:checked + label:before {
+    background: url('../img/radio-1.svg') 0 0 no-repeat;
+}
+
+
+input[type=radio] {
+	display: none;
+}
+label {
+    display: flex;
+    /* align-items: center; */
+    cursor: pointer;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+    margin-top: 0px;
+    padding-right: 14px;
+	background: url('../img/radio-0.svg') 0 0 no-repeat;
+}
+input[type=radio]:checked + label:before {
+    background: url('../img/radio-1.svg') 0 0 no-repeat;
+}
+
+/* ---------------------------------------------*/
+
 
 
 
@@ -387,10 +432,9 @@
     margin-bottom: 6px;
 }
 .block-info-m > .checkboxs  input {
-    all: revert;
     margin-right: 8px;
 }
-.block-info-m > .checkboxs  p {
+.block-info-m > .checkboxs  label {
     font-size: 11px;
     line-height: 90%;
     color: #000000b3;
@@ -529,10 +573,9 @@
     margin-bottom: 6px;
 }
 .block-info-d .checkboxs input {
-    all: revert;
     margin-right: 8px;
 }
-.block-info-d .checkboxs p {
+.block-info-d .checkboxs label {
     font-size: 13px;
     color: #000000b3;
     letter-spacing: -0.025em;
@@ -670,7 +713,6 @@
 }
 .delivery-method .checkbox input {
     margin-right: 6px;
-    all: revert;
 }
 .delivery-method .checkbox label {
     font-weight: 500;
@@ -727,7 +769,6 @@
 }
 .payment-method .checkbox input {
     margin-right: 6px;
-    all: revert;
 }
 .payment-method .checkbox label {
     font-weight: 500;
@@ -740,7 +781,6 @@
     margin-top: 50px;
 }
 .payment-method .bonus input {
-    all: revert;
 }
 .payment-method .bonus label {
     font-weight: 500;

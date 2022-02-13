@@ -273,12 +273,16 @@
                     </div>
                     <div class="checkboxs">
                         <div class="item">
-                            <input type="checkbox">
-                            <p>Подтверждаю, что я согласен на обработку <span>персональных данных</span>.</p>
+                            <input type="checkbox" id="pers-m">
+                            <label for="pers-m">
+                                <p>Подтверждаю, что я согласен на обработку <span>персональных данных</span>.</p>
+                            </label>
                         </div>
                         <div class="item">
-                            <input type="checkbox">
-                            <p>Нажимая на кнопку «Оформить заказ», я соглашаюсь с <span>условиями Публичной оферты</span>.</p>
+                            <input type="checkbox" id="offer-m">
+                            <label for="offer-m">
+                                <p>Нажимая на кнопку «Оформить заказ», я соглашаюсь с <span>условиями Публичной оферты</span>.</p>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -342,12 +346,16 @@
                     </div>
                     <div class="checkboxs">
                         <div class="item">
-                            <input type="checkbox">
-                            <p>Подтверждаю, что я согласен на обработку <a>персональных данных</a>.</p>
+                            <input type="checkbox" id="pers">
+                            <label for="pers">
+                                <p>Подтверждаю, что я согласен на обработку <a>персональных данных</a>.</p>
+                            </label>
                         </div>
                         <div class="item">
-                            <input type="checkbox">
-                            <p>Нажимая на кнопку «Оформить заказ», я соглашаюсь с <a>условиями Публичной оферты</a>.</p>
+                            <input type="checkbox" id="offer">
+                            <label for="offer">
+                                <p>Нажимая на кнопку «Оформить заказ», я соглашаюсь с <a>условиями Публичной оферты</a>.</p>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -408,8 +416,8 @@
                         <img src="./img/cart-deli-meth-1.svg" alt="#">
                         <div class="text">
                             <div class="checkbox">
-                                <input type="checkbox" name="#" id="#">
-                                <label for="#">Самовывоз</label>
+                                <input type="radio" name="del-meth" id="del-meth-1">
+                                <label for="del-meth-1">Самовывоз</label>
                             </div>
                             <p class="description">ул. Пушкина, д. Колотушкина</p>
                             <p class="price">Бесплатно</p>
@@ -419,8 +427,8 @@
                         <img src="./img/cart-deli-meth-2.svg" alt="#">
                         <div class="text">
                             <div class="checkbox">
-                                <input type="checkbox" name="#" id="#">
-                                <label for="#">Пункты выдачи СДЭК</label>
+                                <input type="radio" name="del-meth" id="del-meth-2">
+                                <label for="del-meth-2">Пункты выдачи СДЭК</label>
                             </div>
                             <p class="price">От 150 ₽</p>
                         </div>
@@ -429,8 +437,8 @@
                         <img src="./img/cart-deli-meth-3.svg" alt="#">
                         <div class="text">
                             <div class="checkbox">
-                                <input type="checkbox" name="#" id="#">
-                                <label for="#">Курьер СДЭК</label>
+                                <input type="radio" name="del-meth" id="del-meth-3">
+                                <label for="del-meth-3">Курьер СДЭК</label>
                             </div>
                             <p class="price">От 250 ₽</p>
                         </div>
@@ -439,8 +447,8 @@
                         <img src="./img/cart-deli-meth-4.svg" alt="#">
                         <div class="text">
                             <div class="checkbox">
-                                <input type="checkbox" name="#" id="#">
-                                <label for="#">Почта России</label>
+                                <input type="radio" name="del-meth" id="del-meth-4">
+                                <label for="del-meth-4">Почта России</label>
                             </div>
                             <p class="price">От 350 ₽</p>
                         </div>
@@ -455,28 +463,30 @@
                     <div class="option">
                         <img src="./img/cart-pay-meth-1.svg" alt="#">
                         <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Яндекс.Касса</label>
+                            <input type="radio" name="pay-meth" id="pay-meth-1">
+                            <label for="pay-meth-1">Яндекс.Касса</label>
                         </div>
                     </div>
                     <div class="option">
                         <img src="./img/cart-pay-meth-2.svg" alt="#">
                         <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Оплата картой</label>
+                            <input type="radio" name="pay-meth" id="pay-meth-2">
+                            <label for="pay-meth-2">Оплата картой</label>
                         </div>
                     </div>
                     <div class="option">
                         <img src="./img/cart-pay-meth-3.svg" alt="#">
                         <div class="checkbox">
-                            <input type="checkbox" name="#" id="#">
-                            <label for="#">Оплата наличными</label>
+                            <input type="radio" name="pay-meth" id="pay-meth-3">
+                            <label for="pay-meth-3">Оплата наличными</label>
                         </div>
                     </div>
                 </div>
                 <div class="bonus">
-                    <input type="checkbox" name="#" id="#">
-                    <label for="#">Списать мои доступные баллы. Доступно <span>100 бонусов - 100 рублей</span> на этот заказ.</label>
+                    <input type="checkbox" name="use-bonuse" id="use-bonuse">
+                    <label for="use-bonuse">
+                        <p>Списать мои доступные баллы. Доступно <span>100 бонусов - 100 рублей</span> на этот заказ.</p>
+                    </label>
                 </div>
                 <div class="pay-btn">
                     <p>Оплатить</p>
