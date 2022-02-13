@@ -34,22 +34,32 @@ document.addEventListener("DOMContentLoaded", function(){
     // });
 
 
+    // 1
     function DropDown(el) {
         this.dd = el;
         this.initEvents();
     }
 
+    // 2
     DropDown.prototype = {
         initEvents : function() {
             var obj = this;
+            let curr = this.dd.$(".current");
+            let option = this.dd.$("li");
 
             obj.dd.on('click', function(event){
                 $(this).toggleClass('active');
                 event.stopPropagation();
-            });	
+            });
+            
+            obj.dd.iption.on('click', function(event){
+                $(this).toggleClass('hidden');
+                event.stopPropagation();
+            });
         }
     }
 
+    // 3
     $(function() {
 
         var dd = new DropDown( $('.d-d-list') );
