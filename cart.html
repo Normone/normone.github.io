@@ -405,11 +405,17 @@
                 <h1 class="title">Доставка</h1>
                 <h2 class="sub-title">2. Способ доставки</h2>
                 <div class="whereabouts">
+                    
                     <p>Населённый пункт</p>
-                    <select>
-                        <option>Санкт-Петербург</option>
-                        <option>Расчлененград</option>
-                    </select>
+                    <div class="d-d-list">
+                        <div class="corners"></div>
+                        <p class="current">Санкт-Петербург</p>
+                        <ul class="dropdown">
+                            <li class="hidden">Санкт-Петербург</li>
+                            <li>Расчлененград</li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <div class="options">
                     <div class="option">
@@ -506,6 +512,7 @@
         </div>
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/d-d-list.js"></script>
 </body>
 </html>
