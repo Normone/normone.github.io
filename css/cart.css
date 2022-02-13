@@ -788,6 +788,14 @@ input[type=radio]:checked + label:before {
     line-height: 101%;
     margin-top: 2px;
 }
+.payment-method .bonus label::before {
+    background-size: contain;
+    padding-right: 24px;
+}
+.payment-method .bonus input[type=checkbox]:checked + label:before {
+    background-size: contain;
+    padding-right: 24px;
+}
 .payment-method .bonus span {
     font-weight: 600;
     font-size: 17px;
