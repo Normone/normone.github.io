@@ -2,20 +2,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.d-d-list').each(function (idx, el) {
         $(el).click( function (e) {
-            debugger
+            // debugger
             
             const current = $(this).find('p');
 
             $(this).toggleClass('active');
 
-            $(this).find('li').click(function(e) {
+            // $(this).find('li').click(function(e) {
 
-                console.log(this.innerText) // Выводит нужный текст. Текст из <li></li>
+            //     console.log(this.innerText) // Выводит нужный текст. Текст из <li></li>
 
-                console.log(current.innerText) // Пишет, что undefine
+            //     console.log(current.innerText) // Пишет, что undefine
                 
-                current.innerText = this.innerText; // Естественно, не работает
-            });
+            //     current.innerText = this.innerText; // Естественно, не работает
+            // });
 
             // function DropDown(el) {
             //     this.dd = el;
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
-    // Хрень ниже работает, но только на первый элемент, а потому и нужен этот цирк с конями
+    // Хрень ниже работает, но только на первый элемент, а потому и нужен этот цирк с конями, не говоря уже о том, что оно лишь открывает и закрывает список.
     
     // 1
     // function DropDown(el) {

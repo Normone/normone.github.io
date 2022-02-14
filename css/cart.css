@@ -150,7 +150,6 @@ input[type=radio]:checked + label:before {
 }
 
 
-
 .d-d-list .dropdown li {
     display: block;
     text-decoration: none;
@@ -783,26 +782,28 @@ input[type=radio]:checked + label:before {
     display: flex;
     margin-top: 12px;
 }
+.delivery-method .whereabouts .d-d-list {
+    border-radius: 20px;
+    margin: 0;
+}
+.delivery-method .whereabouts .d-d-list.active {
+    border-radius: 20px 20px 0 0;
+}
+.delivery-method .whereabouts .d-d-list.active .dropdown {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 .delivery-method .whereabouts p {
     font-size: 14px;
     line-height: 183%;
     color: #000000b3;
     margin-right: 10px;
 }
-.delivery-method .whereabouts div {
-    width: 50%;
-    max-width: 170px;
+.delivery-method .whereabouts li {
     
-    border: 0.8px solid #000000;
-    box-sizing: border-box;
-    border-radius: 46px;
 }
-.delivery-method .whereabouts select {
-    font-size: 15px;
-    line-height: 183%;
-    border: none;
-    border-radius: 46px;
-}
+
+
 .delivery-method .options {
     display: grid;
     grid-template-columns: 50% 50%;
