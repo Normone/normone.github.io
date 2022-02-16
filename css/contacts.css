@@ -1,0 +1,537 @@
+* {font-family: Montserrat;}
+
+/* ---------------------------------------------*/
+
+.content {
+    background-image: url('../img/map-bg-desk.webp');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------*/
+
+.page-path {
+    width: 91%;
+    margin: 13px auto 16px auto;
+    text-align: left;
+}
+.page-path__link {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+.page-path__link:last-child {
+    text-decoration-line: underline;
+}
+.page-path__divider {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+/* ---------------------------------------------*/
+
+.tags {
+    width: 91%;
+    margin: 20px auto 16px auto;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sharp {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 101%;
+    margin-right: 5px;
+}
+.tags .item {
+    max-width: 200px;
+    height: 20px;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-top: 3px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.tags .item a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 1px 4px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.tags .item.active {
+    border: 1px solid #289648;
+}
+.tags .item.active a {
+    font-weight: 600;
+}
+.tags .sus-points {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 117%;
+    margin-top: 3px;
+}
+
+
+/* ---------------------------------------------*/
+
+.contacts {
+    
+}
+.contacts > .title {
+    width: 91%;
+    margin: 16px auto 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 101%;
+}
+
+.contacts .phone {
+    width: 91%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.contacts .phone .sub-title {
+    padding-top: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 117%;
+}
+.contacts .phone p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 117%;
+}
+.contacts .phone .hide {
+    display: none;
+}
+
+.contacts .phone .number {
+
+}
+.contacts .phone .number a {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 117%
+}
+
+.mail {
+    margin-top: 12px;
+}
+
+.contacts .phone .social {
+    margin-top: 12px;
+}
+.contacts .phone .social .btns {
+    display: flex;
+    margin-top: 14px;
+}
+.contacts .phone .social img {
+    width: 46px;
+    margin-right: 6px;
+}
+
+/* ---------------------------------------------*/
+
+.contacts .address {
+    width: 91%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.contacts .address .sub-title {
+    padding-top: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 117%;
+}
+.contacts .address p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 117%;
+}
+.contacts .address .map {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    filter: drop-shadow(3px 2px 10px rgba(46, 60, 80, 0.4));
+    border-radius: 11px;
+}
+
+/* ---------------------------------------------*/
+
+.contacts .feedback-form {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.contacts .feedback-form .sub-title {
+    width: 91%;
+    margin: 0 auto;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 117%;
+}
+.contacts .feedback-form .form {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 19px;
+    margin-top: 16px;
+}
+.contacts .feedback-form h3 {
+    width: 91%;
+    margin: 0 auto;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+}
+.contacts .feedback-form h4 {
+    width: 91%;
+    margin: 0 auto;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contacts .feedback-form p {
+    width: 91%;
+    margin: 12px auto 4px auto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+.contacts .feedback-form input {
+    display: block;
+    width: 91%;
+    height: 29px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.contacts .feedback-form .message {
+    width: 91%;
+    height: 100px;
+    margin: 0 auto;
+
+}
+.contacts .feedback-form button {
+    display: block;
+    width: 120px;
+    height: 29px;
+    margin: 25px auto 38px auto;
+    background-color: #000;
+    border-radius: 7px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+}
+
+/* ---------------------------------------------*/
+
+.contacts .props {
+    width: 91%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.contacts .props .sub-title {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 117%;
+}
+.contacts .props .name {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 117%;
+}
+.contacts .props .address {
+
+}
+.contacts .props div {
+    display: flex;
+}
+.contacts .props div .t-sz-1 {
+    width: 80px;
+}
+.contacts .props .kva {
+
+}
+.contacts .props .t-sz-1 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 117%;
+}
+.contacts .props .t-sz-2 {
+    font-size: 14px;
+    line-height: 117%;
+    margin-left: 12px;
+}
+.contacts .props .t-sz-3 {
+    
+    font-size: 13px;
+    line-height: 117%;
+    letter-spacing: -0.005em;
+}
+.contacts .props .m-24 {
+    margin-top: 24px;
+}
+.contacts .props .m-20 {
+    margin-top: 20px;
+}
+.contacts .props .m-13 {
+    margin-top: 13px;
+}
+/* ---------------------------------------------*/
+
+.clue {
+    display: block;
+    max-width: 1100px;
+    margin: 90px auto 0 auto;
+    height: 173px;
+}
+.clue-hr-m {
+    width: 70%;
+    border-color: #FFFFFF;
+    opacity: 0.7;
+    margin: 15px 0;
+}
+.clue-hr-d {
+    display: none;
+    width: 60%;
+    opacity: 0.7;
+}
+.clue__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+.clue__item {
+    display: flex;
+    align-items: center;
+}
+.clue__item-img {
+    display: none;
+}
+.clue__item-link {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EF861C;
+}
+
+/* ---------------------------------------------*/
+
+
+
+/* ---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .page-path {
+        width: 95%;
+    }
+    .tags {
+        width: 95%;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+
+    }
+
+    .contacts > .title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        width: 95%;
+        margin-top: 40px;
+        font-size: 26px;
+    }
+    .contacts .block-1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contacts .block-2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .contacts .block-3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .contacts .block-4 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .contacts .phone {
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: none;
+    }
+    .contacts .address {
+        width: 100%;
+        margin-right: 5%;
+        margin-bottom: none;
+    }
+    .contacts .feedback-form {
+        width: 80%;
+        margin-left: 0;
+    }
+    .contacts .props {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contacts .phone .sub-title {
+        padding-top: 20px;
+    }
+    .contacts .phone p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .contacts .phone .hide {
+        display: block;
+    }
+
+
+    .contacts .address .sub-title {
+        padding-top: 20px;
+    }
+    .contacts .address .map {
+        height: 360px;
+        margin-top: 28px;
+    }
+    .contacts .address p {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+
+    .contacts .feedback-form .sub-title {
+        font-weight: 600;
+        font-size: 20px;
+        
+    }
+    .contacts .feedback-form .form {
+        margin-top: 18px;
+    }
+    .contacts .feedback-form h3 {
+        margin-top: 16px;
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .contacts .feedback-form h4 {
+        margin-top: 18px;
+    }
+    .contacts .feedback-form p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .contacts .props .sub-title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .contacts .props .name {
+        margin-top: 40px;
+        font-size: 19px;
+    }
+    .contacts .props .t-sz-2 {
+        font-size: 15px;
+    }
+    .contacts .props .t-sz-3 {
+        font-size: 15px;
+    }
+    .contacts .props .m-13 {
+        margin-top: 16px;
+    }
+    /* ---------------------------*/
+
+    .clue {
+        
+        max-width: 1100px;
+        margin: 0 auto;
+        margin-top: 400px;
+    }
+    .clue-hr-m {
+        display: none;
+    }
+    .clue-hr-d {
+        display: block;
+    }
+    
+    .clue__block {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin: 25px 0;
+    }
+    .clue__item {
+        display: flex;
+        align-items: center;
+    }
+    .clue__item-img {
+        display: block;
+    }
+    .clue__item-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        text-transform: none;
+        color: #FFFFFF;
+        margin-left: 15px;
+    }
+
+    /* ---------------------------*/
+
+
+
+}
