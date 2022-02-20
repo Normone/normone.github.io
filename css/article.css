@@ -18,7 +18,8 @@ body > .content {
 
 .page-path {
     width: 91%;
-    margin: 13px auto 16px auto;
+    margin: 0 auto;
+    padding: 13px 0 16px 0;
     text-align: left;
 }
 .page-path__link {
@@ -33,6 +34,9 @@ body > .content {
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
+    font-family: none;
+    font-weight: 600;
+    margin: 0 3px;
 }
 
 /* ---------------------------------------------*/

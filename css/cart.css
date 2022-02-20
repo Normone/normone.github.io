@@ -17,8 +17,8 @@
 /* ---------------------------------------------*/
 
 .page-path {
-    margin-top: 13px;
-    margin-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 16px;
     text-align: left;
 }
 .page-path__link {
@@ -33,6 +33,9 @@
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
+    font-family: none;
+    font-weight: 600;
+    margin: 0 3px;
 }
 
 /* ---------------------------------------------*/

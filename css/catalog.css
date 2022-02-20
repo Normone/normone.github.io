@@ -18,8 +18,8 @@
 /* ---------------------------------------------*/
 
 .page-path {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 .page-path__link {
@@ -34,6 +34,9 @@
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
+    font-family: none;
+    font-weight: 600;
+    margin: 0 3px;
 }
 
 /* ---------------------------------------------*/

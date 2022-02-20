@@ -15,7 +15,8 @@
 /* Путь самурая ------------------------------------*/
 
 .page-path {
-    margin: 20px auto 24px auto;
+    margin: 0 auto;
+    padding: 20px 0 24px 0;
     text-align: left;
     width: 89%;
     
@@ -32,6 +33,9 @@
 .page-path__divider {
     font-size: 13px;
     line-height: 15px;
+    font-family: none;
+    font-weight: 600;
+    margin: 0 3px;
 }
 
 /* ---------------------------------------------*/
