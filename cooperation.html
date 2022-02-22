@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="content">
-        <div class="bg-modal"></div>
+        <div onclick="document.getElementById('bg-modal').style.display = 'none'; document.getElementById('modal-1').style.display = 'none'; document.getElementById('modal-2').style.display = 'none'; document.getElementById('modal-3').style.display = 'none';" id="bg-modal"></div>
         <div class="container">
 
             <div class="page-path">
@@ -40,7 +40,7 @@
                         </div>
                         
                         <div class="bottom">
-                            <button>Получить прайс лист</button>
+                            <button onclick="document.getElementById('bg-modal').style.display = 'block'; document.getElementById('modal-1').style.display = 'block';" id="triggerModal-1">Получить прайс лист</button>
                         </div>
                     </div>
                     <div class="item">
@@ -53,7 +53,7 @@
                         
                         <div class="bottom">
                             <p><b>sale1@kronidov.ru</b></p>
-                            <button>Отправить запрос</button>
+                            <button onclick="document.getElementById('bg-modal').style.display = 'block'; document.getElementById('modal-2').style.display = 'block';" id="triggerModal-2">Отправить запрос</button>
                         </div>
                     </div>
                     <div class="item">
@@ -66,14 +66,14 @@
                         
                         <div class="bottom">
                             <p><b>sale2@kronidov.ru</b></p>
-                            <button>Отправить запрос</button>
+                            <button onclick="document.getElementById('bg-modal').style.display = 'block'; document.getElementById('modal-3').style.display = 'block';" id="triggerModal-3">Отправить запрос</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="modals">
-                    <div class="modal-1">
-                        <span class="close"></span>
+                    <div id="modal-1">
+                        <span onclick="document.getElementById('bg-modal').style.display = 'none'; document.getElementById('modal-1').style.display = 'none'; document.getElementById('modal-2').style.display = 'none'; document.getElementById('modal-3').style.display = 'none';" class="close"></span>
                         <h2 class="title">
                             Пожалуйста, введите свой эмейл!
                         </h2>
@@ -82,8 +82,8 @@
                         <input type="text">
                         <button>Получить</button>
                     </div>
-                    <div class="modal-2">
-                        <span class="close"></span>
+                    <div id="modal-2">
+                        <span onclick="document.getElementById('bg-modal').style.display = 'none'; document.getElementById('modal-1').style.display = 'none'; document.getElementById('modal-2').style.display = 'none'; document.getElementById('modal-3').style.display = 'none';" class="close"></span>
                         <h2 class="title">Добро пожаловать!</h2>
                         <p>Есть креативные идеи? Ответьте на пару вопросов чтобы отправить форму заявки!</p>
                         <p class="name">Ваше имя в социальных сетях</p>
@@ -92,8 +92,8 @@
                         <input type="text">
                         <button>Отправить</button>
                     </div>
-                    <div class="modal-3">
-                        <span class="close"></span>
+                    <div id="modal-3">
+                        <span onclick="document.getElementById('bg-modal').style.display = 'none'; document.getElementById('modal-1').style.display = 'none'; document.getElementById('modal-2').style.display = 'none'; document.getElementById('modal-3').style.display = 'none';" class="close"></span>
                         <h2 class="title">Добро пожаловать!</h2>
                         <p>Считаете что вам есть что для нас предложить? Ответьте на пару вопросов чтобы связатбся с нами!</p>
                         <p class="name">Ваше имя в социальных сетях</p>

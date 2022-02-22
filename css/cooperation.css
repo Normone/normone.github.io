@@ -41,7 +41,7 @@
 
 /* ---------------------------------------------*/
 
-.bg-modal {
+#bg-modal {
     display: none;
     position: fixed;
     width: 100%;
@@ -165,13 +165,13 @@
     background-color: #fff;
     z-index: 11;
 }
-.modals .modal-1 {
+.modals #modal-1 {
     display: none;
 }
-.modals .modal-2 {
+.modals #modal-2 {
     display: none;
 }
-.modals .modal-3 {
+.modals #modal-3 {
     display: none;
 }
 
