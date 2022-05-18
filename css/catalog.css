@@ -281,8 +281,10 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .add-in-cart-btn p {
+    display: block;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -290,6 +292,7 @@
     letter-spacing: 0.02em;
     color: #fff;
     padding-top: 1px;
+    
 }
 
 .add-in-cart-btn-desk {
@@ -540,7 +543,7 @@
         /* display: none; */
     }
     .add-in-cart-btn p {
-        padding-top: 3px;
+        padding-top: 2px;
     }
 
     /* .add-in-cart-btn {
