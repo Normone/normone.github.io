@@ -171,7 +171,7 @@ body > .content {
 .blog .archive-d {
     display: none;
     overflow: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .blog .archive-d > .title {
     font-weight: 600;
@@ -265,8 +265,16 @@ body > .content {
     border: 1px solid #30903A;
     box-sizing: border-box;
     border-radius: 7px;
+    cursor: pointer;
 }
-.blog .top > .item .read-btn p {
+.blog .top > .item .read-btn:hover {
+    background-color: #30903A;
+}
+.blog .top > .item .read-btn:hover a {
+    color: #fff;
+}
+.blog .top > .item .read-btn a {
+    display: block;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -328,11 +336,18 @@ body > .content {
     box-sizing: border-box;
     border-radius: 7px;
 }
-.blog .bottom .read-btn p {
+.blog .bottom .read-btn:hover {
+    background-color: #30903A;
+}
+.blog .bottom .read-btn a {
+    display: block;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
+}
+.blog .bottom .read-btn:hover a {
+    color: #fff;
 }
 
 .blog .pages {

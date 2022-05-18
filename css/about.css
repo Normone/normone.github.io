@@ -10,7 +10,7 @@
 }
 .container {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1330px; */
     margin: 0 auto;
 }
 
@@ -21,6 +21,7 @@
     margin: 0 auto;
     padding: 13px 0 16px 0;
     text-align: left;
+    max-width: 1200px;
 }
 .page-path__link {
     font-size: 13px;
@@ -47,6 +48,7 @@
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 .sharp {
     font-weight: 600;
@@ -102,7 +104,8 @@
     grid-template-rows: auto auto auto;
 }
 .about .company .title {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 20px;
@@ -116,7 +119,8 @@
     margin-top: 16px;
 }
 .about .company .desc {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 12px auto 0 auto;
     font-size: 17px;
     line-height: 21px;
@@ -135,7 +139,8 @@
     margin-top: 80px;
 }
 .about .product .title {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 20px;
@@ -149,7 +154,8 @@
     margin-top: 16px;
 }
 .about .product .desc {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 12px auto 0 auto;
     font-size: 17px;
     line-height: 21px;
@@ -168,7 +174,8 @@
     margin-top: 80px;
 }
 .about .package .title {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 20px;
@@ -182,7 +189,8 @@
     margin-top: 16px;
 }
 .about .package .desc {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 12px auto 0 auto;
     font-size: 17px;
     line-height: 21px;
@@ -198,7 +206,8 @@
     margin-top: 80px;
 }
 .about .whereabout .title {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 20px;
@@ -207,7 +216,8 @@
     text-transform: uppercase;
 }
 .about .whereabout .map {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     height: 400px;
     margin: 0 auto;
     margin-top: 16px;
@@ -217,7 +227,8 @@
     height: 360px;
 }
 .about .whereabout .desc {
-    width: 84%;
+    width: 80%;
+    max-width: 1200px;
     margin: 12px auto 0 auto;
     font-size: 17px;
     line-height: 21px;

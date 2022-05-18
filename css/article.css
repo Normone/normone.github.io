@@ -139,7 +139,7 @@ body > .content {
 .article .archive-d {
     display: none;
     overflow: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .article .archive-d > .title {
     font-weight: 600;
