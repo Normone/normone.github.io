@@ -137,6 +137,7 @@ ul.burger-menu__sub-list {
     line-height: 32px;
     text-align: center;
     margin-top: 20px;
+    user-select: none
 }
 
 .entryway__form-login {
@@ -482,7 +483,6 @@ ul.burger-menu__sub-list {
 
 .header__nav-profile {
     height: 30px;
-    cursor: pointer;
     margin-top: -4px;
     left: 3px;
 }
@@ -491,6 +491,7 @@ ul.burger-menu__sub-list {
 }
 .header__nav-profile svg {
     width: 31px;
+    cursor: pointer;
 }
 
 .header__nav-profile-window {
@@ -758,14 +759,13 @@ ul.burger-menu__sub-list {
     /* overflow: hidden; */
 }
 .catalog__title {
-    font-family: Montserrat;
-    font-style: normal;
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     font-size: 18px;
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
     margin-top: 23px;
+    user-select: none
 }
 .catalog__category-title {
     font-weight: 500;
@@ -916,6 +916,7 @@ ul.burger-menu__sub-list {
     display: none;
     width: min-content;
     margin: 40px auto 0 auto;
+    user-select: none
 }
 .catalog-desk__title {
     font-weight: 600;
@@ -923,6 +924,7 @@ ul.burger-menu__sub-list {
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
+    user-select: none
 }
 .catalog-desk__sub-title {
     margin-top: 15px;
@@ -949,6 +951,7 @@ ul.burger-menu__sub-list {
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 11px;
+    cursor: pointer;
 }
 .catalog-desk__item-title {
     font-weight: 600;
@@ -957,6 +960,7 @@ ul.burger-menu__sub-list {
     color: #FFFFFF;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     margin: 12px 20px;
+    user-select: none
 }
 .catalog-desk__category-1 {
     grid-column: 1/3;
@@ -1050,6 +1054,7 @@ ul.burger-menu__sub-list {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin-top: 70px;
+    user-select: none
 }
 
 .offer__category-list {
@@ -1115,6 +1120,9 @@ ul.burger-menu__sub-list {
 .product-item-hidden {
     display: none;
 }
+.product-item .img {
+    cursor: pointer;
+}
 
 .product-item .description {
     font-size: 12px;
@@ -1160,6 +1168,7 @@ ul.burger-menu__sub-list {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .add-in-cart-btn p {
     font-weight: 500;
@@ -1169,6 +1178,7 @@ ul.burger-menu__sub-list {
     letter-spacing: 0.02em;
     color: #fff;
     padding-top: 1px;
+    user-select: none
 }
 .add-in-cart-btn-desk {
     display: none;
@@ -1271,6 +1281,7 @@ ul.burger-menu__sub-list {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin-top: 70px;
+    user-select: none
 }
 
 /* ---------------------------------------------*/
@@ -1290,6 +1301,7 @@ ul.burger-menu__sub-list {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin-top: 70px;
+    user-select: none
 }
 
 
@@ -1462,6 +1474,7 @@ ul.burger-menu__sub-list {
     box-sizing: border-box;
     border-radius: 34px;
     margin: 20px auto;
+    cursor: pointer;
 }
 
 
@@ -1619,6 +1632,7 @@ ul.burger-menu__sub-list {
     box-sizing: border-box;
     border-radius: 34px;
     margin: 0px auto 12px auto;
+    cursor: pointer;
 }
 
 /* ---------------------------------------------*/
@@ -1639,6 +1653,7 @@ ul.burger-menu__sub-list {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(46, 60, 80, 0.35);
     margin: 34px 0 55px 0;
+    user-select: none
 }
 .features__table {
     margin: 0 auto;
@@ -1649,6 +1664,7 @@ ul.burger-menu__sub-list {
     display: flex;
     flex-direction: column;
     margin: 25px 0;
+    user-select: none
 }
 .features__item-img {
     display: block;
@@ -2253,9 +2269,8 @@ ul.burger-menu__sub-list {
         position: relative;
         top: 13px;
         display: flex;
-        height: 54px;
         justify-content: center;
-        left: -1px;
+        cursor: pointer;
     }
 
     /* -=-=-=-==-===-=---==-==-=---=-=--==--=-=-=--=-=--=- */
